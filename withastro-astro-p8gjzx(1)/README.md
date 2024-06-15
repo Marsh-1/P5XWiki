@@ -1,1 +1,0 @@
-Look in ConfSkillFormula, ConfSkill, and ConfThief in p5x data.
