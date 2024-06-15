@@ -18,7 +18,7 @@ const { character } = Astro.params;
 const info = Characters[character];
 ---
 
-<Layout title={info['Talents']['1']['Name']}>
+<Layout title={info['Name']}>
   <main>
     <div>
       <h1>{info['Name']}</h1>
