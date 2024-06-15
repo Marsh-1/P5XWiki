@@ -416,7 +416,7 @@
     }
   },
   "skull": {
-    "name": "Ryuji Sakamoto",
+    "Name": "Ryuji Sakamoto",
     "Codename": "Skull",
     "Role": "Single Target",
     "Element": "Physical",
@@ -533,7 +533,7 @@
       "5": {
         "Type": 2,
         "Name": "Enthusiasm",
-        "Description": "Panther deals 30% more damage in the Burning state."
+        "Description": "Panther deals 30% more damage to enemies in the Burning state."
       },
       "6": {
         "Type": 2,
