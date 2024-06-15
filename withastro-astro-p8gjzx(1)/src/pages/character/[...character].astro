@@ -1,0 +1,176 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Characters from '../../data/Characters.json';
+
+export function getStaticPaths() {
+  return [
+    {params: {character: 'mont'}},
+    {params: {character: 'joker'}},
+    {params: {character: 'rin'}},
+    {params: {character: 'puppet'}},
+    {params: {character: 'fox'}},
+    {params: {character: 'skull'}},
+    {params: {character: 'panther'}}
+  ];
+}
+
+const { character } = Astro.params;
+const info = Characters[character];
+---
+
+<Layout title={info['Talents']['1']['Name']}>
+  <main>
+    <div>
+      <h1>{info['Name']}</h1>
+      <p>Codename: {info['Codename']}</p>
+      <p>Role: {info['Role']}</p>
+      <p>Element: {info['Element']}</p>
+    </div>
+    <div>
+      <h1>Talents</h1>
+      <div>
+        <div>
+          <h2 class="skill1container">
+            {info['Talents']['1']['Name']} (Lv. 10)
+          </h2>
+          <input type="range" min="1" max="15" value="10" class="slider1" id="skill1">
+          <p>{info['Navi'] == true ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['1']['Cost']}{info['Talents']['1']['Type'] == 3 ? ' Rounds' : info['Talents']['1']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
+          <p class='skill1desc'>{
+            info['Talents']['1']['Formula'].reduce((acc,cur) =>
+            acc.replace("%s",Math.round(eval(cur.replace('skillLv',`10`))*10)/10),info['Talents']['1']['Description']
+          )
+          }</p>
+        </div>
+        <div>
+          <h2 class='skill2container'>
+          {info['Talents']['2']['Name']} (Lv. 10)
+          </h2>
+          <input type="range" min="1" max="15" value="10" class="slider2" id="skill2">
+          <p>{info['Navi'] == true ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['2']['Cost']}{info['Talents']['2']['Type'] == 3 ? ' Rounds' : info['Talents']['2']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
+          <p class='skill2desc'>{info['Talents']['2']['Formula'].reduce((acc,cur)=>
+            acc.replace("%s",Math.round(eval(cur.replace('skillLv',`10`))*10)/10),info['Talents']['2']['Description']
+          )}</p>
+        </div>
+        <div>
+          <h2 class='skill3container'>
+          {info['Talents']['3']['Name']} (Lv. 10)
+          </h2>
+          <input type="range" min="1" max="15" value="10" class="slider3" id="skill3">
+          <p>{info['Navi'] == true ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['3']['Cost']}{info['Talents']['3']['Type'] == 3 ? ' Rounds' : info['Talents']['3']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
+          <p class='skill3desc'>{info['Talents']['3']['Formula'].reduce((acc,cur)=>
+            acc.replace("%s",Math.round(eval(cur.replace('skillLv',`10`))*10)/10),info['Talents']['3']['Description']
+          )}</p>
+        </div>
+        <div>
+          <h2 class='skill4container'>
+          {info['Talents']['4']['Name']} {info['Talents']['4']['Type'] == 1 ? '(Lv. 10)': ''}
+          </h2>
+          {info['Talents']['4']['Type'] == 1 ? <input type="range" min="1" max="15" value="10" class="slider4" id="skill4"> : ''}
+          {
+            info['Talents']['4']['Type'] == 1 ? 
+            <p class='skill4desc'>{info['Talents']['4']['Formula'].reduce((acc,cur)=>
+            acc.replace("%s",Math.round(eval(cur.replace('skillLv',`10`))*10)/10),info['Talents']['4']['Description']
+          )}</p> : <p>{info['Talents']['4']['Description']}</p>
+          }
+        </div>
+        <h1>Passive</h1>
+        <div>
+          <h2>{info['Talents']['5']['Name']}</h2>
+          <p>{info['Talents']['5']['Description']}</p>
+        </div>
+        <div>
+          <h2>{info['Talents']['6']['Name']}</h2>
+          <p>{info['Talents']['6']['Description']}</p>
+        </div>
+      </div>
+    </div>
+    <h1>Awareness</h1>
+    <div>
+      <div>
+        <h2>0. {info['Awareness']['0']['Name']}</h2>
+        <p>{info['Awareness']['0']['Description']}</p>
+      </div>
+      <div>
+        <h2>1. {info['Awareness']['1']['Name']}</h2>
+        <p>{info['Awareness']['1']['Description']}</p>
+      </div>
+      <div>
+        <h2>2. {info['Awareness']['2']['Name']}</h2>
+        <p>{info['Awareness']['2']['Description']}</p>
+      </div>
+      <div>
+        <h2>3. {info['Awareness']['3']['Name']}</h2>
+        <p>{info['Awareness']['3']['Description']}</p>
+      </div>
+      <div>
+        <h2>4. {info['Awareness']['4']['Name']}</h2>
+        <p>{info['Awareness']['4']['Description']}</p>
+      </div>
+      <div>
+        <h2>5. {info['Awareness']['5']['Name']}</h2>
+        <p>{info['Awareness']['5']['Description']}</p>
+      </div>
+      <div>
+        <h2>6. {info['Awareness']['6']['Name']}</h2>
+        <p>{info['Awareness']['6']['Description']}</p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<script define:vars={{info}}>
+  
+  const slider1 = document.querySelector('input.slider1');
+  const slider2 = document.querySelector('input.slider2');
+  const slider3 = document.querySelector('input.slider3');
+
+  slider1.addEventListener("change", (event) => {
+      const oldText = document.querySelector('h2.skill1container').innerText.split(' (')[0]
+      document.querySelector('h2.skill1container').innerText = `${oldText} (Lv. ${event.target.value})`;
+      document.querySelector('p.skill1desc').innerText = info['Talents']['1']['Formula'].reduce((acc,cur) =>
+            acc.replace("%s",Math.round(eval(cur.replace('skillLv',`${event.target.value}`))*10)/10),info['Talents']['1']['Description']
+          )
+  });
+
+  slider2.addEventListener("change", (event) => {
+    const oldText = document.querySelector('h2.skill2container').innerText.split(' (')[0]
+    document.querySelector('h2.skill2container').innerText = `${oldText} (Lv. ${event.target.value})`;
+    document.querySelector('p.skill2desc').innerText = info['Talents']['2']['Formula'].reduce((acc,cur) =>
+            acc.replace("%s",Math.round(eval(cur.replace('skillLv',`${event.target.value}`))*10)/10),info['Talents']['2']['Description']
+          )
+  })
+
+  slider3.addEventListener("change", (event) => {
+    const oldText = document.querySelector('h2.skill3container').innerText.split(' (')[0]
+    document.querySelector('h2.skill3container').innerText = `${oldText} (Lv. ${event.target.value})`;
+    document.querySelector('p.skill3desc').innerText = info['Talents']['3']['Formula'].reduce((acc,cur) =>
+            acc.replace("%s",Math.round(eval(cur.replace('skillLv',`${event.target.value}`))*10)/10),info['Talents']['3']['Description']
+          )
+  })
+
+  if(info['Talents']['4']['Type'] == 1){
+    const slider4 = document.querySelector('input.slider4');
+    slider4.addEventListener("change", (event) => {
+      const oldText = document.querySelector('h2.skill4container').innerText.split(' (')[0]
+      document.querySelector('h2.skill4container').innerText = `${oldText} (Lv. ${event.target.value})`;
+      document.querySelector('p.skill4desc').innerText = info['Talents']['4']['Formula'].reduce((acc,cur) =>
+              acc.replace("%s",Math.round(eval(cur.replace('skillLv',`${event.target.value}`))*10)/10),info['Talents']['4']['Description']
+            )
+    })
+  }
+
+  
+  
+</script>
+
+<style>
+  main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+    color: white;
+	}
+</style>
