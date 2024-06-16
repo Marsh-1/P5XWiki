@@ -582,87 +582,82 @@
   "cattle": {
     "name": "Luffy",
     "codename": "Cattle",
-    "Role": "Healer",
+    "Role": "Support",
     "Element": "Fire",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Firecracker",
+        "Cost": 22,
+        "Description": "Deals %s% Attack Power Flame Attribute damage to 1 enemy with a 75% base chance of causing the enemy to burn.",
+        "Formula": ["(0.6+0.04*skillLv)*116"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Beam of Hope",
+        "Cost": 24,
+        "Description": "Restores %s% Attack Power + %s HP to 1 companion, healing effect is increased by %s% if companion's HP is below 50%.",
+        "Formula": ["(0.6+0.04*skillLv)*63.9","(300*skillLv+27)*((0.6+0.04*skillLv))","10+1*skillLv"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Angel's Mercy",
+        "Cost": 31,
+        "Description": "Restores %s% Attack Power + %s HP to all companions, and increases the healing effect inflicted on the primary target companion by %s%.",
+        "Formula": ["(0.6+0.04*skillLv)*40","(300*skillLv+27)*((0.6+0.04*skillLv))","15+skillLv"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "Highlight: Restores %s% Attack Power + %s HP to all companions, boosts all companions' Attack Power by %s%. \n One More: Deals flame attribute damage to 1 enemy.",
+        "Formula": ["(0.6+0.04*skillLv)*61.2","(300*skillLv+27)*(0.6+0.04*skillLv)","(0.6+0.04*skillLv)*34"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Wish",
+        "Description": "Self max life is converted to a healing effect, up to 12000 life can cause the healing effect to be increased by 42%."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Radiance",
+        "Description": "When attacking an enemy with the Personality Mask skill, cause a random 3 companions to gain the『Star's Fire』effect."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "Day and Night Reversal",
+        "Description": "When using a healing skill, cause the target companion to gain the 『Star's Fire』 effect, and each companion has at most one 『Star's Fire』 related effect. \n『Star's Fire I』: Attack power is increased by 4% of Luffel's Attack Power (up to 160 Attack Power), the effect lasts for 1 turn, and is upgraded to『Star's Fire II』at the end of the effect. \n『Star Fire II』: Attack power increased by 8% of Luffel's attack power (up to 320 attack power), effect lasts for 1 turn."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "270 Degree Rotation",
+        "Description": "When a companion in the『Starfire』state causes an elemental abnormality, the effect hit rate is increased by 33%."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "Ear Feather Trembles",
+        "Description": "Increase the skill level of Firecracker and Beam of Hope by 2 levels, up to level 15."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "Prey Appears",
+        "Description": "『Star's Fire II』gains an additional effect, whereby companions in this state are healed by 10% more."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "Silent Attack",
+        "Description": "Increases the skill levels of Angel's Mercy and Battle Technique by 2 levels, up to a maximum of level 15."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "Claw Assault",
+        "Description": "HIGHLIGHT effect enhancement: Increases the fire damage caused by all companions by 32% and the effect lasts for 1 round"
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "Return from a rewarding journey",
+        "Description": "At the end of 『Starfire II』, grant the target 『Starfire III』. \n『Starfire III』: Increases attack power by 8% of Lufei's attack power, increases fire damage by 20%, increases healing effect by 10%, and lasts for 1 round."
       }
     }
   },
