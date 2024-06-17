@@ -662,176 +662,166 @@
     }
   },
   "key": {
-    "name": "",
-    "codename": "Key",
+    "Name": "Kurotani Kiyoshi",
+    "Codename": "Key",
     "Role": "Debuffer",
     "Element": "Fire",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Explosive Flame",
+        "Cost": 18,
+        "Description": "Deal %s% of Key's maximum health as fire damage to an enemy, and have a 100% chance of putting the enemy into a Burning state. If the target enemy is in a Burning state, Kurotani Kiyoshi will gain an additional layer of Sacrifice state and change the skill effect: Deal half damage to all enemies, and have a 100% chance of putting enemies into a Burning state.",
+        "Formula": ["(0.6+0.04*skillLv)*26.8"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Candlelight",
+        "Cost": 22,
+        "Description": "Deal fire damage equal to %s% of Key's maximum health to all enemies; if an enemy is in the state, Kurotani Kiyoshi will gain 2 layers of Sacrificer and make the enemy in the Burning state fall into the Holy Fire state. 'Holy Fire': At the beginning of the round, take fire damage equal to Kurotani Kiyoshi's %s% of the maximum health, which lasts for 2 rounds.",
+        "Formula": ["(0.6+0.04*skillLv)*20.7","(0.6+0.04*skillLv)*18.1"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Flame Purification",
+        "Cost": 22,
+        "Description": "Deal %s% of Key's maximum health as fire damage to one enemy. If the enemy is in the Holy Fire state, the skill's damage increases by 30%.",
+        "Formula": ["(0.6+0.04*skillLv)*60"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "Hightlight: Increases the fire damage taken by all enemies by %s%, and deals fire damage equal to %s% of the maximum health. There is a 100% chance to put all enemies in the Burning state for 2 turns. One More: Deals flame attribute damage to 1 enemy.",
+        "Formula":["(0.6+0.04*skillLv)*30.8","(0.6+0.04*skillLv)*42.5"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Gift",
+        "Description": "For every layer of Sacrifice that Kurotani Kiyoshi possesses, the fire damage received by enemies in the Holy Fire state increases by 3%."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Miracle",
+        "Description": "Increases the fire damage caused by itself based on its own maximum health. Increases fire damage by 1% for every 300 points of maximum health, up to a maximum of 9000 points of maximum health."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "Determination to sacrifice",
+        "Description": "When releasing a skill, Kurotani Kiyoshi will gain 1 layer of Sacrifice status. 'Sacrifice': Increases the fire damage caused by all companions by 5%; when releasing a skill, Kurotani Kiyoshi will lose 4% of his current health for 2 rounds, up to 5 layers can be stacked, and the duration of each layer of Sacrifice status is calculated independently."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "Layers of Fear",
+        "Description": "At the start of your turn, for each layer of Sacrifice, there is a fixed 12% chance to put a random enemy into a burning state."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "Repent, sinner",
+        "Description": "The skill levels of Explosive Flame and Purification Flame are increased by 2 levels, up to a maximum of level 15."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "Mysterious Occurrence",
+        "Description": "At the start of your turn, each enemy in the Burning state will increase the fire damage caused by you by 8% for 1 round, up to 3 enemies."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "Demon Exorcism",
+        "Description": "The skill levels of Burning Heart and Battle Technique are increased by 2 levels, up to a maximum of level 15."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "Sacred Stories",
+        "Description": "HIGHLIGHT effect increased: Increases the target's fire damage taken by an additional 23.3%."
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "Redemption",
+        "Description": "Whenever you gain 10 levels of 『Sacrificer』, it increases the Flame Attribute damage dealt by all companions by 30%, and the effect lasts for 2 turns."
       }
     }
   },
   "soy": {
-    "name": "",
-    "codename": "Soy",
+    "Name": "Kano Shun",
+    "Codename": "Soy",
     "Role": "Defense",
     "Element": "Ice",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Iceberg Shake",
+        "Cost": 20,
+        "Description": "Deals %s% of the Soy's maximum health as Ice damage to one enemy, with a 70% chance of freezing the enemy.",
+        "Formula": ["(0.6+0.04*skillLv)*57.0"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 4,
+        "Name": "Vanguard Assault",
+        "Cost": 6,
+        "Description": "Deals physical damage equal to %s% of Soy's maximum health to one enemy and decreases the target enemy's defense by %s% for 2 turns. When in the Wild Savior state, the defense reduction value is increased to %s%.",
+        "Formula": ["(0.6+0.04*skillLv)*58.3","(0.6+0.04*skillLv)*61.4*0.5","(0.6+0.04*skillLv)*61.4"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Sub-zero Cure",
+        "Cost": 24,
+        "Description": "Increases the maximum health of all companions by 15% of Soy's maximum health (up to %s points of maximum health), and greatly increases the chance of being attacked. The effect lasts for 2 turns. Restores the health of all companions by %s% of Soy's maximum health. Cooldown: 1 turn.",
+        "Formula": ["skillLv*1500","(0.6+0.04*skillLv)*16.9"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "Highlight: Increases the maximum health of all companions by 10.3% of Ganajun's maximum health (up to %s points of maximum health). Restores the health of all companions by %s% of Ganajun's maximum health. At the same time, deals %s% of the maximum health of 1 enemy in cold damage. One More: Causes frost damage to 1 enemy.",
+        "Formula": ["skillLv*1500","(0.6+0.04*skillLv)*10.3","(0.6+0.04*skillLv)*77.2"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Wild",
+        "Description": "The number of gun bullets increases by 18%, and each bullet fired by the gun has a fixed probability of 10% to inflict 9% of the maximum HP of the player and reduce the enemy's defense by 35%. The effect lasts for 3 rounds. Gun damage decays to the same target."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Courage",
+        "Description": "After releasing the skill Zero Healing, every time you are attacked, there is a fixed probability of 30% to trigger the recovery effect of Wild Savior, and the effect lasts for 2 rounds."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "Jumanji",
+        "Description": "The probability of Kano Shun being attacked by the enemy increases, and after being attacked, he will gain Wild Savior. At the end of Kano Jun's turn, he will consume Wild Savior and recover 30% of his lost health."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "Challenge",
+        "Description": "When Soy is in the Wild Savior state, the damage he receives is reduced by 8%."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "Dangerous Confrontation",
+        "Description": "The skill levels of Iceberg Shake and Vanguard Assault are increased by 2 levels, up to a maximum of level 15."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "Hot blood smoke",
+        "Description": "When Soy's health is below 50%, the healing effect he receives increases by 25%."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "A Showdown",
+        "Description": "The skill levels of Zero Healing and Battle Techniques are increased by 2 levels, up to a maximum of level 15."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "Violent Execution",
+        "Description": "HIGHLIGHT effect enhancement: Reduces the damage taken by all companions by 16%, and the effect lasts for 2 rounds."
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "Victory Glory",
+        "Description": "When Soy attacks an enemy in the Wild Savior state, he will deal an additional 10% of Soy's maximum health as damage and restore 10% of Soy's maximum health."
       }
     }
   },
