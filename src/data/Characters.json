@@ -257,14 +257,14 @@
         "Name": "Song of Peace",
         "Cost": 8,
         "Description": "Grant all allies shield equal to %s% of Puppet's DEF + %s for 2 turns. Restore 4 SP. When the shield breaks, reduce Puppet's preparation time by 1.",
-        "Formula": ["(0.6+0.04*skillLv)*29.3", "(0.6+0.04*skillLv)*0.367*2777"]
+        "Formula": ["(0.6+0.04*skillLv)*28.6", "(0.6+0.04*skillLv)*0.3367*(300*skillLv+27)"]
       },
       "2": {
         "Type": 3,
         "Name": "Dance of Convergence",
         "Cost": 8,
         "Description": "Grant target ally shield equal to %s% of Puppet's DEF + %s, and reduces Weakness damage taken by 20% for 2 turns. Target ally will also gain 2 stacks of Knockdown resist and 2 stacks of Sea Guard.",
-        "Formula": ["(0.6+0.04*skillLv)*67.2", "(0.6+0.04*skillLv)*0.84*2779"]
+        "Formula": ["(0.6+0.04*skillLv)*67.2", "(0.6+0.04*skillLv)*0.84*(300*skillLv+27)"]
       },
       "3": {
         "Type": 3,
@@ -273,9 +273,9 @@
         "Description": "Grant all allies Shield equals to %s% of Puppet's DEF + %s + No. of Seaguard * (%s% of Puppet's DEF + %s) for 3 turns. When an ally has 4 or more stacks of Sea Guard, Sea Guard grants the additional effect to increase damage dealt by %s% for 3 turns. When an ally loses their shield or the shield expires, lose 2 stacks of Sea Guard.",
         "Formula": [
           "(0.6+0.04*skillLv)*33.2",
-          "(0.6+0.04*skillLv)*0.416*2779",
+          "(0.6+0.04*skillLv)*0.416*(300*skillLv+27)",
           "(0.6+0.04*skillLv)*6.9",
-          "(0.6+0.04*skillLv)*0.086*2779",
+          "(0.6+0.04*skillLv)*0.086*(300*skillLv+27)",
           "1.0+0.1*skillLv"
         ]
       },
@@ -597,20 +597,20 @@
         "Name": "Beam of Hope",
         "Cost": 24,
         "Description": "Restores %s% Attack Power + %s HP to 1 companion, healing effect is increased by %s% if companion's HP is below 50%.",
-        "Formula": ["(0.6+0.04*skillLv)*63.9","(300*skillLv+27)*((0.6+0.04*skillLv))","10+1*skillLv"]
+        "Formula": ["(0.6+0.04*skillLv)*63.9","(300*skillLv+27)*(0.6+0.04*skillLv)*.639","10+1*skillLv"]
       },
       "3": {
         "Type": 1,
         "Name": "Angel's Mercy",
         "Cost": 31,
         "Description": "Restores %s% Attack Power + %s HP to all companions, and increases the healing effect inflicted on the primary target companion by %s%.",
-        "Formula": ["(0.6+0.04*skillLv)*40","(300*skillLv+27)*((0.6+0.04*skillLv))","15+skillLv"]
+        "Formula": ["(0.6+0.04*skillLv)*40","(300*skillLv+27)*(0.6+0.04*skillLv)*.4","15+skillLv"]
       },
       "4": {
         "Type": 1,
         "Name": "Combat Skills",
         "Description": "Highlight: Restores %s% Attack Power + %s HP to all companions, boosts all companions' Attack Power by %s%. \n One More: Deals flame attribute damage to 1 enemy.",
-        "Formula": ["(0.6+0.04*skillLv)*61.2","(300*skillLv+27)*(0.6+0.04*skillLv)","(0.6+0.04*skillLv)*34"]
+        "Formula": ["(0.6+0.04*skillLv)*61.2","(300*skillLv+27)*(0.6+0.04*skillLv)*.612","(0.6+0.04*skillLv)*34"]
       },
       "5": {
         "Type": 2,
