@@ -13,7 +13,9 @@ export function getStaticPaths() {
     {params: {character: 'panther'}},
     {params: {character: 'cattle'}},
     {params: {character: 'key'}},
-    {params: {character: 'soy'}}
+    {params: {character: 'soy'}},
+    {params: {character: 'bui'}},
+    {params: {character: 'closer'}}
   ];
 }
 
@@ -36,7 +38,7 @@ const info = Characters[character];
           <h2 class="skill1container">
             {info['Talents']['1']['Name']} (Lv. 10)
           </h2>
-          <input type="range" min="1" max="15" value="10" class="slider1" id="skill1">
+          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider1" id="skill1">
           <p>{info['Navi'] == true ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['1']['Cost']}{info['Talents']['1']['Type'] == 3 ? ' Rounds' : info['Talents']['1']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p class='skill1desc'>{
             info['Talents']['1']['Formula'].reduce((acc,cur) =>
@@ -48,7 +50,7 @@ const info = Characters[character];
           <h2 class='skill2container'>
           {info['Talents']['2']['Name']} (Lv. 10)
           </h2>
-          <input type="range" min="1" max="15" value="10" class="slider2" id="skill2">
+          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider2" id="skill2">
           <p>{info['Navi'] == true ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['2']['Cost']}{info['Talents']['2']['Type'] == 3 ? ' Rounds' : info['Talents']['2']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p class='skill2desc'>{info['Talents']['2']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['2']['Description']
@@ -58,7 +60,7 @@ const info = Characters[character];
           <h2 class='skill3container'>
           {info['Talents']['3']['Name']} (Lv. 10)
           </h2>
-          <input type="range" min="1" max="15" value="10" class="slider3" id="skill3">
+          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider3" id="skill3">
           <p>{info['Navi'] == true ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['3']['Cost']}{info['Talents']['3']['Type'] == 3 ? ' Rounds' : info['Talents']['3']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p class='skill3desc'>{info['Talents']['3']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['3']['Description']
@@ -68,7 +70,7 @@ const info = Characters[character];
           <h2 class='skill4container'>
           {info['Talents']['4']['Name']} {info['Talents']['4']['Type'] == 1 ? '(Lv. 10)': ''}
           </h2>
-          {info['Talents']['4']['Type'] == 1 ? <input type="range" min="1" max="15" value="10" class="slider4" id="skill4"> : ''}
+          {info['Talents']['4']['Type'] == 1 ? <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider4" id="skill4"> : ''}
           {
             info['Talents']['4']['Type'] == 1 ? 
             <p class='skill4desc'>{info['Talents']['4']['Formula'].reduce((acc,cur)=>
@@ -161,9 +163,6 @@ const info = Characters[character];
             )
     })
   }
-
-  
-  
 </script>
 
 <style>

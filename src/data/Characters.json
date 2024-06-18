@@ -826,176 +826,166 @@
     }
   },
   "bui": {
-    "name": "",
-    "codename": "Bui",
-    "Role": "",
+    "Name": "Yui",
+    "Codename": "Bui",
+    "Role": "Single Target",
     "Element": "Electric",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Crackle Surprise Box",
+        "Cost": 20,
+        "Description": "Deals %s% Attack Power damage to 1 enemy with the Electrocution attribute. If the enemy is not in the Electrocuted state, there is a %s% base chance that it will fall into the Electrocuted state, and the effect lasts for 2 turns. If the enemy is already in the Electrocuted state, the damage is increased by 30%.",
+        "Formula": ["190*(0.6+0.04*skillLv)","70*(0.6+0.04*skillLv)"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Exploding Bricks",
+        "Cost": 20,
+        "Description": "Deals %s% Attack Power Electricity Attribute damage to all enemies, and increases the damage dealt to the skill's primary target by 25%.",
+        "Formula": ["61.1*(0.6+skillLv*0.04)"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Ultra Rare Reward",
+        "Cost": 25,
+        "Description": "Increase your attack power by %s%. Choose a companion to be YUI's 'Playmate'. When YUI releases the Personality Mask skill on an enemy, YUI will immediately pursue them, causing YUI's next 2 pursuits to deal %s% of their Attack Power as Electric Shock Attribute Damage, and the effect lasts for 2 rounds.",
+        "Formula": ["40*(0.6+0.04*skillLv)","136.2*(0.6+0.04*skillLv)"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Combat Skills",
+        "Description": "Highlight: Increases YUI's attack power by %s%, and the damage boost caused by Pursuit is equal to %s% of YUI's attack power, and the effect lasts for 2 turns. It also makes any companion that releases a skill that deals damage trigger YUI's Pursuit, the effect lasts for 1 turn. One More: Deals electric shock attribute damage to 1 enemy.",
+        "Formula": ["35*(0.6+0.04*skillLv)","25*(0.6+0.04*skillLv)"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Quick-Witted",
+        "Description": "YUI's Pursuit deals increased damage to enemies in the electrocuted state by 36%."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Glitter",
+        "Description": "When 『Playmate』 is present, YUI and Playmate's Strike Rate is increased by 12%."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "★Big Project! Launching★",
+        "Description": "When any ally releases the Personality Mask skill to deal damage, there is a fixed 35% chance that YUI will immediately pursue the main target of the skill, dealing 80% of its Attack Power as Electricity Attack damage, and this pursuit is treated as an additional effect. It also boosts the next Electric Attribute damage taken by that enemy by 15%, and the effect lasts for 2 turns."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "★Day of Sowing★",
+        "Description": "YUI's Pursuit's critical rate is increased by 20%, and critical rate is increased by 10% when pursuing an enemy in the electrified state."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "★A Spell that Sprouts Quickly★",
+        "Description": "Increase the skill level of 『Ultra Rare Reward』 and 『Combat Skill』 by 3 levels, up to 15 levels."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "★Rainbow Maker★",
+        "Description": "After unleashing Pursuit on an enemy, increase your own attack power by 10%, the effect lasts for 2 turns and can stack for 3 levels."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "★Declare War on Bugs★",
+        "Description": "Increase the skill level of 『Crackling Surprise Box』 and 『Exploding Bricks』 by 3 levels, up to 15 levels."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "★Cunning Grass Dance★",
+        "Description": "Highlight Effect Boost: Pursuit Strike effect is increased by 40% and the effect lasts for 2 turns."
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "★Pleasant Harvest Time★",
+        "Description": "When there is only 1 enemy on the field, YUI's Pursuit base skill multiplier is increased to 110% of attack power; YUI's Pursuit deals 25% splash damage to all other enemies."
       }
     }
   },
   "closer": {
-    "name": "",
-    "codename": "Closer",
+    "Name": "Arai Suha",
+    "Codename": "Closer",
     "Role": "AOE",
     "Element": "Electric",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Fury of Thunder",
+        "Cost": 20,
+        "Description": "Fires 4 Celestial Thunderbolts, dealing %s% Attack Power of Electric Attack Attribute damage, with a 100% base chance of putting the main target of the skill in the Electrocuted state. Subsequent attacks on the same target will only deal 10% of the damage, and the Thunderbolts will prioritize targets that have not been attacked.",
+        "Formula": ["78.6*(0.6+skillLv*0.04)"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Hyper-speed Electric Shock",
+        "Cost": 18,
+        "Description": "Deals %s% Attack Power Electricity Attribute Damage to 1 enemy and boosts the Electricity Attribute Damage dealt by all companions by %s%, the effect lasts for 2 turns.",
+        "Formula": ["161*(0.6+skillLv*0.04)","12*(0.6+0.04*skillLv)"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Electrifying Mad Shark",
+        "Cost": 24,
+        "Description": "Deals %s% Attack Power Electricity Attribute damage to all enemies. If there is an enemy in the Electrocuted state, inflict an additional %s% Attack Power Electric Attack damage to all enemies.",
+        "Formula": ["81.2*(0.6+0.04*skillLv)","43.8*(0.6+0.04*skillLv)"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "Highlight: Deals %s% Attack Power Electric Attack Attribute damage to all enemies, with a fixed 100% chance of causing the main target of the skill to enter the Electrocuted state, the effect lasts for 2 turns. It also increases the damage it receives from the Electrocution attribute by 10%, and the effect lasts for 2 turns. One More: Deals electric shock attribute damage to 1 enemy.",
+        "Formula": ["(0.04*skillLv+0.6)*166.4"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Protect",
+        "Description": "Upon releasing the Mask of Personality skill, it increases the damage taken by the main target of the skill from the Electricity Attack property by 20%, the effect lasts for 2 rounds and can be stacked for 2 tiers"
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Forces",
+        "Description": "When Electrocution is applied, there is a fixed 66% chance that the effect will be extended for 1 turn."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "Horn of Offense",
+        "Description": "After inflicting Electro Attack Attribute damage to an enemy, there is a 15% base chance that the enemy will be in the Electrocuted state. When attacking an enemy in the electrified state, your attack power is increased by 30%."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "Failed Interception",
+        "Description": "『Thunderbolt's』 number of segments is increased by 1, and successive attacks on the same enemy deal 15% damage."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "Strike with all one's might",
+        "Description": "Increase the skill level of 『Fury of Thunder』 and 『Hyper-speed Electric Shock』 by 2 levels, up to a maximum of 15 levels."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "Tachyon Chase",
+        "Description": "Damage from electrified enemies is reduced by 20%."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "Limitless Transcendence",
+        "Description": "Increase the skill level of 『Electric Shark』 and 『Combat Skill』 by 2 levels, up to 15 levels."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "Score!",
+        "Description": "Highlight Effect Boost: Increases the damage taken by all enemies from the electric shock property by 20%, effect lasts for 2 turns"
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "Fruit of Victory",
+        "Description": "Increases the damage dealt to enemies in the Electrocution state by 20%."
       }
     }
   },
