@@ -498,7 +498,7 @@
     }
   },
   "panther": {
-    "name": "Ann Takamaki",
+    "Name": "Ann Takamaki",
     "Codename": "Panther",
     "Role": "AOE",
     "Element": "Fire",
@@ -580,8 +580,8 @@
     }
   },
   "cattle": {
-    "name": "Luffy",
-    "codename": "Cattle",
+    "Name": "Luffy",
+    "Codename": "Cattle",
     "Role": "Support",
     "Element": "Fire",
     "Talents": {
@@ -1072,8 +1072,8 @@
     }
   },
   "fleuret": {
-    "name": "Seiji Shiratori",
-    "codename": "Fleuret",
+    "Name": "Seiji Shiratori",
+    "Codename": "Fleuret",
     "Role": "Single Target",
     "Element": "Wind",
     "Talents": {
@@ -1154,8 +1154,8 @@
     }
   },
   "yuki": {
-    "name": "Yukimi Fujikawa",
-    "codename": "Yuki",
+    "Name": "Yukimi Fujikawa",
+    "Codename": "Yuki",
     "Role": "Defense",
     "Element": "Bless",
     "Talents": {
@@ -1236,8 +1236,8 @@
     }
   },
   "riddle": {
-    "name": "Hina Nishimori",
-    "codename": "Riddle",
+    "Name": "Hina Nishimori",
+    "Codename": "Riddle",
     "Role": "Support",
     "Element": "Psychic",
     "Talents": {
@@ -1318,8 +1318,8 @@
     }
   },
   "moko": {
-    "name": "Tomoko Noge",
-    "codename": "Moko",
+    "Name": "Tomoko Noge",
+    "Codename": "Moko",
     "Role": "Support",
     "Element": "Psychic",
     "Talents": {
@@ -1400,8 +1400,8 @@
     }
   },
   "leon": {
-    "name": "Kamiyama Reiyo",
-    "codename": "Leon",
+    "Name": "Kamiyama Reiyo",
+    "Codename": "Leon",
     "Role": "Defense",
     "Element": "Nuke",
     "Talents": {
@@ -1482,8 +1482,8 @@
     }
   },
   "sepia": {
-    "name": "Sumi Toshiya",
-    "codename": "Sepia",
+    "Name": "Sumi Toshiya",
+    "Codename": "Sepia",
     "Role": "Single Target",
     "Element": "Curse",
     "Talents": {
@@ -1564,8 +1564,8 @@
     }
   },
   "okyann": {
-    "name": "Yoshiyo Toyama",
-    "codename": "Okyann",
+    "Name": "Yoshiyo Toyama",
+    "Codename": "Okyann",
     "Role": "Navigation",
     "Element": "None",
     "Navi": true,
