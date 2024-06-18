@@ -8,7 +8,7 @@ import Characters from '../data/Characters.json'
 	<main>
 		<h1>Characters</h1>
 		<ul role="list" class="link-card-grid">
-				{Object.keys(Characters).slice(0,12).map((char) => {
+				{Object.keys(Characters).map((char) => {
 					return <Card title={char.toLocaleUpperCase('en-US')} href = {"/P5XWiki/character/" + char}/>
 				})}
 		</ul>

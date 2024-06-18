@@ -989,90 +989,85 @@
       }
     }
   },
-  "mona": {
-    "name": "Morgana",
-    "codename": "Mona",
-    "Role": "Healer",
+  "mona":{
+    "Name": "Morgana",
+    "Codename": "Mona",
+    "Role": "Support",
     "Element": "Wind",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Gale Force",
+        "Cost": 22,
+        "Description": "Deals %s% of Attack Power Wind damage to 1 enemy, with a 100% base chance of causing the enemy to fall into the Wind Attack state, which lasts for 2 turns.",
+        "Formula": ["120.2*(0.6+0.04*skillLv)"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 4,
+        "Name": "Miracle Punch",
+        "Cost": 12,
+        "Description": "Inflicts %s% Attack Power Physical Attribute damage to 1 enemy, this skill's Hit Rate is reduced by 20%, and its Critical Rate is increased by 30%. If the hit is critical, you immediately gain a layer of『Intuition』.",
+        "Formula": ["132.1*(0.6+0.04*skillLv)"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Art of Healing",
+        "Cost": 33,
+        "Description": "Restores %s% Attack Power + %s Life to all companions and dispels 1 Elemental Anomaly from all companions. If you do so, you immediately gain a level of Intuition.",
+        "Formula": ["38.5*(0.6+0.04*skillLv)",".385*(0.6+0.04*skillLv)*(300*skillLv+27)"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Deals %s% Attack Power Blast Wind Attribute damage to 1 enemy and revives 1 companion at 1% of their max HP. ONE MORE: Deals Wind attribute damage to 1 enemy.",
+        "Formula": ["233.4*(0.6+skillLv*0.04)"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Self-confidence",
+        "Description": "『Intuition』's healing effect can be critical, which increases its recovery by an additional 24% Attack Power + 960."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Restraint",
+        "Description": "Aura: 15% reduction in SP Cost for all companions"
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "Sense of Smell",
+        "Description": "Each time you use a skill that is different from the previous turn, you gain a layer of Intuition, which stacks for 3 layers. 『Intuition』: When a companion uses a skill to attack an enemy, if any companion's blood level is less than 70%, Morgana has a supplementary effect that immediately heals all companions for 10% of their Attack Power + 150/225/300 (varies at Levels 1, 50, and 70) Life Points."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "Energetic",
+        "Description": "The 『Intuition』 effect inflicts an additional healing of 30% of Attack Power on teammates with less than 50% HP."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "Tail Wagging",
+        "Description": "Increase the skill level of『Healing Arts』and『Combat Skills』 by 3 levels, to a maximum of 15 levels."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "Do Not Disturb",
+        "Description": "『Healing Arts』heals primary targets by 33% of Morgana's ATK Power."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "Agile Counter-Attack",
+        "Description": "Increase the skill level of 『Gale Force Attack』 and 『Miracle Fist』 by 3 levels, up to 15 levels."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "Move the Hunted",
+        "Description": "HIGHLIGHT Effect Boost: When reviving a companion, restore an additional 60.0% of their Attack Power + 800 Life Points."
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "Inquisitive Kitty",
+        "Description": "『Miracle Fist』's Hit Rate Reduction is no longer reduced, and it increases the damage dealt to enemies by 15% for 2 turns after dealing a critical hit."
       }
     }
   },
@@ -1083,344 +1078,78 @@
     "Element": "Wind",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Elegant Storm",
+        "Cost": 19,
+        "Description": "Deals 3 times %s% Attack Power Blast attribute damage to all enemies. There is a base probability of gaining the 『Motivation』status based on the number of enemies at the time of the attack (Number of Enemies* %s%).",
+        "Formula": ["74.3*(skillLv*0.04+0.6)/3","50*(skillLv*0.04+0.6)"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Shadowless Stab",
+        "Cost": 18,
+        "Description": "Inflicts 3 times %s% of Attack Power Gale damage to 1 enemy, and when the 『Motivation』status is at least 3 levels, this skill inflicts an additional 1 damage, and increases the Critical Rate by 20%.",
+        "Formula": ["54.5*(skillLv*0.04+0.6)"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Wind Whistling",
+        "Cost": 16,
+        "Description": "Deals 4 %s% Attack Power Blast Wind Attribute damage to 1 enemy, with a %s% base probability of causing the enemy to fall into the Wind Attack state, and the effect lasts for two turns.",
+        "Formula": ["175.8/4*(skillLv*0.04+0.6)","(0.6+0.04*skillLv)*15"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Deals 4 %s% Attack Power Blast Wind Attribute Damage to 1 enemy, and the number of damage is increased by 1 if you hold three or more levels of the『Motivation』status when releasing this skill. One More: Deals Wind attribute damage to 1 enemy.",
+        "Formula": ["30*(0.6+0.04*skillLv)*2"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Focal Point",
+        "Description": "When using the skill『Shadowless Stab』to deal damage to an enemy in Wind Attack, there is a 100% fixed probability of dealing an additional 1 damage."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Depressed",
+        "Description": "At the end of the round, there is a 60% fixed chance that you will gain 1 layer of 『Motivation』."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "Blocking Defense",
+        "Description": "When releasing a skill that deals damage in each segment, there is a 40% fixed chance to gain『Motivation』1 tier, attack power is increased by 7%, speed is increased by 4, and the effect lasts for 2 turns.『Motivation』can be stacked up to 3 layers, each layer duration is calculated independently."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "Return Fire",
+        "Description": "『Motivation』's maximum number of tiers raised to 5"
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "Be Full of Tricks",
+        "Description": "Increase the skill level of 『Wind Whistling』 and 『Elegant Storm』 by 2 levels, to a maximum of 15 levels."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "Change Step lightly",
+        "Description": "When attacked by an enemy there is a fixed 12% chance of evading this attack."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "Take Aim at a Breakthrough",
+        "Description": "Increase the skill level of 『Shadowless Stab』 and 『Combat Skills』 by 2 levels, up to 15 levels."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "Covert Attack ",
+        "Description": "HIGHLIGHT effect boost: When 『Motivation』reaches 3 or more levels, it increases damage by 1 and has a 100% base chance of causing the enemy to fall into the Wind Attack state."
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
-      }
-    }
-  },
-  "riddle": {
-    "name": "",
-    "codename": "Riddle",
-    "Role": "",
-    "Element": "Psychic",
-    "Talents": {
-      "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      }
-    },
-    "Awareness": {
-      "0": {
-        "Id": 0,
-        "Name": "",
-        "Description": ""
-      },
-      "1": {
-        "Id": 1,
-        "Name": "",
-        "Description": ""
-      },
-      "2": {
-        "Id": 2,
-        "Name": "",
-        "Description": ""
-      },
-      "3": {
-        "Id": 3,
-        "Name": "",
-        "Description": ""
-      },
-      "4": {
-        "Id": 4,
-        "Name": "",
-        "Description": ""
-      },
-      "5": {
-        "Id": 5,
-        "Name": "",
-        "Description": ""
-      },
-      "6": {
-        "Id": 6,
-        "Name": "",
-        "Description": ""
-      }
-    }
-  },
-  "moko": {
-    "name": "",
-    "codename": "Moko",
-    "Role": "Buffer",
-    "Element": "Pyschic",
-    "Talents": {
-      "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      }
-    },
-    "Awareness": {
-      "0": {
-        "Id": 0,
-        "Name": "",
-        "Description": ""
-      },
-      "1": {
-        "Id": 1,
-        "Name": "",
-        "Description": ""
-      },
-      "2": {
-        "Id": 2,
-        "Name": "",
-        "Description": ""
-      },
-      "3": {
-        "Id": 3,
-        "Name": "",
-        "Description": ""
-      },
-      "4": {
-        "Id": 4,
-        "Name": "",
-        "Description": ""
-      },
-      "5": {
-        "Id": 5,
-        "Name": "",
-        "Description": ""
-      },
-      "6": {
-        "Id": 6,
-        "Name": "",
-        "Description": ""
-      }
-    }
-  },
-  "leon": {
-    "name": "",
-    "codename": "Leon",
-    "Role": "Defense",
-    "Element": "Nuke",
-    "Talents": {
-      "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      },
-      "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
-      }
-    },
-    "Awareness": {
-      "0": {
-        "Id": 0,
-        "Name": "",
-        "Description": ""
-      },
-      "1": {
-        "Id": 1,
-        "Name": "",
-        "Description": ""
-      },
-      "2": {
-        "Id": 2,
-        "Name": "",
-        "Description": ""
-      },
-      "3": {
-        "Id": 3,
-        "Name": "",
-        "Description": ""
-      },
-      "4": {
-        "Id": 4,
-        "Name": "",
-        "Description": ""
-      },
-      "5": {
-        "Id": 5,
-        "Name": "",
-        "Description": ""
-      },
-      "6": {
-        "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "Hit with a single blow",
+        "Description": "The initial fixed probability of obtaining 『Motivation』 is increased by 20%, and the number of damage done by the skills 『Wind Whistling』, 『Elegant Storm』, and 『Shadowless Stab』 is increased by 1 when 『Motivation』 reaches the highest tier."
       }
     }
   },
@@ -1431,257 +1160,488 @@
     "Element": "Bless",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Ruling of the Righteous",
+        "Cost": 19,
+        "Description": "Deals %s% of Yukimi's Defense as Bless Attribute damage to all enemies, causing Yukimi to gain 1 tier of the Bless effect, and causing its companions who are in the 'Pledge of Allegiance' to gain 1 layer of Bless effect.",
+        "Formula": ["90.2*(0.6+0.04*skillLv)"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Order of Righteousness",
+        "Cost": 20,
+        "Description": "Gives 1 companion a shield with %s% Defense+ %s and a Defense boost (35% of Fujikawa Yukimitsu's Defense, up to a maximum of %s points of Defense). The effect lasts for 2 turns. The effect lasts for 2 turns and causes the companion to gain Blessing for 2 levels and 『Oath of Vows』with the companion.",
+        "Formula": ["48.4*(0.6+0.04*skillLv)",".484*(0.6+0.04*skillLv)*(300*skillLv+27)","1140*(0.6+0.04*skillLv)"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Absolute Judgment",
+        "Cost": 25,
+        "Description": "When self gets Blessing effect, it will get『Recharge』. When『Charge Energy』has no less than 2 tiers, when this skill is released, it will consume all of the『Charge Energy』and inflict %s% Defense Blessing attribute on 1 enemy Damage, for each layer of 'Charge Energy' consumed, causes all companions to boost %s% damage for 1 turn and causes all companions to gain %s% Defense Power Shield for 2 turns. When a companion in the 『Oaths』state gains the Blessing effect, it additionally causes Yukimitsu Fujikawa to gain the 『Recharge』.",
+        "Formula": ["120*(0.6+0.04*skillLv)","5*(0.6+0.04*skillLv)","13.9*(0.6+0.04*skillLv)"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Inflicts %s% Defense Blessing Attribute damage to 1 enemy and causes all companions to raise their Defense based on 20% of Fujikawa Yukimitsu's Defense (up to a maximum of %s points of Defense), and the effect lasts for 2 turns. ONE MORE: Causes blessing damage to 1 enemy",
+        "Formula": ["291.1*(skillLv*0.04+0.6)","674*(skillLv*0.04+0.6)"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Compassion",
+        "Description": "Partners in the 'Pledge' state gain a damage bonus based on their defense, gaining 7% damage bonus for every 1500 points of defense, up to a maximum of 21% damage bonus."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Revolution",
+        "Description": "At the end of its own turn, if any companion's life value is less than 30%, cause it to gain a shield of  Defense and cause it to gain Blessing effect for 1 tier, and the effect lasts for 2 turns. Triggers up to 1 time per battle."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "Follows the Path of Righteousness",
+        "Description": "At the start of battle, create a 『Pledge』 with 1 random companion. At the end of Yukimi's turn, the companion in this state receives a shield equal to 24% of Yukimi's defense, and at most 1 companion can create a 『Pledge』 at the same time."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "The Law",
+        "Description": "Teammates in the『Pledge』state increase their defense by 15%."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "Responsibility and Supervision",
+        "Description": "Increase the skill level of 『Ruling of the Righteous』 and 『Order of Righteousness』 by 2 levels to a maximum of 15 levels."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "Abide by the law",
+        "Description": "At the start of each turn, make a companion in『Oath』gain 1 layer of the Blessing effect."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "Fulfilling the Promise of Justice",
+        "Description": "Increase the skill level of『Absolute Judgment』and『Battle Technique』by 2 levels, up to 15 levels."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "Spiritual Purification",
+        "Description": "HIGHLIGHT Effect Boost: After releasing the HIGHLIGHT skill, cause all companions to gain 2 layers of Blessing effects."
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "Kindness",
+        "Description": "Gives 10% damage bonus to self and companion in『Oath of Blessing』. Gain an additional 2% attribute damage bonus per layer based on the total number of blessing layers for both parties, up to a maximum of 20% attribute damage bonus."
+      }
+    }
+  },
+  "riddle": {
+    "name": "Hina Nishimori",
+    "codename": "Riddle",
+    "Role": "Support",
+    "Element": "Psychic",
+    "Talents": {
+      "1": {
+        "Type": 1,
+        "Name": "Clumsy Helper",
+        "Cost": 20,
+        "Description": "Inflicts %s% Attack Power Nimble Attribute damage to 1 enemy, causing all companions to enter the『Favored』state: when releasing the Personality Mask Skill to inflict damage, it causes Nishimori to gain 1 layer of 『 Childish Fun』, and the effect lasts for 1 turn.",
+        "Formula": ["150*(0.6+0.04*skillLv)"]
+      },
+      "2": {
+        "Type": 1,
+        "Name": "Smart Explorer",
+        "Cost": 22,
+        "Description": "Boosts the healing effects of all companions as well as the shield effects they receive by %s% and defense by %s%. The effect lasts for 1 turn. If 『Child's Play』tier is 0 when this skill is released, you gain 2 tiers of『Child's Play』at the end of the skill.",
+        "Formula": ["18*(0.6+0.04*skillLv)","35*(0.6+0.04*skillLv)"]
+      },
+      "3": {
+        "Type": 1,
+        "Name": "Exuberant Childishness",
+        "Cost": 24,
+        "Description": "When holding『Children's Fun』this skill is turned on, causing all companions' attack power to increase by 10%, and the effect lasts for 2 turns. If 『Child's Play』has no less than 2 levels when this skill is released, the damage dealt by all companions is boosted (by 1% for every 100 points of Attack Power you have, capped at %s), and the effect lasts for 2 turns.",
+        "Formula": ["50*(0.6+0.04*skillLv)"]
+      },
+      "4": {
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Deals %s% Attack Power Psychic Attribute damage to 1 enemy, boosting the damage dealt by all companions by %s% * the current 『Child's Delight』 tier, and the effect lasts for 1 turn. ONE MORE: Deals Psychic Attribute damage to 1 enemy.",
+        "Formula": ["375*(0.6+0.04*skillLv)","8*(0.6+0.04*skillLv)"]
+      },
+      "5": {
+        "Type": 2,
+        "Name": "Investigate in Detail",
+        "Description": "When a companion in 『Favored』 deals damage, for every 1 damage dealt, there is a 40% fixed probability that Nishimori will gain a 1-tier『Childhood's Delight』."
+      },
+      "6": {
+        "Type": 2,
+        "Name": "Delve Into",
+        "Description": "Consuming 『Child's Play』with a tier number greater than or equal to 3 increases the effect of the Attack Boost brought about by『Child's Play』by 24%."
+      }
+    },
+    "Awareness": {
+      "0": {
+        "Id": 0,
+        "Name": "Treasure hunt! Set off!",
+        "Description": "When Nishimori releases his Personality Mask skill, he consumes all『Child's Play』, and for every 1 tier『Child's Play』consumed, he increases the Attack Strength of all companions by 8%, and the effect lasts for 2 turns.『Children's Fun』Limit 5 layers."
+      },
+      "1": {
+        "Id": 1,
+        "Name": "Fork in the Road! Choices!",
+        "Description": "When a companion releases a skill that deals damage, it increases Nishimori's attack power by 20%, capped at 3 levels, and the effect is cleared after releasing the skill on the next turn."
+      },
+      "2": {
+        "Id": 2,
+        "Name": "Experience! Get!",
+        "Description": "Increase the skill level of『Exuberant Childishness』and『Battle Skills』by 3 levels, up to 15 levels."
+      },
+      "3": {
+        "Id": 3,
+        "Name": "Assistant! Upgrade!",
+        "Description": "Fixed probability of obtaining『Childish Fun』through『Chasing Doubt』is increased by 20%. When releasing the 『Exuberant Childhood』skill, if『Childhood』is at full tier, it boosts all companions' attack power by an additional 18%."
+      },
+      "4": {
+        "Id": 4,
+        "Name": "Equip! Strengthen!",
+        "Description": "Increase the skill level of 『Dumb Assistant』 and 『Clever Explorer』 by 3 levels, up to 15 levels."
+      },
+      "5": {
+        "Id": 5,
+        "Name": "Monster! Knockout!",
+        "Description": "HIGHLIGHT effect enhancement: Damage enhancement effect is extended to 2 rounds."
+      },
+      "6": {
+        "Id": 6,
+        "Name": "Puzzle! Solve!",
+        "Description": "For every 5『Child's Play』you gain『Explosion of Curiosity』: when you release your Personality Mask skill targeting an enemy, the damage dealt is boosted by 75%, and clears after damage is dealt."
+      }
+    }
+  },
+  "moko": {
+    "name": "Tomoko Noge",
+    "codename": "Moko",
+    "Role": "Support",
+    "Element": "Psychic",
+    "Talents": {
+      "1": {
+        "Type": 1,
+        "Name": "Melody of Nemesis",
+        "Cost": 20,
+        "Description": "Deals %s% Attack Power Psychic Attribute damage to all enemies and gains 2『Aoba』.",
+        "Formula": ["82.6*(0.6+0.04*skillLv)"]
+      },
+      "2": {
+        "Type": 1,
+        "Name": "Song of the Flute",
+        "Cost": 22,
+        "Description": "Gives 1 companion 『Leaf Song Minor』: Increases their Attack Power by 15% and an additional increase equal to 30% of Tomoko's Attack Power (capped at %s points of Attack Power). This skill consumes 2『Aoba』.",
+        "Formula": ["1200*(0.6+0.04*skillLv)"]
+      },
+      "3": {
+        "Type": 1,
+        "Name": "Good Night Song",
+        "Cost": 24,
+        "Description": "There is a %s% base probability to cause 1 enemy to fall into a sleep state, and the effect lasts for 1 turn. If it hits, boosts %s% the next damage dealt to the enemy. If it fails to hit, it boosts %s%. This skill consumes 2 『Aoba』.",
+        "Formula": ["60*(0.6+0.04*skillLv)","30*(0.6+0.04*skillLv)","15*(0.6+0.04*skillLv)"]
+      },
+      "4": {
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Causes 1 enemy to have a 80% base probability of falling into the Sleep state, the effect lasts for 1 turn, and increases the damage it receives the next time by %s%, the effect lasts for 1 round. ONE MORE: Inflicts Psychic Attribute damage to 1 enemy",
+        "Formula": ["33.6*(0.6+0.04*skillLv)"]
+      },
+      "5": {
+        "Type": 2,
+        "Name": "Fantasy",
+        "Description": "When targeting a companion to unleash a skill, it causes the damage they deals to be increased by 6%, and the effect lasts for 2 turns."
+      },
+      "6": {
+        "Type": 2,
+        "Name": "Search",
+        "Description": "Boosts 10% damage dealt by all companions to enemies in Mental Abnormality."
+      }
+    },
+    "Awareness": {
+      "0": {
+        "Id": 0,
+        "Name": "Gift of the Forest",
+        "Description": "At the start of the battle, Tomoko gains 4『Aoba』. Every 2 turns, Tomoko recovers 1『Aoba』.『Aoba』Limit 5 levels."
+      },
+      "1": {
+        "Id": 1,
+        "Name": "Breath of Grass",
+        "Description": "When consumed『Aoba』, it restores 15% of the attack power of the companion with the lowest current life percentage."
+      },
+      "2": {
+        "Id": 2,
+        "Name": "Howl of the Tree",
+        "Description": "Increase the skill level of『Song of the Flute』and『Melody of Nemesis』by 2 levels, up to level 15."
+      },
+      "3": {
+        "Id": 3,
+        "Name": "Endless",
+        "Description": "The『Aoba』recovery effect of the initial trait is changed to 1 recovery per turn."
+      },
+      "4": {
+        "Id": 4,
+        "Name": "Mountain and Field Ensemble",
+        "Description": "Increase the skill level of『Goodnight Song』and『Battle Technique』by 2 levels, up to a maximum of 15 levels."
+      },
+      "5": {
+        "Id": 5,
+        "Name": "Chanting the Ballad of Peaceful Sleep",
+        "Description": "HIGHLIGHT Effect Boost: Boosts the next 1 damage dealt to the target enemy by an additional 24%."
+      },
+      "6": {
+        "Id": 6,
+        "Name": "Dream trap",
+        "Description": "A companion with 『Leafsong Minor』 that is a ally with the highest Attack Power increases the damage dealt by 20%."
+      }
+    }
+  },
+  "leon": {
+    "name": "Kamiyama Reiyo",
+    "codename": "Leon",
+    "Role": "Defense",
+    "Element": "Nuke",
+    "Talents": {
+      "1": {
+        "Type": 1,
+        "Name": "Nuclear Thermal Fantasy",
+        "Cost": 20,
+        "Description": "Deals %s% Attack Power nuclear thermal attribute damage to 1 enemy. When this skill is released, the damage of this skill is increased by 10% for every 1 layer of『Activation』on all companions.",
+        "Formula": ["134.6*(0.6+skillLv*0.04)"]
+      },
+      "2": {
+        "Type": 1,
+        "Name": "Life Support",
+        "Cost": 20,
+        "Description": "Replaces 30% of 1 companion's current life value at 80% with a shield and adds an additional shield equal to the Shinzan Ridge Central %s% + %s Attack Power, which lasts for 2 turns. It also gives it 1 layer of『Activation』.",
+        "Formula": ["32.4*(0.6+0.04*skillLv)","(300*skillLv+27)*0.324*(0.6+0.04*skillLv)"]
+      },
+      "3": {
+        "Type": 1,
+        "Name": "Energy Conversion",
+        "Cost": 24,
+        "Description": "Increases the attack power of 1 companion by %s%, the effect lasts for 2 turns. For the duration of the effect, for every 1 layer of 『Activation』on the target, it gains an Attack Power boost based on 20% of the Shinzan Ridge Central's Attack Power, and the Attack Power gained in this way is capped at %s.",
+        "Formula": ["20*(0.6+0.04*skillLv)","777*2*(0.6+0.04*skillLv)"]
+      },
+      "4": {
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Causes 1 companion to gain a full tier of『Activation』, the effect lasts for 2 turns, and if the target's life value is below 60%, it restores it to 60%, with the restored life value capped at 200% of Kamiyama Ryo's attack power.It also boosts its attack power based on 15% of Kamiyama Ryo's attack power, capped at %s points, and the effect lasts for 2 turns. ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
+        "Formula": ["600*(0.6+skillLv*0.04)"]
+      },
+      "5": {
+        "Type": 2,
+        "Name": "Conflict",
+        "Description": "『Life Refinement』At the end of the skill's duration, it restores life value based on the 100% of the shield's remaining value."
+      },
+      "6": {
+        "Type": 2,
+        "Name": "Companionship",
+        "Description": "If a companion has two layers of『Activation』effects on them, they are additionally boosted with 45% critical damage."
+      }
+    },
+    "Awareness": {
+      "0": {
+        "Id": 0,
+        "Name": "Organic Reformer",
+        "Description": "When any companion's life value is no higher than 60%, make it gain 『Activation』: Gain an attack power boost based on 6% of Leon's (up to a maximum of 120/180/240 attack power boosts, which changes when reaching levels 1, 50, and 70), the effect lasts for 1 turn, and the『Activation』caps 2 levels."
+      },
+      "1": {
+        "Id": 1,
+        "Name": "The City Watchman",
+        "Description": "Increases the defense of a companion with 'Activate' on them by 10%."
+      },
+      "2": {
+        "Id": 2,
+        "Name": "Ooh! It's a fight to the death.",
+        "Description": "Increase the skill level of 『Nuclear Thermal Fantasy』 and 『Life Refining』by 2 levels, up to 15 levels."
+      },
+      "3": {
+        "Id": 3,
+        "Name": "Marginal Savior",
+        "Description": "When targeting a companion to release the Personality Mask skill, Leon's attack power is increased by 25%."
+      },
+      "4": {
+        "Id": 4,
+        "Name": "Growth and Bonding",
+        "Description": "Increase the skill level of『Energy Transformation』and『Battle Technique』by 2 levels, up to 15 levels."
+      },
+      "5": {
+        "Id": 5,
+        "Name": "The Hero's Journey Home",
+        "Description": "HIGHLIGHT Effect Boost: Increases the effect of target companion's critical damage by 25%, the effect lasts for 2 turns."
+      },
+      "6": {
+        "Id": 6,
+        "Name": "The World Never Ends.",
+        "Description": "When targeting a companion to unleash the Personality Mask skill, if his or her Life Value is no higher than 60%, it increases his or her Critical Damage by 25%, and the effect lasts for 1 turn."
       }
     }
   },
   "sepia": {
-    "name": "",
+    "name": "Sumi Toshiya",
     "codename": "Sepia",
     "Role": "Single Target",
     "Element": "Curse",
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Tragedy of Sorrow",
+        "Cost": 22,
+        "Description": "Deals 3 %s% attack power Curse damage to 1 enemy and gains 3 『Hate Verses』 with this attack, the next time you gain a 『Verses』, there is a 25% fixed chance that it will change to 『Hate Verses』 with a fixed 25% chance of changing to 『Hate Verse』, triggering up to 2 times each level『Hate Verse』 making 『Sonnet of Fate』 to attach a curse effect at a 30% base chance.",
+        "Formula": ["180*(skillLv*0.04+0.6)/3"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Comedy of the Absurd",
+        "Cost": 20,
+        "Description": "Deals 2 %s% attack power curse damage to all enemies and gains 2 『Healing Verses』 for this attack, the next time you gain 『Verses』a 25% fixed chance of changing to 『Healing Verses』. With a fixed 25% chance of transforming into 『Healing Verses』, triggering up to 2 times each level of 『Healing Verses』 making 『Sonnets of Destiny』restores 7.5% of the lowest lifestealing companion's attack power.",
+        "Formula": ["73.125*(skillLv*0.04+0.6)/2"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Romantic Comedy",
+        "Cost": 22,
+        "Description": "Deals 4 %s% Attack Power Curse damage to 1 enemy and gains 4 『Passionate Verse』for this attack, the next time you gain 'Verses' a 25% fixed chance of changing to 'Passionate Verses' with a fixed probability of 25% to change to 『Passionate Verse』, triggering up to 2 times each tier of『Passionate Verse』making『Sonnets of Fate』add 7% of attack power to the overall damage.",
+        "Formula": ["170*(skillLv*0.04+0.6)/4"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Deals 3 %s% attack power Curse damage to 1 enemy, causing the next 2 『Sonnets of Fate』to deal an additional %s% attack power. ONE MORE: Deals cursed attribute damage to 1 enemy.",
+        "Formula": ["297.5/3*(skillLv*0.04+0.6)","51.8*(skillLv*0.04+0.6)"]
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Deathstroke",
+        "Description": "『Sonnet of Fate』increases damage by 50% against enemies in Cursed Abnormal status."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Curse",
+        "Description": "『Sonnets of Fate』for every special『'Verse』in『Sonnets of Fate』increases the damage of it by 10%."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "Sonnets of Destiny",
+        "Description": "Each time any companion deals damage, inspire Toshiya Sumi to gain『Verses』. After gaining any 14『Verses』and completing the chapter, inflicts one single curse damage of 65/98/130% (varies on reaching levels 1, 50, and 70) of Attack Power to the primary target that is currently being attacked Additional Effects."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "Burst of Inspiration",
+        "Description": "After each use of the active skill, the damage of the next 『Sonnets of Fate』 is increased by 40%."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "Fanaticism",
+        "Description": "Increase the skill level of 『Tragedy of Sorrow』 and 『Comedy of the Absurd』 by 2 levels, up to 15 levels."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "Aria of Death",
+        "Description": "『Sonnet of Fate』has a 100% base chance to add a Cursed Abnormal status to an enemy."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "Psychedelic",
+        "Description": "Increase the skill level of 『Romantic Comedy』 and 『Combat Skills』 by 2 levels to a maximum of 15 levels."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "Hymns for the Soul",
+        "Description": "HIGHLIGHT Effect Boost: Make the next 4『Sonnets of Fate』damage boosts."
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "Redeeming the Gods with Filth",
+        "Description": "After using an active skill, the corresponding special『Sonnets of Fate』can be triggered an additional 2 times in the next turn. When there are at least 2 special『Sonnets of Fate』in『Verses of Fate』, this time『Sonnets of Fate』damage is increased by 67%."
       }
     }
   },
   "okyann": {
-    "name": "",
+    "name": "Yoshiyo Toyama",
     "codename": "Okyann",
     "Role": "Navigation",
     "Element": "None",
+    "Navi": true,
     "Talents": {
       "1": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 3,
+        "Name": "Party Frenzy",
+        "Cost": 4,
+        "Description": "Based on 12% of Toyama's own Attack Power, boosts the Attack Power of all companions (up to %s points of Attack Power) and boosts all companions' Effect Hit Rate by %s%, the effect lasts for 1 turn. Gain 1 『Beat』.",
+        "Formula": ["450*skillLv","(0.6+0.04*skillLv)*26.0"]
       },
       "2": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 3,
+        "Name": "Gorgeous Swing",
+        "Cost": 8,
+        "Description": "Restores %s energy value to all companions. Gain 3『Beats』.",
+        "Formula": ["11+Math.ceil(skillLv+Math.max(0,skillLv-8)*0.3+Math.max(0,skillLv-10)*0.6)"]
       },
       "3": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 3,
+        "Name": "Hot Variations",
+        "Cost": 8,
+        "Description": "Causes all companions to inflict a damage boost %s% that lasts for 3 turns and provides an additional 1% damage boost for every 225 points of Yoshiyo Tomiyama's Attack Power (up to a maximum of %s points of Attack Power counted). When dealing damage to an enemy in the Elemental Anomaly state, the damage bonus effect is increased by an additional 50%. Gain 2『Beats』.",
+        "Formula": ["(0.6+0.04*skillLv)*10","450*skillLv"]
       },
       "4": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Attribute Improvement",
+        "Description": "Increases the corresponding attribute values of all companions present by 15% based on the attributes of Tomiyama."
       },
       "5": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Vibrant",
+        "Description": "For every 4『Beat』 gained, cause the enemy with the highest current HP to fall into 1 random Elemental Anomaly effect."
       },
       "6": {
-        "Type": "",
-        "Name": "",
-        "Cost": "",
-        "Description": "",
-        "Formula": []
+        "Type": 2,
+        "Name": "Passion",
+        "Description": "When any companion releases a skill that causes an elemental anomaly, there is a fixed 21% chance that they will gain 1 『Beat』."
       }
     },
     "Awareness": {
       "0": {
         "Id": 0,
-        "Name": "",
-        "Description": ""
+        "Name": "♪ To the Free World ♪",
+        "Description": "Yoshiyo Tomiyama gains a variable number of『Beats』 after using a Support Skill. When the number of 『Beats』 reaches 4, Yoshiyo Tomiyama consumes 4 『Beats』 and immediately releases the add-on effect 「Power Dance」.『Power Dance』: All companions gain a 10%/15%/20% increase in Attack, 10%/15%/20% increase in Defense, and 5%/7.5%/10% increase in Effective Hits for 2 turns, stacking up to a maximum of 3 levels."
       },
       "1": {
         "Id": 1,
-        "Name": "",
-        "Description": ""
+        "Name": "♪ Laugh and Dance ♪",
+        "Description": "At the start of the battle, Yoshiyo Toyama gains 2 『Beats』."
       },
       "2": {
         "Id": 2,
-        "Name": "",
-        "Description": ""
+        "Name": "♪ Painting Gorgeous Colors ♪",
+        "Description": "Increase the skill level of『Party Fever』and『Gorgeous Swing』by 2 levels, up to a maximum of 15 levels."
       },
       "3": {
         "Id": 3,
-        "Name": "",
-        "Description": ""
+        "Name": "♪ Shake the Disco Ball ♪ ",
+        "Description": "Yoshiyo Toyama has a 20% fixed chance of returning 1『Beat』after releasing『Beat』."
       },
       "4": {
         "Id": 4,
-        "Name": "",
-        "Description": ""
+        "Name": "♪ Crash Manic Temperature ♪",
+        "Description": "Increase the skill level of 『Hot Variations』 by 2 levels to a maximum of 15 levels."
       },
       "5": {
         "Id": 5,
-        "Name": "",
-        "Description": ""
+        "Name": "♪ To be the Queen of the Stage ♪",
+        "Description": "After any companion releases the HIGHLIGHT skill, Yoshiyo Toyama has a 67% fixed chance to gain 1『Beats』."
       },
       "6": {
         "Id": 6,
-        "Name": "",
-        "Description": ""
+        "Name": "♪ Encore ♪",
+        "Description": "Yoshiyo Tomiyama has a fixed 25% chance to trigger an Encore after releasing 『Powerful Dance』: 1 additional release of『Power Dance』. The additional Song and Dance cannot be retriggered for an encore."
       }
     }
   }
