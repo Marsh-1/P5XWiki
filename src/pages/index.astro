@@ -9,7 +9,7 @@ import Characters from '../data/Characters.json'
 		<h1>Characters</h1>
 		<ul role="list" class="link-card-grid">
 				{Object.keys(Characters).map((char) => {
-					return <Card title={char.toLocaleUpperCase('en-US')} href = {"/P5XWiki/character/" + char}/>
+					return <Card title={char[0].toUpperCase()+char.substring(1)} href = {"/P5XWiki/character/" + char}/>
 				})}
 		</ul>
 	</main>
@@ -51,7 +51,7 @@ import Characters from '../data/Characters.json'
 
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 		gap: 2rem;
 		padding: 0;
 	}
