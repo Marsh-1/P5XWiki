@@ -1644,5 +1644,87 @@
         "Description": "Yoshiyo Tomiyama has a fixed 25% chance to trigger an Encore after releasing 『Powerful Dance』: 1 additional release of『Power Dance』. The additional Song and Dance cannot be retriggered for an encore."
       }
     }
-  }
+  },
+  "marian":{
+      "Name":"Minami Miyashita",
+      "Codename":"Marian",
+      "Role":"Support",
+      "Element": "Bless",
+      "Talents":{
+        "1":{
+          "Type":1,
+          "Name": "Lily of the Valley",
+          "Cost": 20,
+          "Description": "Deals %s% Max HP Blessing Attribute damage to 1 enemy, causing all companions to gain 1 tier of the Blessing effect; while gaining 1 tier of『Manna』.",
+          "Formula": ["(0.6+0.04*skillLv)*58.3"]
+        },
+        "2":{
+          "Type":1,
+          "Name": "Healing Blessing",
+          "Cost": 25,
+          "Description": "Immediately restores Miyashita Minami's %s% Maximum Life+ %s and dispels 2 Negative Condition for the designated target and the other Monster with the lowest current Life, as well as granting the healed allies a 1 tier Blessing effect and restores life points equal to Minami Miyashita's %s% Max HP + %s at the start of his turn for 2 turns. Gain 1 layer of 『Nectar』.",
+          "Formula": ["(0.6+0.04*skillLv)*17.855","(0.6+0.04*skillLv)*.17855*3*(300*skillLv+27)","(0.6+0.04*skillLv)*14.28","(0.6+0.04*skillLv)*.1428*3*(300*skillLv+27)"]
+        },
+        "3":{
+          "Type":1,
+          "Name":"The Gift of Spring",
+          "Cost": 32,
+          "Description":"Consume all Nectar tiers to instantly restore the life of a designated party member equal to Minami Miyashita's %s% max life + %s and with the same healing effect. Heals the ally with the lowest current lifesteal 2 times, and heals an additional 1 time for every 1 tier of Manna effect consumed. Also, for every 1 layer of Nectar effect consumed, other allies except Minami gains 1 layer equal to Minami's 7.5% Maximum Life (up to %s points) Max HP for 2 turns.",
+          "Formula":["(0.6+0.04*skillLv)*16.17","(0.6+0.04*skillLv)*.1617*3*(300*skillLv+27)",".075*skillLv*1500"]
+        },
+        "4":{
+          "Type":1,
+          "Name":"Combat Skills",
+          "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's %s Max HP + %s to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Maximum HP boost equal 16.5% of Minami Miyashita's Maximum HP (up to %s points) for 2 turns. When any ally takes action, immediately regenerate HP equal to %s% Minami Miyashita's Max HP + %s for 2 turns. The main target will also get additional regeneration stack for 1 turn.  ONE MORE: Deals blessed attribute damage to 1 enemy.",
+          "Formula":["(0.6+0.04*skillLv)*18","(0.6+0.04*skillLv)*.18*3*(300*skillLv+27)",".165*skillLv*1500","(0.6+0.04*skillLv)*6.67","(0.6+0.04*skillLv)*.0667*3*(skillLv*300+27)"]
+        },
+        "5":{
+          "Type":2,
+          "Name":"Bless",
+          "Description":"Healed units receive a damage boost based on their Blessing effect tier for (15% + 3% * Blessing effect layers, up to 30%) for 1 turn."
+        },
+        "6":{
+          "Type":2,
+          "Name":"Kindness",
+          "Description":"Upon entering combat, raise the maximum life of all monsters based on the 10% of Minami's maximum life (up to 1500 points)."
+        }
+      },
+      "Awareness":{
+        "0": {
+          "Id": 0,
+          "Name": "Nursing Assessment",
+          "Description": "When entering battle, gain 1 tier of Manna; at the start of the turn, if any ally is less than 70% of their  Max HP, there is a 100% fixed chance that it will gain 1 tier of Manna; it can have a maximum of 2 tiers of Manna effects."
+        },
+        "1": {
+          "Id": 1,
+          "Name": "Pain Management",
+          "Description": "When an ally is overhealed, the ally gains 20% penetration for 2 rounds."
+        },
+        "2": {
+          "Id": 2,
+          "Name": "Nursing Care Plan",
+          "Description": "Increase the skill level of 『Healing Blessing』 and 『Combat Skills』 by 3 levels, up to 15 levels."
+        },
+        "3": {
+          "Id": 3,
+          "Name": "Nursing Diagnosis",
+          "Description": "『Healing Blessing』 heals an additional ally, and the healing effect of this skill is increased by 20% for Phantom Thieves with less than 50% health."
+        },
+        "4": {
+          "Id": 4,
+          "Name": "Nursing Intervention",
+          "Description": "The skill levels of 『Lily of the Valley Revelation』and『Gift of Spring』are increased by 3 levels, up to a maximum of level 15."
+        },
+        "5": {
+          "Id": 5,
+          "Name": "Post-Operative Care",
+          "Description": "HIGHLIGHT Effect Boost: The duration of the Restore Lifesteal effect and Maximum Lifesteal Boost effect added to the HIGHLIGHT skill is extended by 1 turn."
+        },
+        "6": {
+          "Id": 6,
+          "Name": "Cardiopulmonary Resuscitation",
+          "Description": "Immediately revives a companion when they die and restores life equal to 40% of Minami Miyashita's max life + 1200, triggering once per battle."
+        }
+      }
+    }
 }
