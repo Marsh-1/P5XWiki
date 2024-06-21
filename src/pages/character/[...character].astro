@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Characters from '../../data/Characters.json';
+import Weapons from '../../data/Weapons.json';
+import WeaponItem from '../../components/WeaponItem.astro';
 
 export function getStaticPaths() {
   return [
@@ -129,6 +131,14 @@ const info = Characters[character];
         <p>{info['Awareness']['6']['Description']}</p>
       </div>
     </div>
+    {info["Weapons"] && <h1>Weapons:</h1>}
+    {
+      info["Weapons"] && 
+      info["Weapons"].map((id)=>{
+        const Weapon = Weapons[id]
+        return <WeaponItem name={Weapon['Name']} rarity={Weapon['Rarity']} passive={Weapon['Passive']} description={Weapon['Description']}, scalings={Weapon['Scalings']}/>
+      })
+    }
   </main>
 </Layout>
 

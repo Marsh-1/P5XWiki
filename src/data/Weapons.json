@@ -1,0 +1,62 @@
+{
+    "mont-2":{
+        "Name":"Cavalry Sword",
+        "Rarity": 2,
+        "Passive":"Forces",
+        "Description":"Attack power is increased by %s%",
+        "Scalings": [
+            ["11.3"],
+            ["13"],
+            ["14.7"],
+            ["16.4"],
+            ["18.1"],
+            ["19.8"],
+            ["21.5"]
+        ]
+    },
+    "mont-3":{
+        "Name":"Royal Sabre",
+        "Rarity": 3,
+        "Passive":"Extreme Cold",
+        "Description":"At the beginning of battle, there is a %s% probability of obtaining 4『Ice Crystals』.",
+        "Scalings": [
+            ["52"],
+            ["60"],
+            ["68"],
+            ["76"],
+            ["84"],
+            ["92"],
+            ["100"]
+        ]
+    },
+    "mont-4":{
+        "Name":"Song of the Sky",
+        "Rarity": 4,
+        "Description":"Attack power is increased by %s. Mont increases her frozen damage by %s% every time she gets an『Ice Crystals』for 1 turn, stack up to 10 times",
+        "Passive":"Gift of Ice",
+        "Scalings": [
+            ["12","2.4"],
+            ["12","3,1"],
+            ["16","3.1"],
+            ["16","3.8"],
+            ["20","3.8"],
+            ["20","4.5"],
+            ["24","4.5"]
+        ]
+    },
+    "mont-5":{
+        "Name":"Queen of Winter",
+        "Rarity": 5,
+        "Description":"CRIT DMG is increased by %s%. When Mont's『Ice Crystals』reach 8 stacks, she can unleash『Dancers on the Tip of the Knife』. The damage of『IDancers on the Tip of the Knife』is increased by %s%. At the same time, when you hold 8『Ice Crystals』,『Blade of Ice』is strengtened.",
+        "Passive": "Eternal Winter Night",
+        "Scalings": [
+            ["36.3","46"],
+            ["36.3","68"],
+            ["47.2","68"],
+            ["47.2","90"],
+            ["58.1","90"],
+            ["58.1","112"],
+            ["69","112"]
+        ]
+    }
+}

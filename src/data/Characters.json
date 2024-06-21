@@ -79,7 +79,8 @@
         "Name": "Freeze Frame",
         "Description": "Gain 4 <span style='color: cyan;'>Ice Crystal</span> at the start of battle, and increase the maximum number of Mont's Ice Crystal> to 15."
       }
-    }
+    },
+    "Weapons": ["mont-2","mont-3","mont-4","mont-5"]
   },
   "joker": {
     "Name": "Ren Amamiya",

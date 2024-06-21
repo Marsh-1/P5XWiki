@@ -1,0 +1,22 @@
+---
+interface Props {
+    name: string;
+    passive: string;
+    description: string;
+    scalings: string[][];
+    rarity: number;
+}
+
+const { name, rarity, passive, description, scalings } = Astro.props;
+---
+
+<li>
+    <h2>{name} {'★'.repeat(rarity)}</h2>
+    <h3>{passive}</h3>
+    <p>{scalings[0].reduce((acc, cur) => acc.replace("%s",cur),description)}</p>
+</li>
+<style>
+li {
+    list-style: none;
+}
+</style>
