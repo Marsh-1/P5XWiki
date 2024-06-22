@@ -1727,5 +1727,171 @@
           "Description": "Immediately revives a companion when they die and restores life equal to 40% of Minami Miyashita's max life + 1200, triggering once per battle."
         }
       }
-    }
+  },
+  "vino":{
+    "Name":"Chizuko Nagao",
+    "Codename":"Vino",
+    "Role":"Debuffer",
+    "Element":"Nuclear",
+    "Talents":{
+      "1":{
+        "Type": 2,
+        "Name": "Market Bomb",
+        "Cost": 20,
+        "Description": "Deal 170.8% Nuclear damage to an enemy and reduces their DEF by 37.3% of Vino's EHR. Additionally, Vino has a 100% base chance of inflicting a random elemental ailment that the enemy does not already have.",
+        "Formula": []
+      },
+      "2":{
+        "Type": 2,
+        "Name": "Carpet Bombing",
+        "Cost": 22,
+        "Description": "Deals 91.5% Nuclear damage to all enemies. Vino has a 40% base chance to inflict a random elemental ailment that the enemies do not already have.",
+        "Formula": []
+      },
+      "3":{
+        "Type": 2,
+        "Name": "Concentrated Fire",
+        "Cost": 24,
+        "Description": "Deal 195.2% Nuclear damage to a specific enemy. For each elemental ailment on the target, it applies damage vulnerability to the target based on 11.3% of Vino's Effect Hit Rate, up to 18.7%. This vulnerability lasts for 2 turns and stacks up to three times.",
+        "Formula": []
+      },
+      "4":{
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Deal 324.5% Nuclear damage to an enemy. Vino has a 75% base chance to apply 2 random elemental ailments on the targeted enemy that they do not have. ONE MORE: Deal Nuclear damage to one enemy.",
+        "Formula": []
+      },
+      "5":{
+        "Type": 2,
+        "Name": "Annihilation",
+        "Description": "The 'Radiation' Nuclear attribute increases the damage taken by enemies by 15%"
+      },
+      "6":{
+        "Type": 2,
+        "Name": "Tactics",
+        "Description": "In battle, Vino gains an ATK boost equal to 45% of her Effect Hit Rate."
+      }
+    },
+    "Awareness":{
+      "0":{
+        "Id": 0,
+        "Name": "Black! My Trump Card",
+        "Description": "When inflicting an elemental ailment on the enemy, the enemy also gains radiation for 2 turns. Radiation increases the damage the enemy takes by 15% and is treated as an elemental ailment."
+      },
+      "1":{
+        "Id": 1,
+        "Name": "Traditionalist Stance",
+        "Description": "While Radiation is active, increase the damage of corresponding Fire, Electric, Ice, and Wind attacks by 15% against enemies inflicted with Burn, Shock, Freeze, Gale."
+      },
+      "2":{
+        "Id": 2,
+        "Name": "Then... Let's Fight!",
+        "Description": "Increase the skill level of Marker Bomb and Carpet Bombing by 2 levels, up to a maximum of 15 levels"
+      },
+      "3":{
+        "Id": 3,
+        "Name": "Grand Strategist",
+        "Description": "When a teammate inflicts an elemental ailment onto an enemy, increase Vino's EHR by 10% for 2 turns, max three stacks."
+      },
+      "4":{
+        "Id": 4,
+        "Name": "Roaring Engine",
+        "Description": "Increase the skill level of Concentrated Fire and Combat Skills by 2 levels, up to a maximum of 15 levels."
+      },
+      "5":{
+        "Id": 5,
+        "Name": "Jazzy Veteran",
+        "Description": "HIGHLIGHT Effect Boost: Increase Nuclear damage taken by the enemy 35.3% for 2 turns"
+      },
+      "6":{
+        "Id": 6,
+        "Name": "BOOM! BOOM!",
+        "Description": "When allies attack enemies with Radiation, the following effects occur based on the number of elemental ailments on the target. If there are 1 or more ailments, Vino's ATK is increased by 10%. If there are 2 or more ailments, Vino's Nuclear Damage Bonus is increased by 10%. If there are three or more ailments, Vino's PEN is increased by 8%."
+      }
+    },
+    "Weapons":["vino-4","vino-5"]
+  },
+  "queen":{
+    "Name":"Makoto Nijima",
+    "Codename":"Queen",
+    "Role":"Single Target",
+    "Element":"Nuclear",
+    "Talents":{
+      "1":{
+        "Type": 1,
+        "Name": "Pulse Combo",
+        "Cost": 20,
+        "Description": "Deal %s% Nuke damage to all enemies. If the main target is affected by an elemental ailment, the skill deals an additional %s% Nuke damage.",
+        "Formula": ["(0.6+0.04*skillLv)*54.4","(0.6+0.04*skillLv)*19.0"]
+      },
+      "2":{
+        "Type": 1,
+        "Name": "Nuclear Resonance",
+        "Cost": 22,
+        "Description": "Heals %s% ATK + %s HP to one party member and increases Queen's ATK by %s until the end of the next turn. Queen gains 2 『Tenacity』 and gains 1 additional 『Tenacity』 if the enemy is affected by an elemental ailment.",
+        "Formula": ["(0.6+0.04*skillLv)*52.7","(0.6+0.04*skillLv)*.4955*(300*skillLv+27)","(0.04*skillLv+0.6)*48.8"]
+      },
+      "3":{
+        "Type": 1,
+        "Name": "Nuclear Burst/Fusion Overload",
+        "Cost": 21,
+        "Description": "Nuclear Burst: Deal %s% Nuke damage to one enemy. If the target is affected by an elemental ailment, deals an additional %s% Nuke damage. Queen gains 2『Tenacity』. Fusion Overload: Deals %s% Nuke damage to one enemy. For each elemental ailment the target has, deal an additional instance of %s% Nuke damage. (Has a cap)",
+        "Formula": ["(0.6+0.04*skillLv)*210.6","(0.6+0.04*skillLv)*39","(0.6+0.04*skillLv)*243.6","(0.6+0.04*skillLv)*34.2"]
+      },
+      "4":{
+        "Type": 1,
+        "Name": "Combat Skills",
+        "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal %s% Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0% ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
+        "Formula": ["(0.6+0.04*skillLv)*390.6"]
+      },
+      "5":{
+        "Type": 2,
+        "Name": "Cohesive Energy",
+        "Description": "For each elemental status effect on the field, Makoto gains 15% ATK."
+      },
+      "6":{
+        "Type": 2,
+        "Name": "Will",
+        "Description": "Reduces damage by 6% at the start of battle. Every time Makoto enter the Iron Will state, damage reduction is increased by an additional 6% (Up to a limit of 18%)"
+      }
+    },
+    "Awareness":{
+      "0":{
+        "Id": 0,
+        "Name": "Akido",
+        "Description": "After using Persona skill to attack an enemy, gain 1 stack of 『Tenacity』. For each elemental ailment the enemy has, gain an additional stack of 『Tenacity』. At the beginning of each turn, if Makoto has 5 stacks of 『Tenacity』, enter 『Iron Will』state, gaining 40% ATK and 20.0% DEF. Additionally Nuclear Burst evolves into Fusion Overload, lasting for 2 turns. When 『Iron Will』state ends, all 『Tenacity』stacks are removed."
+      },
+      "1":{
+        "Id": 1,
+        "Name": "Ukemi",
+        "Description": "At the beginning of battle, Makoto gains 5 stacks of 『Tenacity』. At the start of Makoto's first turn, enter 『Iron Will』 state. During 『Iron Will』 state, Makoto's ATK is increased by 50%."
+      },
+      "2":{
+        "Id": 2,
+        "Name": "Throwing Technique",
+        "Description": "Increase the skill level of 『Pulse Combo』 and 『Nuclear Burst』 by 3 levels, up to 15 levels."
+      },
+      "3":{
+        "Id": 3,
+        "Name": "Counterattack",
+        "Description": "Upon entering 『Iron Will』state, immediately apply a random elemental ailment to an enemy. During 『Iron Will』state, for each elemental ailment present on field, Makoto's PEN increases by 6%."
+      },
+      "4":{
+        "Id": 4,
+        "Name": "Obedience",
+        "Description": "Increase the skill level of 『Nuclear Resonance』 and 『Combat Skills』 by 3 levels, up to 15 levels."
+      },
+      "5":{
+        "Id": 5,
+        "Name": "Softening",
+        "Description": "HIGHLIGHT Effect Boost: Gain up to 4 stacks of『Heat』. Consume 『Heat』to apply up to 4 elemental ailment to the enemy and increase skill damage up to 4 times."
+      },
+      "6":{
+        "Id": 6,
+        "Name": "Breathing - Harmony",
+        "Description": "When entering『Iron Will』state, gain an extra turn. The duration of the『Iron Will』state is increased to 3 turns."
+      }
+    },
+    "Weapons":["queen-4","queen-5"]
+  }
 }

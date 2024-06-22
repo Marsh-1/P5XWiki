@@ -58,5 +58,33 @@
             ["58.1","112"],
             ["69","112"]
         ]
+    },
+    "vino-4":{
+        "Name":"Airspace Gravity",
+        "Rarity": 4,
+        "Description":"Increase ATK by 12%. Reduce the Defense of enemies with elemental ailments by 9.6%. If an enemy has Radiation their defense is reduced by a further 9.6%",
+        "Passive":"",
+        "Scalings":[["12","9.6","9.6"]]
+    },
+    "vino-5":{
+        "Name":"Overclock Removal",
+        "Rarity": 5,
+        "Description":"EHR increased by 36%. When an enemy is inflicted with an elemental ailment, their defense is reduced by 33% for 2 turns. Additionally every two turns, Vino has an 80% base chance to inflict a random elemntal ailment on a random enemy that they do not already have.",
+        "Passive":"",
+        "Scalings":[["36","33","80"]]
+    },
+    "queen-4": {
+        "Name":"Omega Knuckles",
+        "Rarity": 4,
+        "Description":"Increase ATK by 12%. Increase Nuclear damage by 4.4% for each stack of Tenacity Queen has.",
+        "Passive":"",
+        "Scalings":[["12","4.4"]]
+    },
+    "queen-5": {
+        "Name":"Nuclear's End",
+        "Rarity": 5,
+        "Description":"Increase Nuclear Damage by %s%. Increase ATK by %s% when attacking an enemy with elemental ailments. When any ally inflicts an elemental ailment, gain one stack of Heat Energy. When entering Iron Will, use all Heat Energy. each stack of Heat Energy will increase the Nuclear damage of the next skill by %s% up to a max of %s%.",
+        "Passive":"",
+        "Scalings":[["24.2","30","10%","60%"]]
     }
 }
