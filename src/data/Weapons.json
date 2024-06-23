@@ -88,10 +88,10 @@
         "Scalings":[["24.2","30","10%","60%"]]
     },
     "joker-4":{
-        "Name":"Mountain Splitter",
+        "Name":"Kaizen Knife",
         "Rarity": 4,
         "Description":"Increases ATK by %s%. When attacking an enemy with a debuff on them, ATK is increased by an additional %s%",
-        "Passive":"",
+        "Passive":"An Omen is Coming",
         "Scalings":[["12","19.1"]]
     },
     "joker-5":{
@@ -105,84 +105,266 @@
         "Name":"Four Seasons, All of Creation",
         "Rarity": 4,
         "Description":"Increase ATK by %s. After applying a debuff, increase Rin's SPD by %s. Effect lasts for 2 rounds, max 2 stacks. Gain 2 stacks at beginning of battle.",
-        "Passive":"",
+        "Passive":"The Meaning of the Battlefield",
         "Scalings":[["12","8"]]
     },
     "rin-5": {
         "Name":"Distant Corner, One Thought",
         "Rarity": 5,
         "Description":"SPD is increased by %s. When attacking with a Persona skill inflict 『Wang Chuan Water』on the targeted enemy. 『Wang Chuan Water』: Increase the damage taken by %s% for every 10 points of Rin's SPD, effect lasts for 1 turn. Affects all enemies when『Meng Po Soup』is active.",
-        "Passive":"",
+        "Passive":"Reincarnation",
         "Scalings":[["15","1"]]
     },
     "yuki-4": {
         "Name":"Spiked Hail",
         "Rarity": 4,
         "Description":"Increase DEF by %s%. Increase shield effect by %s% for allies under 50% HP",
-        "Passive":"",
+        "Passive":"Nemesis",
         "Scalings":[["18","16.3"]]
     },
     "yuki-5": {
         "Name":"Elysium",
         "Rarity": 5,
         "Description":"Increase DEF by %s%. When using『Absolute Judgement』, add an additional stack of『Vitalize』 and reduce the enemy's DEF by %s% of Yuki's DEF (up to a maximum of %s) and increase Yuki's defense by the amount reduced for 2 turns.",
-        "Passive":"",
+        "Passive":"Redemption Chain",
         "Scalings":[["45","13","520"]]
     },
     "fox-4":{
         "Name":"Lay Katana",
         "Rarity": 4,
         "Description":"Increase DEF by %s%. Every time a counterattack is triggered, increase ice damage by %s% for 2 turns, up to 2 stacks. Each stack duration is calculated independently.",
-        "Passive":"",
+        "Passive":"Heartless Blade",
         "Scalings":[["18","7.4"]]
     },
     "fox-5":{
         "Name":"Golden Shadow Slasher",
         "Rarity": 5,
         "Description":"Increase DEF by %s%. When entering battle, increase counterattack damage by %s%. When gaining a shield, gain 1 stack of『Guardian Spirit』. Every stack of 『Guardian Spirit』increases counterattack damage by %s%. When『Guardian Spirit』reaches 6 stacks increase counterattack damage by %s% permanently for the duration of battle.",
-        "Passive":"",
+        "Passive":"Ice Drill",
         "Scalings":[["45","30","2","30"]]
     },
     "puppet-4":{
         "Name":"Sea Sonar",
         "Rarity": 4,
         "Description":"Increase shielding effectiveness by %s%. Allies with a shield gain an increase in DEF by %s%.",
-        "Passive":"",
+        "Passive":"Echo Barrier",
         "Scalings":[["8.7","24"]]
     },
     "puppet-5":{
         "Name":"Bubble Dream",
         "Rarity": 5,
         "Description":"Increase DEF by %s%. When using a support skill, targeted ally will gain an additional attack of『Sea Guard』. each stack of『Sea Guard』will also increase the ally's ATK and DEF by %s% for 2 turns",
-        "Passive":"",
+        "Passive":"Deep Sea Acknowledgement",
         "Scalings":[["45","3"]]
     },
     "okyann-4":{
         "Name":"Luminous Charm",
         "Rarity": 4,
         "Description":"Increase ATK by %s. After using a support skill, there is a %s fixed chance to obtain 1 stack of『Beat』.",
-        "Passive":"",
+        "Passive":"Chord Ringer",
         "Scalings":[["12","43"]]
     },
     "okyann-5":{
         "Name":"Retro Disco :P",
         "Rarity": 5,
         "Description":"Increase ATK by %s%. After using『Song and Dance』, there is a %s% fixed chance to regain 1『Beat』. Increase『Song and Dance』attribute boost by an additional %s%.",
-        "Passive":"",
+        "Passive":"Trend Focus",
         "Scalings":[["30","41","26"]]
     },
     "soy-4":{
         "Name":"Devourer",
         "Rarity": 4,
         "Description":"Increase HP by %s%. When in the『Wild Savior』state, Soy's HP, DEF, and Effect Resistance increase by an additional %s%.",
-        "Passive":"",
+        "Passive":"Sturdy Blade",
         "Scalings":[["12","11"]]
     },
     "soy-5":{
         "Name":"Ancestral Glacier",
         "Rarity": 5,
         "Description":"Increase HP by %s%. When『Wild Savior』is consumed for healing, there is a %s% chance for the ally with the lowest hp to gain the same healing effect. When Soy gets hit by an enemy, the attacking target's defense is reduced by %s%.",
-        "Passive":"",
+        "Passive":"Praise of the Ice Age",
         "Scalings":[["30","52","30"]]
+    },
+    "skull-4":{
+        "Name":"Gaia Suppressor",
+        "Rarity": 4,
+        "Description":"CRIT Rate Increase %s%. When releasing a skill that deals a bludgeon, if you hold the 『Touchdown Bounce』effect, it increases the bludgeon effect of that skill by %s%.",
+        "Passive":"Rupture Vanguard",
+        "Scalings":[["7.3","38"]]
+    },
+    "skull-5":{
+        "Name":"Avenger's Fangs.",
+        "Rarity": 5,
+        "Description":"CRIT DMG is increased by %s%. At the end of Ryuji's turn, he gains 1 level of Brute Force, up to a maximum o 10, and when he deals damage, he uses up all of his Brute Force to increase the damage of his skills by %s% * Number of Brute Force",
+        "Passive":"Son of a Rebel",
+        "Scalings":[["36.3","3.8"]]
+    },
+    "panther-4":{
+        "Name":"Whiplash",
+        "Rarity": 4,
+        "Description":"Attack is increased by %s%. When attacking an enemy with Burn increases your ATK by %s%.",
+        "Passive":"Dance of the Flames",
+        "Scalings":[["12","23.7"]]
+    },
+    "panther-5":{
+        "Name":"Sea Buckthorn",
+        "Rarity": 5,
+        "Description":"Flame Damage is increased by %s%. When Panther enters the Subconscious state, it will cause one enemy to enter the Burning state. Flame damage is increased by the number of enemies in the burning state caused by Panther (Number of Burned Enemies * %s%, up to a max of %s%)",
+        "Passive":"Love Devouring Fire",
+        "Scalings":[["24.2","25.5","76"]]
+    },
+    "cattle-4":{
+        "Name":"Flames of Lava",
+        "Rarity": 4,
+        "Description":"Attack Power is increased by %s%. When Star Fire is present, Cattle's ATK is increased by 12%. Depending on the level of Star Fire, healing effect is increased by %s%",
+        "Passive":"Reborn in Fire",
+        "Scalings":[["12","6.9"]]
+    },
+    "cattle-5":{
+        "Name":"God's Lightfall",
+        "Rarity": 5,
+        "Description":"Healing Boost is increased by %s%. Star Fire increases the healing effect of your companions by %s% and increases your companions' attack power by %s%.",
+        "Passive":"The Fire Plume of Kabuto",
+        "Scalings":[["22","4.5","16"]]
+    },
+    "key-4":{
+        "Name":"Rocking Fire",
+        "Rarity": 4,
+        "Description":"Lifesteal increases by %s%. Sacred Fire increases damage dealt by %s%.",
+        "Passive":"Fire of Deliverance",
+        "Scalings":[["12","34"]]
+    },
+    "key-5":{
+        "Name":"Baptism of Light",
+        "Rarity": 5,
+        "Description":"Maximum HP is increased by %s%. Applying burn to an enemy increases the damage dealt to the enemy by %s%. For every level of Sacrificer, increase Key's Flame damage by %s%.",
+        "Passive":"Pieces of the Holy Spirit",
+        "Scalings":[["30","18","4"]]
+    },
+    "bui-4":{
+        "Name":"Future Instruction",
+        "Rarity": 4,
+        "Description":"CRIT Rate increases by %s%. Increases the electric damage dealt by YUI after dealing Pursuit by %s%. This effect lasts for 1 round and can be stacked twice.",
+        "Passive":"Code Reorganization",
+        "Scalings":[["7.3","9.7"]]
+    },
+    "bui-5":{
+        "Name":"",
+        "Rarity": 0,
+        "Description":"",
+        "Passive":"",
+        "Scalings":[]
+    },
+    "closer-4": {
+        "Name":"Crime and Punishment",
+        "Rarity": 4,
+        "Description":"Attack is increased by %s. When an enemy has shock on field, closer's ATK is increased by %s%.",
+        "Passive":"Electromagnetic Eruption",
+        "Scalings":[["12","20"]]
+    },
+    "closer-5": {
+        "Name":"Electromagnetic Analogs",
+        "Rarity": 5,
+        "Description":"Electric Damage is increased by %s%. Gain one level of Electromagnetic Storm after using a persona skill. Increase Closer's attack power by %s% if an enemy is shocked. If the enemy is in the electrocution state, you gain an additional stack, up to three stacks and each stack lasts for 2 turns.",
+        "Passive":"Thunderstorms",
+        "Scalings":[["24.2","11"]]
+    },
+    "mona-4": {
+        "Name":"Crescent Blade",
+        "Rarity": 4,
+        "Description":"Attack is increased by %s%. If Morgana heals and the healed ally is above 80%, they will receive the Full Moon effect. Full Moon: Max HP is increased by %s% and ATK is increased by %s%.",
+        "Passive":"Moonlight Night Doctor",
+        "Scalings":[["12","10","4"]]
+    },
+    "mona-5": {
+        "Name":"Gold Loot",
+        "Rarity": 5,
+        "Description":"CRIT Rate is increased by %s%. When you unleash a skill on an enemy that lands a critical hit, you will deal an additional %s% Max HP as damage, up to %s% of the user's ATK Power. When using a Healing Skill, the primary target restores %s% of their max HP. If you miss a skill attack, immediately gain Intuition.",
+        "Passive":"",
+        "Scalings":[["18","10","100","9"]]
+    },
+    "fleuret-4": {
+        "Name":"Medal of Honor",
+        "Rarity": 4,
+        "Description":"Attack is increased by %s%. When dealing damage to the same enemy in a row each attack has a 30% chacne to increase your damage to that enemy by %s% (Max %s%).",
+        "Passive":"Knightly Spirit",
+        "Scalings":[["12","3.8","19"]]
+    },
+    "fleuret-5": {
+        "Name":"Star of Kai Ming",
+        "Rarity": 5,
+        "Description":"CRIT Rate is increased by %s%. At the beginning of battle, Fleuret gains 1 motivation. Each time Fleuret gains Motivation or Incentive, increase the damage dealt by Fleuret by Motivation Level * %s%. This effect lasts for 1 turn.",
+        "Passive":"The Storm is Coming",
+        "Scalings":[["18","7.5"]]
+    },
+    "riddle-4": {
+        "Name":"Fuzzy Chirp",
+        "Rarity": 4,
+        "Description":"Attack power is increased by %s%. After targeting a companion with skill, the target's attack power is increased by the number of attack power boosts the target currently has. Each increases their attack power by %s% and lasts for 2 turns (Max three levels).",
+        "Passive":"Chirp is Unstoppable",
+        "Scalings":[["12","2.4"]]
+    },
+    "riddle-5": {
+        "Name":"Sweet Gifts",
+        "Rarity": 5,
+        "Description":"Attack is increased by %s%. When Child's Play is consumed, Riddle gains the Whimsy effect. While Riddle has Whimsy, their attack power is increased by %s%. When a companion releases a skill that deals daamge, consume 1 level of Whimsy and increase the damage dealt by that skill by %s%.",
+        "Passive":"Candy Detection",
+        "Scalings":[["30","17","17"]]
+    },
+    "moko-4": {
+        "Name":"Shadow Dance",
+        "Rarity": 4,
+        "Description":"Attack is increased by %s%. When consuming Aoba, increase ATK by %s%. When releasing persona skill on an ally, it will increase the damage of all allies by 8%.",
+        "Passive":"Nightmares",
+        "Scalings":[["12","19"]]
+    },
+    "moko-5": {
+        "Name":"Dream Weaver",
+        "Rarity": 5,
+        "Description":"Attack is increased by %s%. The hit rate for inflict sleep on enemies is increased by %s%. When targeting a companion, increase their attack power by %s% for 2 turns.",
+        "Passive":"Phantom Symphony",
+        "Scalings":[["30","36","21"]]
+    },
+    "leon-4": {
+        "Name":"The Strongest Battle Halberd X",
+        "Rarity": 4,
+        "Description":"Shield Effect is increased by %s%. When targeting a companion with a persona skill, increase their attack power by %s%. This effect is increased by 20% for every 20% of life lost.",
+        "Passive":"Partnership",
+        "Scalings":[["8.8","9"]]
+    },
+    "leon-5": {
+        "Name":"Broken Destroyer",
+        "Rarity": 5,
+        "Description":"Attack is increased by %s%. If you target a companion with a persona skill, they randomly gain 1 of 2 effects. Increase their ATK power by %s%. Increase shield effect by %s%. This effect lasts for 1 turn. If Activate layer is greater than or equal to 2, ally gain both effects and increase the effect of Leon's shield by %s%. When Leon does damage with his persona he gains 1 level of Childishness which lasts for one turn.",
+        "Passive":"Hero Aura",
+        "Scalings":[["30","16","16","10"]]
+    },
+    "sepia-4": {
+        "Name":"Scarlet Scepter",
+        "Rarity": 4,
+        "Description":"Attack Power is increased by %s%. Gain a special Poetry every time Sepia gains a Poem. It will increase Sepia's attack by 12%. Depending on the number of special poetry, increase the damage dealt by the current number of special verses by %s% for one turn.",
+        "Passive":"Touch of Blood",
+        "Scalings":[["12","2"]]
+    },
+    "sepia-5": {
+        "Name":"The Dead",
+        "Rarity": 5,
+        "Description":"Attack is increased by %s%. Damage from Sonnet of Fate is increased by %s%. When you gain poetry, there is a %s% of obtaining an Excellent Verse. Excellent Verse trigger all Poetry effects.",
+        "Passive":"Reincarnation Rune",
+        "Scalings":[["30","33","10"]]
+    },
+    "marian-4": {
+        "Name":"Ode to Life",
+        "Rarity": 4,
+        "Description":"Healing Boost is increased by %s%. Increase the healing of regeneration by %s%. While actively healing there is a %s% chance for the primary target to gain a Bless stack.",
+        "Passive":"Total Care",
+        "Scalings":[["8.7","28.5","26"]]
+    },
+    "marian-5": {
+        "Name":"Angel Heart",
+        "Rarity": 5,
+        "Description":"Maximum HP is increased by %s%. Manna increases Marian's healing effect by %s%. Consuming Manna will increase the damage of all allies by %s% which lasts for 1 turn.",
+        "Passive":"The Healing Vow",
+        "Scalings":[["30","10","25"]]
     }
 }

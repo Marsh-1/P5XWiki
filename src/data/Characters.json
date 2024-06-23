@@ -500,7 +500,8 @@
         "Name": "Super God Killer",
         "Description": "When releasing the 『Storage Strike』 skill to deal damage to an enemy, cause the target to gain 1 『Fear』 effect: Increase the damage of the next skill Ryuji releases on it by 60%."
       }
-    }
+    },
+    "Weapons":["skull-4","skull-5"]
   },
   "panther": {
     "Name": "Ann Takamaki",
@@ -582,7 +583,8 @@
         "Name": "A Perfect Curtain Call",
         "Description": "When attacking an enemy, there is a 60% that you will use an additional subconsciousness. Gain 1 extra count of Subconsciousness. For each level of Subconsciouness you have, Panther's Flame damage is increased by 11%, up to a maximum of 110%"
       }
-    }
+    },
+    "Weapons":["panther-4","panther-5"]
   },
   "cattle": {
     "Name": "Luffy",
@@ -664,7 +666,8 @@
         "Name": "Return from a rewarding journey",
         "Description": "At the end of 『Starfire II』, grant the target 『Starfire III』. \n『Starfire III』: Increases attack power by 8% of Lufei's attack power, increases fire damage by 20%, increases healing effect by 10%, and lasts for 1 round."
       }
-    }
+    },
+    "Weapons":["cattle-4","cattle-5"]
   },
   "key": {
     "Name": "Kurotani Kiyoshi",
@@ -746,7 +749,8 @@
         "Name": "Redemption",
         "Description": "Whenever you gain 10 levels of 『Sacrificer』, it increases the Flame Attribute damage dealt by all companions by 30%, and the effect lasts for 2 turns."
       }
-    }
+    },
+    "Weapons":["key-4","key-5"]
   },
   "soy": {
     "Name": "Kano Shun",
@@ -911,7 +915,8 @@
         "Name": "★Pleasant Harvest Time★",
         "Description": "When there is only 1 enemy on the field, YUI's Pursuit base skill multiplier is increased to 110% of attack power; YUI's Pursuit deals 25% splash damage to all other enemies."
       }
-    }
+    },
+    "Weapons":["bui-4"]
   },
   "closer": {
     "Name": "Arai Suha",
@@ -993,7 +998,8 @@
         "Name": "Fruit of Victory",
         "Description": "Increases the damage dealt to enemies in the Electrocution state by 20%."
       }
-    }
+    },
+    "Weapons":["closer-4","closer-5"]
   },
   "mona":{
     "Name": "Morgana",
@@ -1075,7 +1081,8 @@
         "Name": "Inquisitive Kitty",
         "Description": "『Miracle Fist』's Hit Rate Reduction is no longer reduced, and it increases the damage dealt to enemies by 15% for 2 turns after dealing a critical hit."
       }
-    }
+    },
+    "Weapons":["mona-4","mona-5"]
   },
   "fleuret": {
     "Name": "Seiji Shiratori",
@@ -1157,7 +1164,8 @@
         "Name": "Hit with a single blow",
         "Description": "The initial fixed probability of obtaining 『Motivation』 is increased by 20%, and the number of damage done by the skills 『Wind Whistling』, 『Elegant Storm』, and 『Shadowless Stab』 is increased by 1 when 『Motivation』 reaches the highest tier."
       }
-    }
+    },
+    "Weapons":["fleuret-4","fleuret-5"]
   },
   "yuki": {
     "Name": "Yukimi Fujikawa",
@@ -1322,7 +1330,8 @@
         "Name": "Puzzle! Solve!",
         "Description": "For every 5『Child's Play』you gain『Explosion of Curiosity』: when you release your Personality Mask skill targeting an enemy, the damage dealt is boosted by 75%, and clears after damage is dealt."
       }
-    }
+    },
+    "Weapons":["riddle-4","riddle-5"]
   },
   "moko": {
     "Name": "Tomoko Noge",
@@ -1404,7 +1413,8 @@
         "Name": "Dream trap",
         "Description": "A companion with 『Leafsong Minor』 that is a ally with the highest Attack Power increases the damage dealt by 20%."
       }
-    }
+    },
+    "Weapons":["moko-4","moko-5"]
   },
   "leon": {
     "Name": "Kamiyama Reiyo",
@@ -1486,7 +1496,8 @@
         "Name": "The World Never Ends.",
         "Description": "When targeting a companion to unleash the Personality Mask skill, if his or her Life Value is no higher than 60%, it increases his or her Critical Damage by 25%, and the effect lasts for 1 turn."
       }
-    }
+    },
+    "Weapons":["leon-4","leon-5"]
   },
   "sepia": {
     "Name": "Sumi Toshiya",
@@ -1568,7 +1579,8 @@
         "Name": "Redeeming the Gods with Filth",
         "Description": "After using an active skill, the corresponding special『Sonnets of Fate』can be triggered an additional 2 times in the next turn. When there are at least 2 special『Sonnets of Fate』in『Verses of Fate』, this time『Sonnets of Fate』damage is increased by 67%."
       }
-    }
+    },
+    "Weapons":["sepia-4","sepia-5"]
   },
   "okyann": {
     "Name": "Yoshiyo Toyama",
@@ -1733,7 +1745,8 @@
           "Name": "Cardiopulmonary Resuscitation",
           "Description": "Immediately revives a companion when they die and restores life equal to 40% of Minami Miyashita's max life + 1200, triggering once per battle."
         }
-      }
+      },
+      "Weapons":["marian-4","marian-5"]
   },
   "vino":{
     "Name":"Chizuko Nagao",
