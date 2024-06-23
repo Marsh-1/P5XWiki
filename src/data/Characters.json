@@ -80,7 +80,7 @@
         "Description": "Gain 4 <span style='color: cyan;'>Ice Crystal</span> at the start of battle, and increase the maximum number of Mont's Ice Crystal> to 15."
       }
     },
-    "Weapons": ["mont-2","mont-3","mont-4","mont-5"]
+    "Weapons": ["mont-4","mont-5"]
   },
   "joker": {
     "Name": "Ren Amamiya",
@@ -162,7 +162,8 @@
         "Name": "Show's Over",
         "Description": "If there's an enemy on the field with less than 10% HP, the enemy is directly executed, the effect is capped at 250% of Joker's ATK. This can be triggered once per enemy per battle."
       }
-    }
+    },
+    "Weapons":["joker-4","joker-5"]
   },
   "rin": {
     "Name": "Yaoling Li",
@@ -244,7 +245,8 @@
         "Name": "Lycoris Fireworks",
         "Description": "When Meng Po Soup is consumed, there is a 60% chance thaht it will not be consumed. This effect has a 1 turn cooldown."
       }
-    }
+    },
+    "Weapons": ["rin-4","rin-5"]
   },
   "puppet": {
     "Name": "Muyi Sahara",
@@ -332,7 +334,8 @@
         "Name": "Never Ending Show",
         "Description": "The maximum amount of Sea Guard stacks is increased to 8. When 8 stacks of Sea Guard are obtained, increase the damage of all allies by 25%."
       }
-    }
+    },
+    "Weapons":["puppet-4","puppet-5"]
   },
   "fox": {
     "Name": "Yusuke Kitagawa",
@@ -414,7 +417,8 @@
         "Name": "Vibrant Brushstrokes",
         "Description": "Enhance Dragon Dance and Ink Dragon's Rora to Craze Dragon Dance and Craze Ink Dragon's Roar respectively. These skills will now increase the counterattack  to inflict 2 additional hits, with each hit dealing 70% of the original damage while having an additional 30% DEF Pen."
       }
-    }
+    },
+    "Weapons": ["fox-4","fox-5"]
   },
   "skull": {
     "Name": "Ryuji Sakamoto",
@@ -824,7 +828,8 @@
         "Name": "Victory Glory",
         "Description": "When Soy attacks an enemy in the Wild Savior state, he will deal an additional 10% of Soy's maximum health as damage and restore 10% of Soy's maximum health."
       }
-    }
+    },
+    "Weapons":["soy-4","soy-5"]
   },
   "bui": {
     "Name": "Yui",
@@ -1234,7 +1239,8 @@
         "Name": "Kindness",
         "Description": "Gives 10% damage bonus to self and companion in『Oath of Blessing』. Gain an additional 2% attribute damage bonus per layer based on the total number of blessing layers for both parties, up to a maximum of 20% attribute damage bonus."
       }
-    }
+    },
+    "Weapons":["yuki-4","yuki-5"]
   },
   "riddle": {
     "Name": "Hina Nishimori",
@@ -1644,7 +1650,8 @@
         "Name": "♪ Encore ♪",
         "Description": "Yoshiyo Tomiyama has a fixed 25% chance to trigger an Encore after releasing 『Powerful Dance』: 1 additional release of『Power Dance』. The additional Song and Dance cannot be retriggered for an encore."
       }
-    }
+    },
+    "Weapons":["okyann-4","okyann-5"]
   },
   "marian":{
       "Name":"Minami Miyashita",

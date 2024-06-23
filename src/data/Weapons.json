@@ -86,5 +86,103 @@
         "Description":"Increase Nuclear Damage by %s%. Increase ATK by %s% when attacking an enemy with elemental ailments. When any ally inflicts an elemental ailment, gain one stack of Heat Energy. When entering Iron Will, use all Heat Energy. each stack of Heat Energy will increase the Nuclear damage of the next skill by %s% up to a max of %s%.",
         "Passive":"",
         "Scalings":[["24.2","30","10%","60%"]]
+    },
+    "joker-4":{
+        "Name":"Mountain Splitter",
+        "Rarity": 4,
+        "Description":"Increases ATK by %s%. When attacking an enemy with a debuff on them, ATK is increased by an additional %s%",
+        "Passive":"",
+        "Scalings":[["12","19.1"]]
+    },
+    "joker-5":{
+        "Name":"Phoenix",
+        "Rarity": 5,
+        "Description":"Increases ATK by %s%. When gaining 『Fury』, boost Curse dmg by %s% for 2 turns, and with 3 stacks of 『Fury』, DMG dealt by next attack is increased by %s%.",
+        "Passive":"",
+        "Scalings":[["30","10","23"]]
+    },
+    "rin-4": {
+        "Name":"Four Seasons, All of Creation",
+        "Rarity": 4,
+        "Description":"Increase ATK by %s. After applying a debuff, increase Rin's SPD by %s. Effect lasts for 2 rounds, max 2 stacks. Gain 2 stacks at beginning of battle.",
+        "Passive":"",
+        "Scalings":[["12","8"]]
+    },
+    "rin-5": {
+        "Name":"Distant Corner, One Thought",
+        "Rarity": 5,
+        "Description":"SPD is increased by %s. When attacking with a Persona skill inflict 『Wang Chuan Water』on the targeted enemy. 『Wang Chuan Water』: Increase the damage taken by %s% for every 10 points of Rin's SPD, effect lasts for 1 turn. Affects all enemies when『Meng Po Soup』is active.",
+        "Passive":"",
+        "Scalings":[["15","1"]]
+    },
+    "yuki-4": {
+        "Name":"Spiked Hail",
+        "Rarity": 4,
+        "Description":"Increase DEF by %s%. Increase shield effect by %s% for allies under 50% HP",
+        "Passive":"",
+        "Scalings":[["18","16.3"]]
+    },
+    "yuki-5": {
+        "Name":"Elysium",
+        "Rarity": 5,
+        "Description":"Increase DEF by %s%. When using『Absolute Judgement』, add an additional stack of『Vitalize』 and reduce the enemy's DEF by %s% of Yuki's DEF (up to a maximum of %s) and increase Yuki's defense by the amount reduced for 2 turns.",
+        "Passive":"",
+        "Scalings":[["45","13","520"]]
+    },
+    "fox-4":{
+        "Name":"Lay Katana",
+        "Rarity": 4,
+        "Description":"Increase DEF by %s%. Every time a counterattack is triggered, increase ice damage by %s% for 2 turns, up to 2 stacks. Each stack duration is calculated independently.",
+        "Passive":"",
+        "Scalings":[["18","7.4"]]
+    },
+    "fox-5":{
+        "Name":"Golden Shadow Slasher",
+        "Rarity": 5,
+        "Description":"Increase DEF by %s%. When entering battle, increase counterattack damage by %s%. When gaining a shield, gain 1 stack of『Guardian Spirit』. Every stack of 『Guardian Spirit』increases counterattack damage by %s%. When『Guardian Spirit』reaches 6 stacks increase counterattack damage by %s% permanently for the duration of battle.",
+        "Passive":"",
+        "Scalings":[["45","30","2","30"]]
+    },
+    "puppet-4":{
+        "Name":"Sea Sonar",
+        "Rarity": 4,
+        "Description":"Increase shielding effectiveness by %s%. Allies with a shield gain an increase in DEF by %s%.",
+        "Passive":"",
+        "Scalings":[["8.7","24"]]
+    },
+    "puppet-5":{
+        "Name":"Bubble Dream",
+        "Rarity": 5,
+        "Description":"Increase DEF by %s%. When using a support skill, targeted ally will gain an additional attack of『Sea Guard』. each stack of『Sea Guard』will also increase the ally's ATK and DEF by %s% for 2 turns",
+        "Passive":"",
+        "Scalings":[["45","3"]]
+    },
+    "okyann-4":{
+        "Name":"Luminous Charm",
+        "Rarity": 4,
+        "Description":"Increase ATK by %s. After using a support skill, there is a %s fixed chance to obtain 1 stack of『Beat』.",
+        "Passive":"",
+        "Scalings":[["12","43"]]
+    },
+    "okyann-5":{
+        "Name":"Retro Disco :P",
+        "Rarity": 5,
+        "Description":"Increase ATK by %s%. After using『Song and Dance』, there is a %s% fixed chance to regain 1『Beat』. Increase『Song and Dance』attribute boost by an additional %s%.",
+        "Passive":"",
+        "Scalings":[["30","41","26"]]
+    },
+    "soy-4":{
+        "Name":"Devourer",
+        "Rarity": 4,
+        "Description":"Increase HP by %s%. When in the『Wild Savior』state, Soy's HP, DEF, and Effect Resistance increase by an additional %s%.",
+        "Passive":"",
+        "Scalings":[["12","11"]]
+    },
+    "soy-5":{
+        "Name":"Ancestral Glacier",
+        "Rarity": 5,
+        "Description":"Increase HP by %s%. When『Wild Savior』is consumed for healing, there is a %s% chance for the ally with the lowest hp to gain the same healing effect. When Soy gets hit by an enemy, the attacking target's defense is reduced by %s%.",
+        "Passive":"",
+        "Scalings":[["30","52","30"]]
     }
 }
