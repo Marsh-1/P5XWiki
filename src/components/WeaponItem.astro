@@ -5,18 +5,45 @@ interface Props {
     description: string;
     scalings: string[][];
     rarity: number;
+    path: string;
 }
 
-const { name, rarity, passive, description, scalings } = Astro.props;
+const { name, rarity, passive, description, scalings, path } = Astro.props;
 ---
 
 <li>
-    <h2>{name} {'★'.repeat(rarity)}</h2>
-    <h3>{passive}</h3>
-    <p>{scalings[0].reduce((acc, cur) => acc.replace("%s",cur),description)}</p>
+    <div class="WeaponImageContainer">
+        <img src={`/P5XWiki/weapons/${path}.png`}/>
+    </div>
+    <div class="WeaponInfo">
+        <h2>{name} {'★'.repeat(rarity)}</h2>
+        <h3>{passive}</h3>
+        <p>{scalings[0].reduce((acc, cur) => acc.replace("%s",cur),description)}</p>
+    </div>
 </li>
 <style>
-li {
-    list-style: none;
-}
+    li {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 300px 600px;
+        gap: 4rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    li .WeaponImageContainer{
+        grid-area: 1/1/2/2;
+        display: flex;
+        justify-content:center;
+        align-content: center;
+    }
+
+    li .WeaponImageContainer img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    li .WeaponInfo{
+        grid-area: 1 / 2 / 3 / 3;
+    }
 </style>

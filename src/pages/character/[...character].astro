@@ -138,7 +138,7 @@ const info = Characters[character];
       info["Weapons"] && 
       info["Weapons"].map((id)=>{
         const Weapon = Weapons[id]
-        return <WeaponItem name={Weapon['Name']} rarity={Weapon['Rarity']} passive={Weapon['Passive']} description={Weapon['Description']}, scalings={Weapon['Scalings']}/>
+        return <WeaponItem name={Weapon['Name']} path={id} rarity={Weapon['Rarity']} passive={Weapon['Passive']} description={Weapon['Description']}, scalings={Weapon['Scalings']}/>
       })
     }
   </main>
@@ -190,8 +190,8 @@ const info = Characters[character];
   main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
+		width: 960px;
+		max-width: calc(100% - 1rem);
 		font-size: 20px;
 		line-height: 1.6;
     color: white;

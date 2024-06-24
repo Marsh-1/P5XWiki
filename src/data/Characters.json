@@ -915,8 +915,7 @@
         "Name": "★Pleasant Harvest Time★",
         "Description": "When there is only 1 enemy on the field, YUI's Pursuit base skill multiplier is increased to 110% of attack power; YUI's Pursuit deals 25% splash damage to all other enemies."
       }
-    },
-    "Weapons":["bui-4"]
+    }
   },
   "closer": {
     "Name": "Arai Suha",
