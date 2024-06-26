@@ -13,7 +13,7 @@ const { name, rarity, passive, description, scalings, path } = Astro.props;
 
 <li>
     <div class="WeaponImageContainer">
-        <img src={`/P5XWiki/weapons/${path}.png`}/>
+        <img id={path} alt="Weapon Art" src={`/P5XWiki/weapons/${path}.png`}/>
     </div>
     <div class="WeaponInfo">
         <h2>{name} {'★'.repeat(rarity)}</h2>
@@ -21,6 +21,14 @@ const { name, rarity, passive, description, scalings, path } = Astro.props;
         <p>{scalings[0].reduce((acc, cur) => acc.replace("%s",cur),description)}</p>
     </div>
 </li>
+<script define:vars={{path}}>
+    const img = document.getElementById(path)
+    img.addEventListener("error", function(event) {
+        event.preventDefault()
+        event.onerror = null
+        event.target.src = "/P5XWiki/ErrorMessage.png"
+    })
+</script>
 <style>
     li {
         display: grid;
