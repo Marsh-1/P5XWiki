@@ -9,45 +9,45 @@
           "Type": 1,
           "Name": "Winter's Blossom",
           "Cost": 20,
-          "Description": "Deals Ice DMG equals to %s% of Mont's ATK to all enemy with a %s% base chance to inflict freeze",
+          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;\">%s%</span> of Mont's ATK to all enemy with a %s% base chance to inflict freeze",
           "Formula": ["89.2*(0.6+0.04*skillLv)", "30*(0.6+0.04*skillLv)"]
         },
         "2": {
           "Type": 1,
           "Name": "Frostbite Rend",
           "Cost": 20,
-          "Description": "Deals Ice DMG equals to %s% of Mont's ATK to an enemy and gain 4 stacks of『Ice Crystal』.",
+          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;\">%s%</span> of Mont's ATK to an enemy and gain 4 stacks of『Ice Crystal』.",
           "Formula": ["164.3*(0.6+0.04*skillLv)"]
         },
         "3": {
           "Type": 1,
           "Name": "Blizzard Blade",
           "Cost": 24,
-          "Description": "Deals Ice DMG equals to %s% of Mont's ATK to an enemy. If Mont has 10 stacks of『Ice Crystal』, deal additional damage dependent on the enemy's % of missing HP, up to a maximum of %s% additional damage at 1HP",
+          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;\">%s%</span> of Mont's ATK to an enemy. If Mont has 10 stacks of『Ice Crystal』, deal additional damage dependent on the enemy's % of missing HP, up to a maximum of <span style=\"color:#00a2ef;\">%s%</span> additional damage at 1HP.",
           "Formula": ["184.1*(0.6+0.04*skillLv)", "30*(0.6+0.04*skillLv)"]
         },
         "4": {
           "Type": 1,
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deal Ice DMG equals to %s% of Mont's ATK to an enemy. Deal additional damage dependent on the enemy's % of missing HP, up to a maximum of 30.0% additional damage at 20% remaining HP. ONE MORE: Deals Ice DMG to an enemy",
+          "Description": "HIGHLIGHT: Deal Ice DMG equals to <span style=\"color:#00a2ef;\">%s%</span> of Mont's ATK to an enemy. Deal additional damage dependent on the enemy's % of missing HP, up to a maximum of 30.0% additional damage at 20% remaining HP. ONE MORE: Deals Ice DMG to an enemy.",
           "Formula": ["300*(0.6+skillLv*0.04)"]
         },
         "5": {
           "Type": 2,
           "Name": "Selflessness",
-          "Description": "Dancer on a Blade's Edge will have a 100% base chance to inflict Freeze"
+          "Description": "Dancer on a Blade's Edge will have a 100% base chance to inflict Freeze."
         },
         "6": {
           "Type": 2,
           "Name": "Boundless",
-          "Description": "When Mont defeats an enemy, gain 4『Ice Crystal』"
+          "Description": "When Mont defeats an enemy, gain 4『Ice Crystal』."
         }
       },
       "Awareness": {
         "0": {
           "Id": 0,
           "Name": "Dancer on a Blade's Edge",
-          "Description": "Whenever an ally takes an action, Mont gains a stack of『Ice Crystal』up to a maximum of 10 stacks. When Mont has 10 stacks of『Ice Crystal』and casts a skill, consume all stacks of『Ice Crystal』and deal an additional hit of Ice DMG equal to 65.0% of Mont's ATK that will always be a critical hit"
+          "Description": "Whenever an ally takes an action, Mont gains a stack of『Ice Crystal』up to a maximum of 10 stacks. When Mont has 10 stacks of『Ice Crystal』and casts a skill, consume all stacks of『Ice Crystal』and deal an additional hit of Ice DMG equal to 65.0% of Mont's ATK that will always be a critical hit."
         },
         "1": {
           "Id": 1,
@@ -62,7 +62,7 @@
         "3": {
           "Id": 3,
           "Name": "Flying Spin",
-          "Description": "[Dancer on a Blade's Edge additional effect]: Increase your skill damage based on the amount of life your target has lost, up to a maximum of 50.0% increased skill damage "
+          "Description": "[Dancer on a Blade's Edge additional effect]: Increase your skill damage based on the amount of life your target has lost, up to a maximum of 50.0% increased skill damage."
         },
         "4": {
           "Id": 4,
