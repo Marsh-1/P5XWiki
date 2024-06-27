@@ -1859,13 +1859,15 @@
     "Talents":{
       "1":{
         "Type": 1,
+        "Icon": "NUKE_AOE",
         "Name": "Pulse Combo",
         "Cost": 20,
-        "Description": "Deal <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to all enemies. If the main target is affected by an elemental ailment, the skill deals an additional <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage.",
+        "Description": "Deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to all enemies. If the main target is affected by an elemental ailment, the skill deals an additional %s% Nuke damage.",
         "Formula": ["(0.6+0.04*skillLv)*54.4","(0.6+0.04*skillLv)*19.0"]
       },
       "2":{
         "Type": 1,
+        "Icon": "HEAL_ST",
         "Name": "Nuclear Resonance",
         "Cost": 22,
         "Description": "Heals <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> ATK + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> HP to one party member and increases Queen's ATK by <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> until the end of the next turn. Queen gains 2『Tenacity』 and gains 1 additional『Tenacity』if the enemy is affected by an elemental ailment.",
@@ -1873,15 +1875,16 @@
       },
       "3":{
         "Type": 1,
+        "Icon": "NUKE_ST",
         "Name": "Nuclear Burst/Fusion Overload",
         "Cost": 21,
-        "Description": "Nuclear Burst: Deal <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to one enemy. If the target is affected by an elemental ailment, deals an additional <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage. Queen gains 2『Tenacity』. Fusion Overload: Deals <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to one enemy. For each elemental ailment the target has, deal an additional instance of <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage. (Has a cap)",
+        "Description": "Nuclear Burst: Deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. If the target is affected by an elemental ailment, deals an additional <span style=\"color:#00fcff;\">%s%</span> Nuke damage. Queen gains 2『Tenacity』. Fusion Overload: Deals <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. For each elemental ailment the target has, deal an additional instance of <span style=\"color:#00fcff;\">%s%</span> Nuke damage. (Has a cap)",
         "Formula": ["(0.6+0.04*skillLv)*210.6","(0.6+0.04*skillLv)*39","(0.6+0.04*skillLv)*243.6","(0.6+0.04*skillLv)*34.2"]
       },
       "4":{
         "Type": 1,
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0% ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
+        "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0% ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
         "Formula": ["(0.6+0.04*skillLv)*390.6"]
       },
       "5":{
