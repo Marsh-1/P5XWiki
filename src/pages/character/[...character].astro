@@ -88,7 +88,7 @@ const info = Characters[character];
             info['Talents']['4']['Type'] == 1 ? 
             <p set:html={info['Talents']['4']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['4']['Description']
-            )} class='skill4desc'></p> : <p>{info['Talents']['4']['Description']} class='skill4desc'></p>
+            )} class='skill4desc'></p> : <p set:html={info['Talents']['4']['Description']} class='skill4desc'></p>
           }
         </div>
         <h1>Passive</h1>

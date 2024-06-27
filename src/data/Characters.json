@@ -94,27 +94,27 @@
         "Type": 1,
         "Name": "Fearless Suppression",
         "Cost": 19,
-        "Description": "Deals %s% of Joker's ATK as Curse DMG to all enemies, with a 20% chance of applying a Curse DoT that lasts for 2 turns and deals damage equal to 1% of the enemy's Max HP. gains 1 stack of『Fury』.",
+        "Description": "Deals <span style=\"color:#ff0034;\">%s%</span> of Joker's ATK as Curse DMG to all enemies, with a 20% chance of applying a Curse DoT that lasts for 2 turns and deals damage equal to 1% of the enemy's Max HP. gains 1 stack of『Fury』.",
         "Formula": ["85*(0.6+0.04*skillLv)"]
       },
       "2": {
         "Type": 1,
         "Name": "Ominous Omen",
         "Cost": 19,
-        "Description": "Deals %s% of Joker's ATK as Curse DMG to one enemy. If there is only 1 enemy on the field, Joker will gain 2 stacks of『Fury』",
+        "Description": "Deals <span style=\"color:#ff0034;\">%s%</span> of Joker's ATK as Curse DMG to one enemy. If there is only 1 enemy on the field, Joker will gain 2 stacks of『Fury』",
         "Formula": ["100.0*(0.6+skillLv*0.04)"]
       },
       "3": {
         "Type": 1,
         "Name": "Doom Chase",
         "Cost": 22,
-        "Description": "Deals %s% of Joker's ATK as curse DMG to all enemies. During an extra turn, increase DMG by 25%. If the targets has any debuffs, DMG is increased by an additional 25%.",
+        "Description": "Deals <span style=\"color:#ff0034;\">%s%</span> of Joker's ATK as curse DMG to all enemies. During an extra turn, increase DMG by 25%. If the targets has any debuffs, DMG is increased by an additional 25%.",
         "Formula": ["76*(0.6+skillLv*0.04)"]
       },
       "4": {
         "Type": 1,
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Deals %s% of Joker's ATK as Curse DMG to all enemies and gain 1 Fury stack. ONE MORE: Deals Curse DMG to 1 opponent",
+        "Description": "HIGHLIGHT: Deals <span style=\"color:#ff0034;\">%s%</span> of Joker's ATK as Curse DMG to all enemies and gain 1 Fury stack. ONE MORE: Deals Curse DMG to 1 opponent",
         "Formula": ["(0.6+skillLv*0.04)*210"]
       },
       "5": {
@@ -178,28 +178,28 @@
         "Type": 1,
         "Name": "Ferryman",
         "Cost": 20,
-        "Description": "Deals %s% of Rin's ATK as AOE Curse DMG. For every 10 SPD Rin has, reduces enemies' DEF by 3% (max %s%) for 2 turns. For every opponent hit, gain 4 stacks of『Memory』.",
+        "Description": "Deals <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as AOE Curse DMG. For every 10 SPD Rin has, reduces enemies' DEF by 3% (max <span style=\"color:#ff0036;font-weight:bold;\">%s%</span>) for 2 turns. For every opponent hit, gain 4 stacks of『Memory』.",
         "Formula": ["(0.6+0.04*skillLv)*75", "25.6+skillLv*2.56"]
       },
       "2": {
         "Type": 1,
         "Name": "Gathering of the Distant Shore",
         "Cost": 22,
-        "Description": "Deals %s% of Rin's ATK as Curse DMG to a single enemy. If the enemy is debuffed, increase damage dealt by 20%. 『Meng Po Soup』now has a 100% chance to inflict [Forget], lasting for 2 turns.",
+        "Description": "Deals <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to a single enemy. If the enemy is debuffed, increase damage dealt by 20%.『Meng Po Soup』now has a 100% chance to inflict [Forget], lasting for 2 turns.",
         "Formula": ["60+skillLv*4"]
       },
       "3": {
         "Type": 1,
         "Name": "Dance of the Playful Lioness",
         "Cost": 24,
-        "Description": "Deals %s% of Rin's ATK as Curse DMG to all enemies, and give all enemies『Crosshare Lycoris』. For every 10 SPD, DMG taken by all enemies is increased by 3% (max %s%). The effect is cleared after the enemy takes damage twice or after 2 turns.『Meng Po Soup』now doubles the effect of『Crosshare Lycoris』.",
+        "Description": "Deals <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to all enemies, and give all enemies『Crosshare Lycoris』. For every 10 SPD, DMG taken by all enemies is increased by 3% (max <span style=\"color:#ff0036;font-weight:bold;\">%s%</span>). The effect is cleared after the enemy takes damage twice or after 2 turns.『Meng Po Soup』now doubles the effect of『Crosshare Lycoris』.",
         "Formula": ["70*(0.6+0.04*skillLv)", "25+skillLv*2.5"]
       },
       "4": {
-        "Type": 2,
+        "Type": 1,
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: deal %s% of Rin's ATK as Curse DMG to all enemies and increase the next damage taken by all enemies by %s%. There is a 30% base chance to inflict [Forget] on all enemies for 2 turns. ONE MORE: Deals Curse DMG to 1 opponent.",
-        "Formula": ["150f*(0.6f+skillLv*0.04f)", "50f*(0.6f+skillLv*0.04f)"]
+        "Description": "HIGHLIGHT: deal <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to all enemies and increase the next damage taken by all enemies by <span style=\"color:#ff0036;font-weight:bold;\">%s%</span>. There is a 30% base chance to inflict [Forget] on all enemies for 2 turns. ONE MORE: Deals Curse DMG to 1 opponent.",
+        "Formula": ["150*(0.6+skillLv*0.04)", "50*(0.6+skillLv*0.04)"]
       },
       "5": {
         "Type": 2,
@@ -262,21 +262,21 @@
         "Type": 3,
         "Name": "Song of Peace",
         "Cost": 8,
-        "Description": "Grant all allies shield equal to %s% of Puppet's DEF + %s for 2 turns. Restore 4 SP. When the shield breaks, reduce Puppet's preparation time by 1.",
+        "Description": "Grant all allies shield equal to <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of Puppet's DEF + <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> for 2 turns. Restore 4 SP. When the shield breaks, reduce Puppet's preparation time by 1.",
         "Formula": ["(0.6+0.04*skillLv)*28.6", "(0.6+0.04*skillLv)*0.3367*(300*skillLv+27)"]
       },
       "2": {
         "Type": 3,
         "Name": "Dance of Convergence",
         "Cost": 8,
-        "Description": "Grant target ally shield equal to %s% of Puppet's DEF + %s, and reduces Weakness damage taken by 20% for 2 turns. Target ally will also gain 2 stacks of Knockdown resist and 2 stacks of『Sea Guard』.",
+        "Description": "Grant target ally shield equal to <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of Puppet's DEF + <span style=\"color:#3c6eff;font-weight:bold;\">%s</span>, and reduces Weakness damage taken by 20% for 2 turns. Target ally will also gain 2 stacks of Knockdown resist and 2 stacks of『Sea Guard』.",
         "Formula": ["(0.6+0.04*skillLv)*67.2", "(0.6+0.04*skillLv)*0.84*(300*skillLv+27)"]
       },
       "3": {
         "Type": 3,
         "Name": "Bubbles of Dawn",
         "Cost": 12,
-        "Description": "Grant all allies Shield equals to %s% of Puppet's DEF + %s + No. of Seaguard * (%s% of Puppet's DEF + %s) for 3 turns. When an ally has 4 or more stacks of『Sea Guard』, 『Sea Guard』 grants the additional effect to increase damage dealt by %s% for 3 turns. When an ally loses their shield or the shield expires, lose 2 stacks of『Sea Guard』.",
+        "Description": "Grant all allies Shield equals to <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of Puppet's DEF + <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> + No. of Seaguard * (<span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of Puppet's DEF + <span style=\"color:#3c6eff;font-weight:bold;\">%s</span>) for 3 turns. When an ally has 4 or more stacks of『Sea Guard』, 『Sea Guard』 grants the additional effect to increase damage dealt by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> for 3 turns. When an ally loses their shield or the shield expires, lose 2 stacks of『Sea Guard』.",
         "Formula": [
           "(0.6+0.04*skillLv)*33.2",
           "(0.6+0.04*skillLv)*0.416*(300*skillLv+27)",
@@ -351,27 +351,27 @@
         "Type": 1,
         "Name": "Frost Break",
         "Cost": 20,
-        "Description": "Deals Ice Damage equals to %s% of Fox's Defense to all enemies with a 100% base chance to inflict Freeze.",
+        "Description": "Deals Ice Damage equals to <span style=\"color:#00a2ef;\">%s%</span> of Fox's Defense to all enemies with a 100% base chance to inflict Freeze.",
         "Formula": ["142.2*(0.6+0.04*skillLv)"]
       },
       "2": {
         "Type": 1,
         "Name": "Frostlinger Slash",
         "Cost": 20,
-        "Description": "Deals Ice Damage equal to %s% of Fox's DEF to a random enemy 5 times, prioritising enemies that have not been hit yet. If Fox has a shield , increase the skill damage by an additional 30%. Consecutive hits on the same target will have a 60% damage reduction, down to a minimum of 20% damage.",
+        "Description": "Deals Ice Damage equal to <span style=\"color:#00a2ef;\">%s%</span> of Fox's DEF to a random enemy 5 times, prioritising enemies that have not been hit yet. If Fox has a shield , increase the skill damage by an additional 30%. Consecutive hits on the same target will have a 60% damage reduction, down to a minimum of 20% damage.",
         "Formula": ["86.7*(0.6+0.04*skillLv)"]
       },
       "3": {
         "Type": 1,
         "Name": "Ginka-Zanshin",
         "Cost": 24,
-        "Description": "Enhance the next attack Dragon Dance into Ink Dragon's Roar. This increase the counterattack probability to a 100% fixed chance, increases the Ice Damage by an additional 58.6%, and changes the attack to AoE. If this does not activate after 1 turn , activate it. In addition, gain a shield equal to %s% + 555 of Fox's DEF for 2 turns. Fox's weakness will become neutral and taunt all enemies for 1 turn.",
+        "Description": "Enhance the next attack Dragon Dance into Ink Dragon's Roar. This increase the counterattack probability to a 100% fixed chance, increases the Ice Damage by an additional 58.6%, and changes the attack to AoE. If this does not activate after 1 turn , activate it. In addition, gain a shield equal to <span style=\"color:#00a2ef;\">%s%</span> + 555 of Fox's DEF for 2 turns. Fox's weakness will become neutral and taunt all enemies for 1 turn.",
         "Formula": ["19.5*(0.6+0.04*skillLv)"]
       },
       "4": {
         "Type": 1,
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Deals Ice Damage equal to %s% of Fox's DEF to all enemies. Increase the chance of triggering [Dragon Dance] by %s% for 3 turns. ONE MORE: Deals Ice Damage to an enemy.",
+        "Description": "HIGHLIGHT: Deals Ice Damage equal to <span style=\"color:#00a2ef;\">%s%</span> of Fox's DEF to all enemies. Increase the chance of triggering [Dragon Dance] by <span style=\"color:#00a2ef;\">%s%</span> for 3 turns. ONE MORE: Deals Ice Damage to an enemy.",
         "Formula": ["178.1*(0.6+0.04*skillLv)", "35*(0.6+0.04*skillLv)"]
       },
       "5": {
@@ -855,27 +855,27 @@
         "Type": 1,
         "Name": "Crackle Surprise Box",
         "Cost": 20,
-        "Description": "Deals %s% Attack Power damage to 1 enemy with the Electrocution attribute. If the enemy is not in the Electrocuted state, there is a %s% base chance that it will fall into the Electrocuted state, and the effect lasts for 2 turns. If the enemy is already in the Electrocuted state, the damage is increased by 30%.",
+        "Description": "Deals <span style=\"color:#fafd35;\">%s%</span> Attack Power damage to 1 enemy with the Electrocution attribute. If the enemy is not in the Electrocuted state, there is a <span style=\"color:#fafd35;\">%s%</span> base chance that it will fall into the Electrocuted state, and the effect lasts for 2 turns. If the enemy is already in the Electrocuted state, the damage is increased by 30%.",
         "Formula": ["190*(0.6+0.04*skillLv)","70*(0.6+0.04*skillLv)"]
       },
       "2": {
         "Type": 1,
         "Name": "Exploding Bricks",
         "Cost": 20,
-        "Description": "Deals %s% Attack Power Electricity Attribute damage to all enemies, and increases the damage dealt to the skill's primary target by 25%.",
+        "Description": "Deals <span style=\"color:#fafd35;\">%s%</span> Attack Power Electricity Attribute damage to all enemies, and increases the damage dealt to the skill's primary target by 25%.",
         "Formula": ["61.1*(0.6+skillLv*0.04)"]
       },
       "3": {
         "Type": 1,
         "Name": "Ultra Rare Reward",
         "Cost": 25,
-        "Description": "Increase your attack power by %s%. Choose a companion to be YUI's 'Playmate'. When YUI releases the Personality Mask skill on an enemy, YUI will immediately pursue them, causing YUI's next 2 pursuits to deal %s% of their Attack Power as Electric Shock Attribute Damage, and the effect lasts for 2 rounds.",
+        "Description": "Increase your attack power by <span style=\"color:#fafd35;\">%s%</span>. Choose a companion to be YUI's 'Playmate'. When YUI releases the Personality Mask skill on an enemy, YUI will immediately pursue them, causing YUI's next 2 pursuits to deal <span style=\"color:#fafd35;\">%s%</span> of their Attack Power as Electric Shock Attribute Damage, and the effect lasts for 2 rounds.",
         "Formula": ["40*(0.6+0.04*skillLv)","136.2*(0.6+0.04*skillLv)"]
       },
       "4": {
-        "Type": 2,
+        "Type": 1,
         "Name": "Combat Skills",
-        "Description": "Highlight: Increases YUI's attack power by %s%, and the damage boost caused by Pursuit is equal to %s% of YUI's attack power, and the effect lasts for 2 turns. It also makes any companion that releases a skill that deals damage trigger YUI's Pursuit, the effect lasts for 1 turn. One More: Deals electric shock attribute damage to 1 enemy.",
+        "Description": "Highlight: Increases YUI's attack power by <span style=\"color:#fafd35;\">%s%</span>, and the damage boost caused by Pursuit is equal to <span style=\"color:#fafd35;\">%s%</span> of YUI's attack power, and the effect lasts for 2 turns. It also makes any companion that releases a skill that deals damage trigger YUI's Pursuit, the effect lasts for 1 turn. One More: Deals electric shock attribute damage to 1 enemy.",
         "Formula": ["35*(0.6+0.04*skillLv)","25*(0.6+0.04*skillLv)"]
       },
       "5": {
@@ -1610,21 +1610,21 @@
         "Type": 3,
         "Name": "Party Frenzy",
         "Cost": 4,
-        "Description": "Based on 12% of Toyama's own Attack Power, boosts the Attack Power of all companions (up to %s points of Attack Power) and boosts all companions' Effect Hit Rate by %s%, the effect lasts for 1 turn. Gain 1 『Beat』.",
+        "Description": "Based on 12% of Toyama's own Attack Power, boosts the Attack Power of all companions (up to <span style=\"color:#3c6eff;\">%s</span> points of Attack Power) and boosts all companions' Effect Hit Rate by <span style=\"color:#3c6eff;\">%s%</span>, the effect lasts for 1 turn. Gain 1 『Beat』.",
         "Formula": ["450*skillLv","(0.6+0.04*skillLv)*26.0"]
       },
       "2": {
         "Type": 3,
         "Name": "Gorgeous Swing",
         "Cost": 8,
-        "Description": "Restores %s energy value to all companions. Gain 3『Beats』.",
+        "Description": "Restores <span style=\"color:#3c6eff;\">%s</span> energy value to all companions. Gain 3『Beats』.",
         "Formula": ["11+Math.ceil(skillLv+Math.max(0,skillLv-8)*0.3+Math.max(0,skillLv-10)*0.6)"]
       },
       "3": {
         "Type": 3,
         "Name": "Hot Variations",
         "Cost": 8,
-        "Description": "Causes all companions to inflict a damage boost %s% that lasts for 3 turns and provides an additional 1% damage boost for every 225 points of Yoshiyo Tomiyama's Attack Power (up to a maximum of %s points of Attack Power counted). When dealing damage to an enemy in the Elemental Anomaly state, the damage bonus effect is increased by an additional 50%. Gain 2『Beats』.",
+        "Description": "Causes all companions to inflict a damage boost of <span style=\"color:#3c6eff;\">%s%</span> that lasts for 3 turns and provides an additional 1% damage boost for every 225 points of Yoshiyo Tomiyama's Attack Power (up to a maximum of <span style=\"color:#3c6eff;\">%s</span> points of Attack Power counted). When dealing damage to an enemy in the Elemental Anomaly state, the damage bonus effect is increased by an additional 50%. Gain 2『Beats』.",
         "Formula": ["(0.6+0.04*skillLv)*10","450*skillLv"]
       },
       "4": {
@@ -1683,88 +1683,88 @@
     "Weapons":["okyann-4","okyann-5"]
   },
   "marian":{
-      "Name":"Minami Miyashita",
-      "Codename":"Marian",
-      "Role":"Support",
-      "Element": "Bless",
-      "Released": 1715227200,
-      "Talents":{
-        "1":{
-          "Type":1,
-          "Name": "Lily of the Valley",
-          "Cost": 20,
-          "Description": "Deals %s% Max HP Blessing Attribute damage to 1 enemy, causing all companions to gain 1 tier of the Blessing effect; while gaining 1 tier of『Manna』.",
-          "Formula": ["(0.6+0.04*skillLv)*58.3"]
-        },
-        "2":{
-          "Type":1,
-          "Name": "Healing Blessing",
-          "Cost": 25,
-          "Description": "Immediately restores Miyashita Minami's %s% Maximum Life+ %s and dispels 2 Negative Condition for the designated target and the other Monster with the lowest current Life, as well as granting the healed allies a 1 tier Blessing effect and restores life points equal to Minami Miyashita's %s% Max HP + %s at the start of his turn for 2 turns. Gain 1 layer of『Nectar』.",
-          "Formula": ["(0.6+0.04*skillLv)*17.855","(0.6+0.04*skillLv)*.17855*3*(300*skillLv+27)","(0.6+0.04*skillLv)*14.28","(0.6+0.04*skillLv)*.1428*3*(300*skillLv+27)"]
-        },
-        "3":{
-          "Type":1,
-          "Name":"The Gift of Spring",
-          "Cost": 32,
-          "Description":"Consume all Nectar tiers to instantly restore the life of a designated party member equal to Minami Miyashita's %s% max life + %s and with the same healing effect. Heals the ally with the lowest current lifesteal 2 times, and heals an additional 1 time for every 1 tier of Manna effect consumed. Also, for every 1 layer of Nectar effect consumed, other allies except Minami gains 1 layer equal to Minami's 7.5% Maximum Life (up to %s points) Max HP for 2 turns.",
-          "Formula":["(0.6+0.04*skillLv)*16.17","(0.6+0.04*skillLv)*.1617*3*(300*skillLv+27)",".075*skillLv*1500"]
-        },
-        "4":{
-          "Type":1,
-          "Name":"Combat Skills",
-          "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's %s Max HP + %s to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Maximum HP boost equal 16.5% of Minami Miyashita's Maximum HP (up to %s points) for 2 turns. When any ally takes action, immediately regenerate HP equal to %s% Minami Miyashita's Max HP + %s for 2 turns. The main target will also get additional regeneration stack for 1 turn. ONE MORE: Deals blessed attribute damage to 1 enemy.",
-          "Formula":["(0.6+0.04*skillLv)*18","(0.6+0.04*skillLv)*.18*3*(300*skillLv+27)",".165*skillLv*1500","(0.6+0.04*skillLv)*6.67","(0.6+0.04*skillLv)*.0667*3*(skillLv*300+27)"]
-        },
-        "5":{
-          "Type":2,
-          "Name":"Bless",
-          "Description":"Healed units receive a damage boost based on their Blessing effect tier for (15% + 3% * Blessing effect layers, up to 30%) for 1 turn."
-        },
-        "6":{
-          "Type":2,
-          "Name":"Kindness",
-          "Description":"Upon entering combat, raise the maximum life of all monsters based on the 10% of Minami's maximum life (up to 1500 points)."
-        }
+    "Name":"Minami Miyashita",
+    "Codename":"Marian",
+    "Role":"Support",
+    "Element": "Bless",
+    "Released": 1715227200,
+    "Talents":{
+      "1":{
+        "Type":1,
+        "Name": "Lily of the Valley",
+        "Cost": 20,
+        "Description": "Deals <span style=\"color:#ffff9f;\">%s%</span> Max HP Blessing Attribute damage to 1 enemy, causing all companions to gain 1 tier of the Blessing effect; while gaining 1 tier of『Manna』.",
+        "Formula": ["(0.6+0.04*skillLv)*58.3"]
       },
-      "Awareness":{
-        "0": {
-          "Id": 0,
-          "Name": "Nursing Assessment",
-          "Description": "When entering battle, gain 1 tier of『Manna』; at the start of the turn, if any ally is less than 70% of their  Max HP, there is a 100% fixed chance that it will gain 1 tier of『Manna』; it can have a maximum of 2 tiers of『Manna』effects."
-        },
-        "1": {
-          "Id": 1,
-          "Name": "Pain Management",
-          "Description": "When an ally is overhealed, the ally gains 20% penetration for 2 rounds."
-        },
-        "2": {
-          "Id": 2,
-          "Name": "Nursing Care Plan",
-          "Description": "Increase the skill level of『Healing Blessing』and『Combat Skills』 by 3 levels, up to 15 levels."
-        },
-        "3": {
-          "Id": 3,
-          "Name": "Nursing Diagnosis",
-          "Description": "『Healing Blessing』heals an additional ally, and the healing effect of this skill is increased by 20% for Phantom Thieves with less than 50% health."
-        },
-        "4": {
-          "Id": 4,
-          "Name": "Nursing Intervention",
-          "Description": "The skill levels of『Lily of the Valley Revelation』and『Gift of Spring』are increased by 3 levels, up to a maximum of level 15."
-        },
-        "5": {
-          "Id": 5,
-          "Name": "Post-Operative Care",
-          "Description": "HIGHLIGHT Effect Boost: The duration of the Regeneration effect and Max HP Boost effect added to the HIGHLIGHT skill is extended by 1 turn."
-        },
-        "6": {
-          "Id": 6,
-          "Name": "Cardiopulmonary Resuscitation",
-          "Description": "Immediately revives a companion when they die and restores life equal to 40% of Minami's Max HP + 1200, triggering once per battle."
-        }
+      "2":{
+        "Type":1,
+        "Name": "Healing Blessing",
+        "Cost": 25,
+        "Description": "Immediately restores Miyashita Minami's <span style=\"color:#ffff9f;\">%s%</span> Maximum HP + <span style=\"color:#ffff9f;\">%s</span> and dispels 2 Negative Condition for the designated target and the other ally with the lowest current HP, as well as granting the healed allies one tier of the Blessing effect and restores life points equal to Minami Miyashita's <span style=\"color:#ffff9f;\">%s%</span> Max HP + <span style=\"color:#ffff9f;\">%s</span> at the start of his turn for 2 turns. Gain 1 layer of『Nectar』.",
+        "Formula": ["(0.6+0.04*skillLv)*17.855","(0.6+0.04*skillLv)*.17855*3*(300*skillLv+27)","(0.6+0.04*skillLv)*14.28","(0.6+0.04*skillLv)*.1428*3*(300*skillLv+27)"]
       },
-      "Weapons":["marian-4","marian-5"]
+      "3":{
+        "Type":1,
+        "Name":"The Gift of Spring",
+        "Cost": 32,
+        "Description":"Consume all Nectar tiers to instantly restore the life of a designated party member equal to Minami Miyashita's <span style=\"color:#ffff9f;\">%s%</span> Max HP + <span style=\"color:#ffff9f;\">%s</span> and with the same healing effect. Heals the ally with the lowest current lifesteal 2 times, and heals an additional 1 time for every 1 tier of Manna effect consumed. Also, for every 1 layer of Nectar effect consumed, other allies except Minami gains 1 layer equal to Minami's 7.5% Maximum Life (up to <span style=\"color:#ffff9f;\">%s</span> points) Max HP for 2 turns.",
+        "Formula":["(0.6+0.04*skillLv)*16.17","(0.6+0.04*skillLv)*.1617*3*(300*skillLv+27)",".075*skillLv*1500"]
+      },
+      "4":{
+        "Type":1,
+        "Name":"Combat Skills",
+        "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's <span style=\"color:#ffff9f;\">%s%</span> Max HP + <span style=\"color:#ffff9f;\">%s</span> to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Max HP boost equal 16.5% of Minami Miyashita's Max HP (up to <span style=\"color:#ffff9f;\">%s</span> points) for 2 turns. When any ally takes action, immediately regenerate HP equal to <span style=\"color:#ffff9f;\">%s%</span> Minami Miyashita's Max HP + <span style=\"color:#ffff9f;\">%s</span> for 2 turns. The main target will also get additional regeneration stack for 1 turn. ONE MORE: Deals blessed attribute damage to 1 enemy.",
+        "Formula":["(0.6+0.04*skillLv)*18","(0.6+0.04*skillLv)*.18*3*(300*skillLv+27)",".165*skillLv*1500","(0.6+0.04*skillLv)*6.67","(0.6+0.04*skillLv)*.0667*3*(skillLv*300+27)"]
+      },
+      "5":{
+        "Type":2,
+        "Name":"Bless",
+        "Description":"Healed units receive a damage boost based on their Blessing effect tier for (15% + 3% * Blessing effect layers, up to 30%) for 1 turn."
+      },
+      "6":{
+        "Type":2,
+        "Name":"Kindness",
+        "Description":"Upon entering combat, raise the maximum life of all monsters based on the 10% of Minami's maximum life (up to 1500 points)."
+      }
+    },
+    "Awareness":{
+      "0": {
+        "Id": 0,
+        "Name": "Nursing Assessment",
+        "Description": "When entering battle, gain 1 tier of『Manna』; at the start of the turn, if any ally is less than 70% of their  Max HP, there is a 100% fixed chance that it will gain 1 tier of『Manna』; it can have a maximum of 2 tiers of『Manna』effects."
+      },
+      "1": {
+        "Id": 1,
+        "Name": "Pain Management",
+        "Description": "When an ally is overhealed, the ally gains 20% penetration for 2 rounds."
+      },
+      "2": {
+        "Id": 2,
+        "Name": "Nursing Care Plan",
+        "Description": "Increase the skill level of『Healing Blessing』and『Combat Skills』 by 3 levels, up to 15 levels."
+      },
+      "3": {
+        "Id": 3,
+        "Name": "Nursing Diagnosis",
+        "Description": "『Healing Blessing』heals an additional ally, and the healing effect of this skill is increased by 20% for Phantom Thieves with less than 50% health."
+      },
+      "4": {
+        "Id": 4,
+        "Name": "Nursing Intervention",
+        "Description": "The skill levels of『Lily of the Valley Revelation』and『Gift of Spring』are increased by 3 levels, up to a maximum of level 15."
+      },
+      "5": {
+        "Id": 5,
+        "Name": "Post-Operative Care",
+        "Description": "HIGHLIGHT Effect Boost: The duration of the Regeneration effect and Max HP Boost effect added to the HIGHLIGHT skill is extended by 1 turn."
+      },
+      "6": {
+        "Id": 6,
+        "Name": "Cardiopulmonary Resuscitation",
+        "Description": "Immediately revives a companion when they die and restores life equal to 40% of Minami's Max HP + 1200, triggering once per battle."
+      }
+    },
+    "Weapons":["marian-4","marian-5"]
   },
   "vino":{
     "Name":"Chizuko Nagao",
@@ -1777,27 +1777,27 @@
         "Type": 2,
         "Name": "Market Bomb",
         "Cost": 20,
-        "Description": "Deal 170.8% Nuclear damage to an enemy and reduces their DEF by 37.3% of Vino's EHR. Additionally, Vino has a 100% base chance of inflicting a random elemental ailment that the enemy does not already have.",
+        "Description": "Deal <span style=\"color:#00fcff;\">170.8%</span> Nuclear damage to an enemy and reduces their DEF by <span style=\"color:#00fcff;\">37.3%</span> of Vino's EHR. Additionally, Vino has a 100% base chance of inflicting a random elemental ailment that the enemy does not already have.",
         "Formula": []
       },
       "2":{
         "Type": 2,
         "Name": "Carpet Bombing",
         "Cost": 22,
-        "Description": "Deals 91.5% Nuclear damage to all enemies. Vino has a 40% base chance to inflict a random elemental ailment that the enemies do not already have.",
+        "Description": "Deals <span style=\"color:#00fcff;\">91.5%</span> Nuclear damage to all enemies. Vino has a 40% base chance to inflict a random elemental ailment that the enemies do not already have.",
         "Formula": []
       },
       "3":{
         "Type": 2,
         "Name": "Concentrated Fire",
         "Cost": 24,
-        "Description": "Deal 195.2% Nuclear damage to a specific enemy. For each elemental ailment on the target, it applies damage vulnerability to the target based on 11.3% of Vino's Effect Hit Rate, up to 18.7%. This vulnerability lasts for 2 turns and stacks up to three times.",
+        "Description": "Deal <span style=\"color:#00fcff;\">195.2%</span> Nuclear damage to a specific enemy. For each elemental ailment on the target, it applies damage vulnerability to the target based on <span style=\"color:#00fcff;\">11.3%</span> of Vino's Effect Hit Rate, up to <span style=\"color:#00fcff;\">18.7%</span>. This vulnerability lasts for 2 turns and stacks up to three times.",
         "Formula": []
       },
       "4":{
         "Type": 1,
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Deal 324.5% Nuclear damage to an enemy. Vino has a 75% base chance to apply 2 random elemental ailments on the targeted enemy that they do not have. ONE MORE: Deal Nuclear damage to one enemy.",
+        "Description": "HIGHLIGHT: Deal <span style=\"color:#00fcff;\">324.5%</span> Nuclear damage to an enemy. Vino has a 75% base chance to apply 2 random elemental ailments on the targeted enemy that they do not have. ONE MORE: Deal Nuclear damage to one enemy.",
         "Formula": []
       },
       "5":{
@@ -1861,27 +1861,27 @@
         "Type": 1,
         "Name": "Pulse Combo",
         "Cost": 20,
-        "Description": "Deal %s% Nuke damage to all enemies. If the main target is affected by an elemental ailment, the skill deals an additional %s% Nuke damage.",
+        "Description": "Deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to all enemies. If the main target is affected by an elemental ailment, the skill deals an additional %s% Nuke damage.",
         "Formula": ["(0.6+0.04*skillLv)*54.4","(0.6+0.04*skillLv)*19.0"]
       },
       "2":{
         "Type": 1,
         "Name": "Nuclear Resonance",
         "Cost": 22,
-        "Description": "Heals %s% ATK + %s HP to one party member and increases Queen's ATK by %s until the end of the next turn. Queen gains 2 『Tenacity』 and gains 1 additional 『Tenacity』 if the enemy is affected by an elemental ailment.",
+        "Description": "Heals <span style=\"color:#00fcff;\">%s%</span> ATK + <span style=\"color:#00fcff;\">%s</span> HP to one party member and increases Queen's ATK by <span style=\"color:#00fcff;\">%s%</span> until the end of the next turn. Queen gains 2『Tenacity』 and gains 1 additional『Tenacity』if the enemy is affected by an elemental ailment.",
         "Formula": ["(0.6+0.04*skillLv)*52.7","(0.6+0.04*skillLv)*.4955*(300*skillLv+27)","(0.04*skillLv+0.6)*48.8"]
       },
       "3":{
         "Type": 1,
         "Name": "Nuclear Burst/Fusion Overload",
         "Cost": 21,
-        "Description": "Nuclear Burst: Deal %s% Nuke damage to one enemy. If the target is affected by an elemental ailment, deals an additional %s% Nuke damage. Queen gains 2『Tenacity』. Fusion Overload: Deals %s% Nuke damage to one enemy. For each elemental ailment the target has, deal an additional instance of %s% Nuke damage. (Has a cap)",
+        "Description": "Nuclear Burst: Deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. If the target is affected by an elemental ailment, deals an additional <span style=\"color:#00fcff;\">%s%</span> Nuke damage. Queen gains 2『Tenacity』. Fusion Overload: Deals <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. For each elemental ailment the target has, deal an additional instance of <span style=\"color:#00fcff;\">%s%</span> Nuke damage. (Has a cap)",
         "Formula": ["(0.6+0.04*skillLv)*210.6","(0.6+0.04*skillLv)*39","(0.6+0.04*skillLv)*243.6","(0.6+0.04*skillLv)*34.2"]
       },
       "4":{
         "Type": 1,
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal %s% Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0% ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
+        "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0% ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
         "Formula": ["(0.6+0.04*skillLv)*390.6"]
       },
       "5":{
