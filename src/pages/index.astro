@@ -8,8 +8,8 @@ import Characters from '../data/Characters.json'
 	<main>
 		<h1>Characters</h1>
 		<ul role="list" class="link-card-grid">
-				{Object.keys(Characters).map((char) => {
-					return <Card title={char[0].toUpperCase()+char.substring(1)} href = {"/P5XWiki/character/" + char}/>
+				{Object.values(Characters).sort((a,b)=> a["Released"] < b["Released"]).map((char)=>{
+					return <Card title={char["Codename"][0].toUpperCase()+char["Codename"].substring(1)} href = {"/P5XWiki/character/" + char["Codename"].toLowerCase()}/>
 				})}
 		</ul>
 	</main>
