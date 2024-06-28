@@ -1636,6 +1636,7 @@
     "Talents": {
       "1": {
         "Type": 3,
+        "Icon":"BUFF_AOE",
         "Name": "Party Frenzy",
         "Cost": 4,
         "Description": "Based on 12% of Toyama's own Attack Power, boosts the Attack Power of all companions (up to <span style=\"color:#3c6eff;\">%s</span> points of Attack Power) and boosts all companions' Effect Hit Rate by <span style=\"color:#3c6eff;\">%s%</span>, the effect lasts for 1 turn. Gain 1 『Beat』.",
@@ -1643,6 +1644,7 @@
       },
       "2": {
         "Type": 3,
+        "Icon":"BUFF_AOE",
         "Name": "Gorgeous Swing",
         "Cost": 8,
         "Description": "Restores <span style=\"color:#3c6eff;\">%s</span> energy value to all companions. Gain 3『Beats』.",
@@ -1650,6 +1652,7 @@
       },
       "3": {
         "Type": 3,
+        "Icon":"BUFF_AOE",
         "Name": "Hot Variations",
         "Cost": 8,
         "Description": "Causes all companions to inflict a damage boost <span style=\"color:#3c6eff;\">%s%</span> that lasts for 3 turns and provides an additional 1% damage boost for every 225 points of Yoshiyo Tomiyama's Attack Power (up to a maximum of <span style=\"color:#3c6eff;\">%s</span> points of Attack Power counted). When dealing damage to an enemy in the Elemental Anomaly state, the damage bonus effect is increased by an additional 50%. Gain 2『Beats』.",
@@ -1657,6 +1660,7 @@
       },
       "4": {
         "Type": 2,
+        "Icon":"PASSIVE",
         "Name": "Attribute Improvement",
         "Description": "Increases the corresponding attribute values of all companions present by 15% based on the attributes of Tomiyama."
       },

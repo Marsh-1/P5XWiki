@@ -48,17 +48,15 @@ const info = Characters[character];
       <h1>Talents</h1>
       <div>
         <div>
-          <div class="skill1header">
+          <div class="skilltitle">
             <div>
               <img src={`/P5XWiki/skills/${info['Talents']['1']['Icon'] || 'HEAL_AOE'}.png`}/>
             </div>
-            <div>
-              <h2 class="skill1container">
-                {info['Talents']['1']['Name']} (Lv. 10)
-              </h2>
-              <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider1" id="skill1">
-            </div>
+            <h2 class="skill1container">
+              {info['Talents']['1']['Name']} (Lv. 10)
+            </h2>
           </div>
+          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider1" id="skill1">
           <p>{info['Role'] == 'Navi' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['1']['Cost']}{info['Talents']['1']['Type'] == 3 ? ' Rounds' : info['Talents']['1']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={
             info['Talents']['1']['Formula'].reduce((acc,cur) =>
@@ -67,45 +65,44 @@ const info = Characters[character];
           } class='skill1desc'></p>
         </div>
         <div>
-          <div class="skill2header">
+          <div class="skilltitle">
             <div>
               <img src={`/P5XWiki/skills/${info['Talents']['2']['Icon'] || 'HEAL_AOE'}.png`}/>
             </div>
-            <div>
-              <h2 class='skill2container'>
-                {info['Talents']['2']['Name']} (Lv. 10)
-              </h2>
-              <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider2" id="skill2">
-            </div>
+            <h2 class='skill2container'>
+              {info['Talents']['2']['Name']} (Lv. 10)
+            </h2>
           </div>
-          
-          
+          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider2" id="skill2">
           <p>{info['Role'] == 'Navi' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['2']['Cost']}{info['Talents']['2']['Type'] == 3 ? ' Rounds' : info['Talents']['2']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={info['Talents']['2']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['2']['Description']
           )} class='skill2desc'></p>
         </div>
         <div>
-          <div classname="skill3header">
+          <div class="skilltitle">
             <div>
               <img src={`/P5XWiki/skills/${info['Talents']['3']['Icon'] || 'HEAL_AOE'}.png`}/>
             </div>
-            <div>
-              <h2 class='skill3container'>
+            <h2 class='skill3container'>
               {info['Talents']['3']['Name']} (Lv. 10)
-              </h2>
-              <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider3" id="skill3">
-            </div>
+            </h2>
           </div>
+          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider3" id="skill3">
           <p>{info['Role'] == 'Navi' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['3']['Cost']}{info['Talents']['3']['Type'] == 3 ? ' Rounds' : info['Talents']['3']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={info['Talents']['3']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['3']['Description']
           )} class='skill3desc'></p>
         </div>
         <div>
-          <h2 class='skill4container'>
-          {info['Talents']['4']['Name']} {info['Talents']['4']['Type'] == 1 ? '(Lv. 10)': ''}
-          </h2>
+          <div class="skilltitle">
+            <div>
+              <img src={`/P5XWiki/skills/${info['Talents']['4']['Icon'] || 'HEAL_AOE'}.png`}/>
+            </div>
+            <h2 class='skill4container'>
+              {info['Talents']['4']['Name']} {info['Talents']['4']['Type'] == 1 ? '(Lv. 10)': ''}
+            </h2>
+          </div>
           {info['Talents']['4']['Type'] == 1 ? <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider4" id="skill4"> : ''}
           {
             info['Talents']['4']['Type'] == 1 ? 
@@ -157,13 +154,15 @@ const info = Characters[character];
       </div>
     </div>
     {info["Weapons"] && <h1>Weapons:</h1>}
-    {
-      info["Weapons"] && 
-      info["Weapons"].map((id)=>{
-        const Weapon = Weapons[id]
-        return <WeaponItem name={Weapon['Name']} path={id} rarity={Weapon['Rarity']} passive={Weapon['Passive']} description={Weapon['Description']}, scalings={Weapon['Scalings']}/>
-      })
-    }
+    <ul class="weaponlist">
+      {
+        info["Weapons"] && 
+        info["Weapons"].map((id)=>{
+          const Weapon = Weapons[id]
+          return <WeaponItem name={Weapon['Name']} path={id} rarity={Weapon['Rarity']} passive={Weapon['Passive']} description={Weapon['Description']}, scalings={Weapon['Scalings']}/>
+        })
+      }
+    </ul>
   </main>
 </Layout>
 
@@ -212,11 +211,24 @@ const info = Characters[character];
 <style>
   main {
     margin: 0 auto;
-    width: 100%;
 		max-width: 960px;
     padding: 1rem;
 		font-size: 20px;
 		line-height: 1.6;
     color: white;
 	}
+  .skilltitle{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .skilltitle img{
+    aspect-ratio: auto;
+  }
+
+  .weaponlist{
+    max-width: 100vw;
+  }
 </style>
