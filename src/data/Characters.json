@@ -85,7 +85,23 @@
           "Description": "Gain 4『Ice Crystal』at the start of battle, and increase the maximum number of Mont's『Ice Crystal』to 15."
         }
       },
-      "Weapons": ["mont-4","mont-5"]
+      "Weapons": ["mont-4","mont-5"],
+      "Build": {
+          "Revelation": [{
+            "Name": "Focus",
+            "Image": "/P5XWiki/arcana/qishi-new-teshu-zhuanzhu.png"
+          }],
+          "Artifact": [{
+            "Name": "Greed",
+            "Image": "/P5XWiki/arcana/qishi-new-tz-shehua.png"
+          }],
+          "Main":{
+            "Moon": "DMG Bonus%",
+            "Star": "CD%",
+            "Dawn": "ATK%"
+          },
+          "Sub": ["CD%","PEN%","DMG Bonus","ATK%","CR%"]
+      }
   },
   "rin": {
     "Name": "Yaoling Li",
@@ -173,7 +189,36 @@
         "Description": "When『Meng Po Soup』is consumed, there is a 60% chance that it will not be consumed. This effect has a 1 turn cooldown."
       }
     },
-    "Weapons": ["rin-4","rin-5"]
+    "Weapons": ["rin-4","rin-5"],
+    "Build": {
+      "Revelation": [
+        {
+          "Name": "Harmony",
+          "Image": "/P5XWiki/arcana/qishi-new-teshu-hexie.png"
+        },
+        {
+          "Name": "Departure",
+          "Image": "/P5XWiki/arcana/qishi-new-teshu-qicheng.png"
+        }
+      ],
+      "Artifact": [
+        {
+          "Name": "Power 4-Pc",
+          "Image": "/P5XWiki/arcana/qishi-new-tz-liliang.png"
+        },
+        {
+          "Name": "Enrichment 4-Pc",
+          "Image": "/P5XWiki/arcana/qishi-new-tz-fuzu.png"
+        }
+      ],
+      "Main":{
+        "Moon": "DMG Bonus%",
+        "Star": "EHR%",
+        "Dawn": "SPD"
+      },
+      "Sub": ["SPD","EHR%","SP Regen"]
+
+    }
   },
   "puppet": {
     "Name": "Muyi Sahara",
@@ -266,7 +311,24 @@
         "Description": "The maximum amount of『Sea Guard』stacks is increased to 8. When 8 stacks of『Sea Guard』are obtained, increase the damage of that ally by 20%."
       }
     },
-    "Weapons":["puppet-4","puppet-5"]
+    "Weapons":["puppet-4","puppet-5"],
+    "Build": {
+      "Revelation": [{
+        "Name": "Faith",
+        "Image": "/P5XWiki/arcana/qishi-new-teshu-xinnian.png"
+      }],
+      "Artifact": [{
+        "Name": "Peace 4-Pc",
+        "Image": "/P5XWiki/arcana/qishi-new-tz-heping.png"
+      }],
+      "Main":{
+        "Moon": "DEF%",
+        "Star": "CR or CD or DEF%",
+        "Dawn": "DEF%"
+      },
+      "Sub": ["CR","CD","ATK%/DEF%"]
+
+    }
   },
   "skull": {
     "Name": "Ryuji Sakamoto",
@@ -1847,7 +1909,24 @@
         "Description": "Enhance Dragon Dance and Ink Dragon's Roar to Craze Dragon Dance and Craze Ink Dragon's Roar respectively. These skills will now increase the counterattack  to inflict 2 additional hits, with each hit dealing 70% of the original damage while having an additional 30% DEF Pen."
       }
     },
-    "Weapons": ["fox-4","fox-5"]
+    "Weapons": ["fox-4","fox-5"],
+    "Build": {
+      "Revelation": [{
+        "Name": "Growth",
+        "Image": "/P5XWiki/arcana/qishi-new-teshu-chengzhang.png"
+      }],
+      "Artifact": [{
+        "Name": "Greed 4-Pc",
+        "Image": "/P5XWiki/arcana/qishi-new-tz-shehua.png"
+      }],
+      "Main":{
+        "Moon": "DEF% or DMG Bonux%",
+        "Star": "CR%",
+        "Dawn": "DEF%"
+      },
+      "Sub": ["CR%","PEN%","CD","DMG Bonus","DEF%"]
+
+    }
   },
   "vino":{
     "Name":"Chizuko Nagao",
@@ -1944,7 +2023,13 @@
       "Artifact": [{
         "Name": "Truth 4-Pc",
         "Image": "/P5XWiki/arcana/qishi-new-tz-zhendi.png"
-      }]
+      }],
+      "Main":{
+        "Moon": "ATK%",
+        "Star": "EHR%",
+        "Dawn": "SPD"
+      },
+      "Sub": ["EHR%","SPD","ATK%"]
     }
   },
   "queen":{
@@ -2033,7 +2118,24 @@
         "Description": "When entering『Iron Will』state, gain an extra turn. The duration of the『Iron Will』state is increased to 3 turns."
       }
     },
-    "Weapons":["queen-4","queen-5"]
+    "Weapons":["queen-4","queen-5"],
+    "Build": {
+      "Revelation": [{
+        "Name": "Awareness",
+        "Image": "/P5XWiki/arcana/qishi-new-teshu-juezhi.png"
+      }],
+      "Artifact": [{
+        "Name": "Truth 4-Pc",
+        "Image": "/P5XWiki/arcana/qishi-new-tz-zhendi.png"
+      }],
+      "Main":{
+        "Moon": "DMG Bonus%",
+        "Star": "CR%",
+        "Dawn": "ATK%"
+      },
+      "Sub": ["CR%","PEN%","DMG Bonus","ATK%"]
+
+    }
   },
   "phoebe":{
       "Name":"Yumi Shiina",

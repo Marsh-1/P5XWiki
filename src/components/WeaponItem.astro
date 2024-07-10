@@ -32,7 +32,6 @@ const { name, rarity, passive, description, scalings, path } = Astro.props;
 <style>
     li {
         display: grid;
-        grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr;
         align-items: center;
         gap: 4rem;
@@ -48,8 +47,6 @@ const { name, rarity, passive, description, scalings, path } = Astro.props;
     }
 
     li .WeaponImageContainer img{
-        aspect-ratio: auto;
-        max-width: 300px;
         max-height: 300px;
     }
 

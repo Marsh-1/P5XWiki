@@ -8,7 +8,13 @@ interface Props {
         Artifact: {
           "Name": string
           "Image": string
-        }[]
+        }[],
+        Main: {
+            Moon: string
+            Star: string
+            Dawn: string
+        },
+        Sub: string[]
     }
 }
 
@@ -19,35 +25,57 @@ const {build} = Astro.props;
     <h1>Recommended Build:</h1>
     <div class="RecommendedMain">
         <div>
-            <div class="ArcanaCard">
-                <img src={build["Revelation"][0]["Image"]}></img>
-                <img src={build["Artifact"][0]["Image"]}></img>
-            </div>
-            <p>{build["Revelation"][0]["Name"]} & {build["Artifact"][0]["Name"]}</p>
+            {build["Revelation"].map((curr,index)=>{
+                return <div>
+                    <div class="ArcanaCard">
+                        <img src={curr["Image"]}></img>
+                        <img src={build["Artifact"][index]["Image"]}></img>
+                    </div>
+                    <p class="name">{curr["Name"]} & {build["Artifact"][index]["Name"]}</p>
+                </div>
+            })}
         </div>
         <div>
-            <p>Moon:</p>
-            <p>Star:</p>
-            <p>Dawn:</p>
+        <h2>Main Stat</h2>
+            <p>Moon: {build["Main"]["Moon"]}</p>
+            <p>Star: {build["Main"]["Star"]}</p>
+            <p>Dawn: {build["Main"]["Dawn"]}</p>
+            <h2>Substat Priority</h2>
+            <p>{build["Sub"].map((stat,index) => {
+                            if(index == build["Sub"].length-1){
+                                return stat
+                            }
+                            return stat + " -> "
+                        }
+                    )       
+                }
+            </p>
         </div>
         
     </div>
 </div>
 
 <style>
-    .RecommendedMain{
+    .RecommendedMain {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: 1fr;
         grid-column-gap: 2rem;
         grid-row-gap: 0px;
     }
+    .RecommendedMain h2 {
+        margin: 0;
+    }
     .RecommendedMain .ArcanaCard{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    .RecommendedMain .name{
         text-align: center;
     }
     .RecommendedMain .ArcanaCard img{
-        max-width: 50%;
+        max-width: 33%;
     }
 </style>
