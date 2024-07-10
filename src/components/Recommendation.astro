@@ -1,0 +1,53 @@
+---
+interface Props {
+    build: {
+        Revelation: {
+          "Name": string
+          "Image": string
+        }[]
+        Artifact: {
+          "Name": string
+          "Image": string
+        }[]
+    }
+}
+
+const {build} = Astro.props;
+---
+
+<div>
+    <h1>Recommended Build:</h1>
+    <div class="RecommendedMain">
+        <div>
+            <div class="ArcanaCard">
+                <img src={build["Revelation"][0]["Image"]}></img>
+                <img src={build["Artifact"][0]["Image"]}></img>
+            </div>
+            <p>{build["Revelation"][0]["Name"]} & {build["Artifact"][0]["Name"]}</p>
+        </div>
+        <div>
+            <p>Moon:</p>
+            <p>Star:</p>
+            <p>Dawn:</p>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+    .RecommendedMain{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 0px;
+    }
+    .RecommendedMain .ArcanaCard{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .RecommendedMain .ArcanaCard img{
+        max-width: 50%;
+    }
+</style>

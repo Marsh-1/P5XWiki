@@ -1935,7 +1935,17 @@
         "Description": "When allies attack enemies with『Radiation』, the following effects occur based on the number of elemental ailments on the target. If there are 1 or more ailments, Vino's ATK is increased by 10%. If there are 2 or more ailments, Vino's Nuclear Damage Bonus is increased by 10%. If there are three or more ailments, Vino's PEN is increased by 8%."
       }
     },
-    "Weapons":["vino-4","vino-5"]
+    "Weapons":["vino-4","vino-5"],
+    "Build": {
+      "Revelation": [{
+        "Name": "Harmony",
+        "Image": "/P5XWiki/arcana/qishi-new-teshu-hexie.png"
+      }],
+      "Artifact": [{
+        "Name": "Truth 4-Pc",
+        "Image": "/P5XWiki/arcana/qishi-new-tz-zhendi.png"
+      }]
+    }
   },
   "queen":{
     "Name":"Makoto Nijima",

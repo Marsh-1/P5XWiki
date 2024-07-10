@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Characters from '../../data/Characters.json';
 import Weapons from '../../data/Weapons.json';
 import WeaponItem from '../../components/WeaponItem.astro';
+import Recommendation from '../../components/Recommendation.astro';
 
 export function getStaticPaths() {
   return [
@@ -164,6 +165,7 @@ const info = Characters[character];
         })
       }
     </ul>
+    {info["Build"] && <Recommendation build={info["Build"]}/>}
   </main>
 </Layout>
 
