@@ -11,7 +11,7 @@
           "Icon":"ICE_AOE",
           "Name": "Winter's Blossom",
           "Cost": 20,
-          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;\">%s%</span> of Mont's ATK to all enemy with a %s% base chance to inflict freeze",
+          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Mont's ATK to all enemy with a %s% base chance to inflict freeze",
           "Formula": ["89.2*(0.6+0.04*skillLv)", "30*(0.6+0.04*skillLv)"]
         },
         "2": {
@@ -19,7 +19,7 @@
           "Icon": "ICE_ST",
           "Name": "Frostbite Rend",
           "Cost": 20,
-          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;\">%s%</span> of Mont's ATK to an enemy and gain 4 stacks of『Ice Crystal』.",
+          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Mont's ATK to an enemy and gain 4 stacks of『Ice Crystal』.",
           "Formula": ["164.3*(0.6+0.04*skillLv)"]
         },
         "3": {
@@ -27,14 +27,14 @@
           "Icon":"ICE_ST",
           "Name": "Blizzard Blade",
           "Cost": 24,
-          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;\">%s%</span> of Mont's ATK to an enemy. If Mont has 10 stacks of『Ice Crystal』, deal additional damage dependent on the enemy's % of missing HP, up to a maximum of <span style=\"color:#00a2ef;\">%s%</span> additional damage at 1HP.",
+          "Description": "Deals Ice DMG equals to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Mont's ATK to an enemy. If Mont has 10 stacks of『Ice Crystal』, deal additional damage dependent on the enemy's % of missing HP, up to a maximum of <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> additional damage at 1HP.",
           "Formula": ["184.1*(0.6+0.04*skillLv)", "30*(0.6+0.04*skillLv)"]
         },
         "4": {
           "Type": 1,
           "Icon":"ICE_ST",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deal Ice DMG equals to <span style=\"color:#00a2ef;\">%s%</span> of Mont's ATK to an enemy. Deal additional damage dependent on the enemy's % of missing HP, up to a maximum of 30.0% additional damage at 20% remaining HP. ONE MORE: Deals Ice DMG to an enemy.",
+          "Description": "HIGHLIGHT: Deal Ice DMG equals to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Mont's ATK to an enemy. Deal additional damage dependent on the enemy's % of missing HP, up to a maximum of 30.0% additional damage at 20% remaining HP. ONE MORE: Deals Ice DMG to an enemy.",
           "Formula": ["300*(0.6+skillLv*0.04)"]
         },
         "5": {
@@ -135,11 +135,11 @@
         "Formula": ["70*(0.6+0.04*skillLv)", "25+skillLv*2.5"]
       },
       "4": {
-        "Type": 2,
+        "Type": 1,
         "Icon":"CURSE_AOE",
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: deal <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to all enemies and increase the next damage taken by all enemies by <span style=\"color:#ff0036;font-weight:bold;\">%s%</span>. There is a 30% base chance to inflict [Forget] on all enemies for 2 turns. ONE MORE: Deals Curse DMG to 1 opponent.",
-        "Formula": ["150f*(0.6f+skillLv*0.04f)", "50f*(0.6f+skillLv*0.04f)"]
+        "Description": "HIGHLIGHT: Deal <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to all enemies and increase the next damage taken by all enemies by <span style=\"color:#ff0036;font-weight:bold;\">%s%</span>. There is a 30% base chance to inflict [Forget] on all enemies for 2 turns. ONE MORE: Deals Curse DMG to 1 opponent.",
+        "Formula": ["150*(0.6+skillLv*0.04)", "50*(0.6+skillLv*0.04)"]
       },
       "5": {
         "Type": 2,
@@ -1915,7 +1915,7 @@
         "Icon":"ELEC_ST",
         "Name": "Crackle Surprise Box",
         "Cost": 20,
-        "Description": "Deals <span style=\"color:#fafd35;\">%s%</span> Attack Power damage to 1 enemy with the Electrocution attribute. If the enemy is not in the Electrocuted state, there is a <span style=\"color:#fafd35;\">%s%</span> base chance that it will fall into the Electrocuted state, and the effect lasts for 2 turns. If the enemy is already in the Electrocuted state, the damage is increased by 30%.",
+        "Description": "Deals <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> Attack Power damage to 1 enemy with the Electrocution attribute. If the enemy is not in the Electrocuted state, there is a <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> base chance that it will fall into the Electrocuted state, and the effect lasts for 2 turns. If the enemy is already in the Electrocuted state, the damage is increased by 30%.",
         "Formula": ["190*(0.6+0.04*skillLv)","70*(0.6+0.04*skillLv)"]
       },
       "2": {
@@ -1923,7 +1923,7 @@
         "Icon":"ELEC_AOE",
         "Name": "Exploding Bricks",
         "Cost": 20,
-        "Description": "Deals <span style=\"color:#fafd35;\">%s%</span> Attack Power Electricity Attribute damage to all enemies, and increases the damage dealt to the skill's primary target by 25%.",
+        "Description": "Deals <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> Attack Power Electricity Attribute damage to all enemies, and increases the damage dealt to the skill's primary target by 25%.",
         "Formula": ["61.1*(0.6+skillLv*0.04)"]
       },
       "3": {
@@ -1931,14 +1931,14 @@
         "Icon":"BUFF_ST",
         "Name": "Ultra Rare Reward",
         "Cost": 25,
-        "Description": "Increase your attack power by <span style=\"color:#fafd35;\">%s%</span>. Choose a companion to be YUI's 'Playmate'. When YUI releases the Personality Mask skill on an enemy, YUI will immediately pursue them, causing YUI's next 2 pursuits to deal <span style=\"color:#fafd35;\">%s%</span> of their Attack Power as Electric Shock Attribute Damage, and the effect lasts for 2 rounds.",
+        "Description": "Increase your attack power by <span style=\"color:#fafd35;font-weight:bold;\">%s%</span>. Choose a companion to be YUI's 'Playmate'. When YUI releases the Personality Mask skill on an enemy, YUI will immediately pursue them, causing YUI's next 2 pursuits to deal <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> of their Attack Power as Electric Shock Attribute Damage, and the effect lasts for 2 rounds.",
         "Formula": ["40*(0.6+0.04*skillLv)","136.2*(0.6+0.04*skillLv)"]
       },
       "4": {
-        "Type": 2,
+        "Type": 1,
         "Icon":"BUFF_AOE",
         "Name": "Combat Skills",
-        "Description": "Highlight: Increases YUI's attack power by <span style=\"color:#fafd35;\">%s%</span>, and the damage boost caused by Pursuit is equal to <span style=\"color:#fafd35;\">%s%</span> of YUI's attack power, and the effect lasts for 2 turns. It also makes any companion that releases a skill that deals damage trigger YUI's Pursuit, the effect lasts for 1 turn. One More: Deals electric shock attribute damage to 1 enemy.",
+        "Description": "Highlight: Increases YUI's attack power by <span style=\"color:#fafd35;font-weight:bold;\">%s%</span>, and the damage boost caused by Pursuit is equal to <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> of YUI's attack power, and the effect lasts for 2 turns. It also makes any companion that releases a skill that deals damage trigger YUI's Pursuit, the effect lasts for 1 turn. One More: Deals electric shock attribute damage to 1 enemy.",
         "Formula": ["35*(0.6+0.04*skillLv)","25*(0.6+0.04*skillLv)"]
       },
       "5": {
