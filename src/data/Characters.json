@@ -655,6 +655,7 @@
       "1": {
         "Type": 1,
         "Name": "Explosive Flame",
+        "Icon": "FIRE_ST",
         "Cost": 18,
         "Description": "Deal <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> of Key's maximum health as fire damage to an enemy, and have a 100% chance of putting the enemy into a Burning state. If the target enemy is in a Burning state, Kurotani Kiyoshi will gain an additional layer of Sacrifice state and change the skill effect: Deal half damage to all enemies, and have a 100% chance of putting enemies into a Burning state.",
         "Formula": ["(0.6+0.04*skillLv)*26.8"]
@@ -662,6 +663,7 @@
       "2": {
         "Type": 1,
         "Name": "Candlelight",
+        "Icon":"FIRE_AOE",
         "Cost": 22,
         "Description": "Deal fire damage equal to <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> of Key's maximum health to all enemies; if an enemy is in the state, Kurotani Kiyoshi will gain 2 layers of Sacrificer and make the enemy in the Burning state fall into the Holy Fire state. 'Holy Fire': At the beginning of the round, take fire damage equal to Kurotani Kiyoshi's <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> of the maximum health, which lasts for 2 rounds.",
         "Formula": ["(0.6+0.04*skillLv)*20.7","(0.6+0.04*skillLv)*18.1"]
@@ -669,6 +671,7 @@
       "3": {
         "Type": 1,
         "Name": "Flame Purification",
+        "Icon":"FIRE_ST",
         "Cost": 22,
         "Description": "Deal <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> of Key's maximum health as fire damage to one enemy. If the enemy is in the Holy Fire state, the skill's damage increases by 30%.",
         "Formula": ["(0.6+0.04*skillLv)*60"]
@@ -676,7 +679,8 @@
       "4": {
         "Type": 1,
         "Name": "Combat Skills",
-        "Description": "Hightlight: Increases the fire damage taken by all enemies by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span>, and deals fire damage equal to <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> of the maximum health. There is a 100% chance to put all enemies in the Burning state for 2 turns. One More: Deals flame attribute damage to 1 enemy.",
+        "Icon":"FIRE_AOE",
+        "Description": "Highlight: Increases the fire damage taken by all enemies by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span>, and deals fire damage equal to <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> of Key's Max HP. There is a 100% chance to put all enemies in the Burning state for 2 turns. One More: Deals flame attribute damage to 1 enemy.",
         "Formula":["(0.6+0.04*skillLv)*30.8","(0.6+0.04*skillLv)*42.5"]
       },
       "5": {
@@ -1799,14 +1803,14 @@
     "Codename": "Joker",
     "Role": "AOE",
     "Element": "Curse",
-    "Released": 1713412800,
+    "Released": 1713412801,
     "Talents": {
       "1": {
         "Type": 1,
         "Icon":"CURSE_AOE",
         "Name": "Fearless Suppression",
         "Cost": 19,
-        "Description": "Deals <span style=\"color:#ff0034;\">%s%</span> of Joker's ATK as Curse DMG to all enemies, with a 20% chance of applying a Curse DoT that lasts for 2 turns and deals damage equal to 1% of the enemy's Max HP. gains 1 stack of『Fury』.",
+        "Description": "Deals <span style=\"color:#ff0034;font-weight:bold;\">%s%</span> of Joker's ATK as Curse DMG to all enemies, with a 20% chance of applying a Curse DoT that lasts for 2 turns and deals damage equal to 1% of the enemy's Max HP. gains 1 stack of『Fury』.",
         "Formula": ["85*(0.6+0.04*skillLv)"]
       },
       "2": {
@@ -1814,7 +1818,7 @@
         "Icon": "CURSE_ST",
         "Name": "Ominous Omen",
         "Cost": 19,
-        "Description": "Deals <span style=\"color:#ff0034;\">%s%</span> of Joker's ATK as Curse DMG to one enemy. If there is only 1 enemy on the field, Joker will gain 2 stacks of『Fury』",
+        "Description": "Deals <span style=\"color:#ff0034;font-weight:bold;\">%s%</span> of Joker's ATK as Curse DMG to one enemy. If there is only 1 enemy on the field, Joker will gain 2 stacks of『Fury』",
         "Formula": ["100.0*(0.6+skillLv*0.04)"]
       },
       "3": {
@@ -1822,14 +1826,14 @@
         "Icon":"CURSE_AOE",
         "Name": "Doom Chase",
         "Cost": 22,
-        "Description": "Deals <span style=\"color:#ff0034;\">%s%</span> of Joker's ATK as curse DMG to all enemies. During an extra turn, increase DMG by 25%. If the targets has any debuffs, DMG is increased by an additional 25%.",
+        "Description": "Deals <span style=\"color:#ff0034;font-weight:bold;\">%s%</span> of Joker's ATK as curse DMG to all enemies. During an extra turn, increase DMG by 25%. If the targets has any debuffs, DMG is increased by an additional 25%.",
         "Formula": ["76*(0.6+skillLv*0.04)"]
       },
       "4": {
         "Type": 1,
         "Icon":"CURSE_AOE",
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Deals <span style=\"color:#ff0034;\">%s%</span> of Joker's ATK as Curse DMG to all enemies and gain 1 Fury stack. ONE MORE: Deals Curse DMG to 1 opponent",
+        "Description": "HIGHLIGHT: Deals <span style=\"color:#ff0034;font-weight:bold;\">%s%</span> of Joker's ATK as Curse DMG to all enemies and gain 1 Fury stack. ONE MORE: Deals Curse DMG to 1 opponent",
         "Formula": ["(0.6+skillLv*0.04)*210"]
       },
       "5": {
@@ -2015,7 +2019,7 @@
           "Icon":"BLESS_ST",
           "Name": "Lily of the Valley",
           "Cost": 20,
-          "Description": "Deals <span style=\"color:#ffff9f;\">%s%</span> Max HP Blessing Attribute damage to 1 enemy, causing all companions to gain 1 tier of the Blessing effect; while gaining 1 tier of『Manna』.",
+          "Description": "Deals <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Max HP Blessing Attribute damage to 1 enemy, causing all companions to gain 1 tier of the Blessing effect; while gaining 1 tier of『Manna』.",
           "Formula": ["(0.6+0.04*skillLv)*58.3"]
         },
         "2":{
@@ -2023,7 +2027,7 @@
           "Icon":"HEAL_AOE",
           "Name": "Healing Blessing",
           "Cost": 25,
-          "Description": "Immediately restores Miyashita Minami's <span style=\"color:#ffff9f;\">%s%</span Maximum Life + <span style=\"color:#ffff9f;\">%s</span> and dispels 2 Negative Condition for the designated target and the other Monster with the lowest current Life, as well as granting the healed allies a 1 tier Blessing effect and restores life points equal to Minami Miyashita's <span style=\"color:#ffff9f;\">%s%</span> Max HP + <span style=\"color:#ffff9f;\">%s</span> at the start of his turn for 2 turns. Gain 1 layer of『Nectar』.",
+          "Description": "Immediately restores Miyashita Minami's <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span Maximum Life + <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> and dispels 2 Negative Condition for the designated target and the other Monster with the lowest current Life, as well as granting the healed allies a 1 tier Blessing effect and restores life points equal to Minami Miyashita's <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Max HP + <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> at the start of his turn for 2 turns. Gain 1 layer of『Nectar』.",
           "Formula": ["(0.6+0.04*skillLv)*17.855","(0.6+0.04*skillLv)*.17855*3*(300*skillLv+27)","(0.6+0.04*skillLv)*14.28","(0.6+0.04*skillLv)*.1428*3*(300*skillLv+27)"]
         },
         "3":{
@@ -2031,14 +2035,14 @@
           "Icon":"HEAL_AOE",
           "Name":"The Gift of Spring",
           "Cost": 32,
-          "Description":"Consume all Nectar tiers to instantly restore the life of a designated party member equal to Minami Miyashita's <span style=\"color:#ffff9f;\">%s%</span> max life + <span style=\"color:#ffff9f;\">%s</span> and with the same healing effect. Heals the ally with the lowest current lifesteal 2 times, and heals an additional 1 time for every 1 tier of Manna effect consumed. Also, for every 1 layer of Nectar effect consumed, other allies except Minami gains 1 layer equal to Minami's 7.5% Maximum Life (up to <span style=\"color:#ffff9f;\">%s</span> points) Max HP for 2 turns.",
+          "Description":"Consume all Nectar tiers to instantly restore the life of a designated party member equal to Minami Miyashita's <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> max life + <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> and with the same healing effect. Heals the ally with the lowest current lifesteal 2 times, and heals an additional 1 time for every 1 tier of Manna effect consumed. Also, for every 1 layer of Nectar effect consumed, other allies except Minami gains 1 layer equal to Minami's 7.5% Maximum Life (up to <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> points) Max HP for 2 turns.",
           "Formula":["(0.6+0.04*skillLv)*16.17","(0.6+0.04*skillLv)*.1617*3*(300*skillLv+27)",".075*skillLv*1500"]
         },
         "4":{
           "Type":1,
           "Icon":"HEAL_AOE",
           "Name":"Combat Skills",
-          "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's <span style=\"color:#ffff9f;\">%s%</span> Max HP + <span> style=\"color:#ffff9f;\">%s</span> to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Maximum HP boost equal 16.5% of Minami Miyashita's Maximum HP (up to <span style=\"color:#ffff9f;\">%s</span> points) for 2 turns. When any ally takes action, immediately regenerate HP equal to <span style=\"color:#ffff9f;\">%s%</span> Minami Miyashita's Max HP + <span style=\"color:#ffff9f;\">%s</span> for 2 turns. The main target will also get additional regeneration stack for 1 turn. ONE MORE: Deals blessed attribute damage to 1 enemy.",
+          "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Max HP + <span> style=\"color:#ffff9f;font-weight:bold;\">%s</span> to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Maximum HP boost equal 16.5% of Minami Miyashita's Maximum HP (up to <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> points) for 2 turns. When any ally takes action, immediately regenerate HP equal to <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Minami Miyashita's Max HP + <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> for 2 turns. The main target will also get additional regeneration stack for 1 turn. ONE MORE: Deals blessed attribute damage to 1 enemy.",
           "Formula":["(0.6+0.04*skillLv)*18","(0.6+0.04*skillLv)*.18*3*(300*skillLv+27)",".165*skillLv*1500","(0.6+0.04*skillLv)*6.67","(0.6+0.04*skillLv)*.0667*3*(skillLv*300+27)"]
         },
         "5":{
@@ -2120,7 +2124,7 @@
         "Icon":"ICE_AOE",
         "Name": "Frost Break",
         "Cost": 20,
-        "Description": "Deals Ice Damage equals to <span style=\"color:#00a2ef;\">%s%</span> of Fox's Defense to all enemies with a 100% base chance to inflict Freeze.",
+        "Description": "Deals Ice Damage equals to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Fox's Defense to all enemies with a 100% base chance to inflict Freeze.",
         "Formula": ["142.2*(0.6+0.04*skillLv)"]
       },
       "2": {
@@ -2128,7 +2132,7 @@
         "Icon":"ICE_AOE",
         "Name": "Frostlinger Slash",
         "Cost": 20,
-        "Description": "Deals Ice Damage equal to <span style=\"color:#00a2ef;\">%s%</span> of Fox's DEF to a random enemy 5 times, prioritising enemies that have not been hit yet. If Fox has a shield , increase the skill damage by an additional 30%. Consecutive hits on the same target will have a 60% damage reduction, down to a minimum of 20% damage.",
+        "Description": "Deals Ice Damage equal to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Fox's DEF to a random enemy 5 times, prioritising enemies that have not been hit yet. If Fox has a shield , increase the skill damage by an additional 30%. Consecutive hits on the same target will have a 60% damage reduction, down to a minimum of 20% damage.",
         "Formula": ["86.7*(0.6+0.04*skillLv)"]
       },
       "3": {
@@ -2136,14 +2140,14 @@
         "Icon":"BUFF_ST",
         "Name": "Ginka-Zanshin",
         "Cost": 24,
-        "Description": "Enhance the next attack Dragon Dance into Ink Dragon's Roar. This increase the counterattack probability to a 100% fixed chance, increases the Ice Damage by an additional 58.6%, and changes the attack to AoE. If this does not activate after 1 turn , activate it. In addition, gain a shield equal to <span style=\"color:#00a2ef;\">%s%</span> + 555 of Fox's DEF for 2 turns. Fox's weakness will become neutral and taunt all enemies for 1 turn.",
+        "Description": "Enhance the next attack Dragon Dance into Ink Dragon's Roar. This increase the counterattack probability to a 100% fixed chance, increases the Ice Damage by an additional 58.6%, and changes the attack to AoE. If this does not activate after 1 turn , activate it. In addition, gain a shield equal to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> + 555 of Fox's DEF for 2 turns. Fox's weakness will become neutral and taunt all enemies for 1 turn.",
         "Formula": ["19.5*(0.6+0.04*skillLv)"]
       },
       "4": {
         "Type": 1,
         "Icon":"ICE_AOE",
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Deals Ice Damage equal to <span style=\"color:#00a2ef;\">%s%</span> of Fox's DEF to all enemies. Increase the chance of triggering [Dragon Dance] by <span style=\"color:#00a2ef;\">%s%</span> for 3 turns. ONE MORE: Deals Ice Damage to an enemy.",
+        "Description": "HIGHLIGHT: Deals Ice Damage equal to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Fox's DEF to all enemies. Increase the chance of triggering [Dragon Dance] by <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> for 3 turns. ONE MORE: Deals Ice Damage to an enemy.",
         "Formula": ["178.1*(0.6+0.04*skillLv)", "35*(0.6+0.04*skillLv)"]
       },
       "5": {
@@ -2329,7 +2333,7 @@
         "Icon": "NUKE_AOE",
         "Name": "Pulse Combo",
         "Cost": 20,
-        "Description": "Deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to all enemies. If the main target is affected by an elemental ailment, the skill deals an additional %s% Nuke damage.",
+        "Description": "Deal <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to all enemies. If the main target is affected by an elemental ailment, the skill deals an additional %s% Nuke damage.",
         "Formula": ["(0.6+0.04*skillLv)*54.4","(0.6+0.04*skillLv)*19.0"]
       },
       "2":{
@@ -2345,14 +2349,14 @@
         "Icon": "NUKE_ST",
         "Name": "Nuclear Burst/Fusion Overload",
         "Cost": 21,
-        "Description": "Nuclear Burst: Deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. If the target is affected by an elemental ailment, deals an additional <span style=\"color:#00fcff;\">%s%</span> Nuke damage. Queen gains 2『Tenacity』. Fusion Overload: Deals <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. For each elemental ailment the target has, deal an additional instance of <span style=\"color:#00fcff;\">%s%</span> Nuke damage. (Has a cap)",
+        "Description": "Nuclear Burst: Deal <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to one enemy. If the target is affected by an elemental ailment, deals an additional <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage. Queen gains 2『Tenacity』. Fusion Overload: Deals <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to one enemy. For each elemental ailment the target has, deal an additional instance of <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage. (Has a cap)",
         "Formula": ["(0.6+0.04*skillLv)*210.6","(0.6+0.04*skillLv)*39","(0.6+0.04*skillLv)*243.6","(0.6+0.04*skillLv)*34.2"]
       },
       "4":{
         "Type": 1,
         "Icon":"NUKE_ST",
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal <span style=\"color:#00fcff;\">%s%</span> Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0% ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
+        "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0% ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
         "Formula": ["(0.6+0.04*skillLv)*390.6"]
       },
       "5":{
@@ -2434,7 +2438,7 @@
         "Icon":"BUFF_AOE",
         "Name": "Alluring Drunkenness",
         "Cost": 8,
-        "Description": "Increase the ATK of all allies equal to 8% of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;\">%s</span> ATK). This effect lasts for 3 turns. When using this skill, if Shiina Yuumi has Alcohol, she will consume 1 bottle to enhance the skill's effect (consuming high quality wine first). Consuming 『Premium Deluxe』/『Premium』/『Mixed Blend』increases the skill's effect by 120%/100%/50% respectively.",
+        "Description": "Increase the ATK of all allies equal to 8% of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> ATK). This effect lasts for 3 turns. When using this skill, if Shiina Yuumi has Alcohol, she will consume 1 bottle to enhance the skill's effect (consuming high quality wine first). Consuming 『Premium Deluxe』/『Premium』/『Mixed Blend』increases the skill's effect by 120%/100%/50% respectively.",
         "Formula": ["500"]
       },
       "2":{
@@ -2442,7 +2446,7 @@
         "Icon":"BUFF_AOE",
         "Name": "Colorful Supplement",
         "Cost": 4,
-        "Description": "Increases the damage of one ally per 250 points of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;\">%s</span> ATK) and their Max HP by %s%. This effect lasts for 1 turn. When using this skill, Shiina Yumi will transform 1 bottle of 『Mixed Blend』/『Premium』into『Premium Deluxe』",
+        "Description": "Increases the damage of one ally per 250 points of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> ATK) and their Max HP by %s%. This effect lasts for 1 turn. When using this skill, Shiina Yumi will transform 1 bottle of 『Mixed Blend』/『Premium』into『Premium Deluxe』",
         "Formula": ["500","8.3"]
       },
       "3":{
@@ -2450,7 +2454,7 @@
         "Icon":"BUFF_AOE",
         "Name": "Unparalleled Drink",
         "Cost": 8,
-        "Description": "Consumes all Cocktails to custom-mix the chosen ally's attribute. Each bottle of 『Premium Deluxe』/『Premium』/『Mixed Blend』triggers an effect of 150%/100%/50% boost as follows: increases the attribute damage of all allies (each 250 points of Shiina Yuumi's ATK provides a 1% damage bonus, up to <span style=\"color:#3c6eff;\">%s</span> ATK), and increases the chosen ally's attribute damage bonus by an additional 20%. This effect lasts for 2 turns. This ability cannot be used when there are no cocktails",
+        "Description": "Consumes all Cocktails to custom-mix the chosen ally's attribute. Each bottle of 『Premium Deluxe』/『Premium』/『Mixed Blend』triggers an effect of 150%/100%/50% boost as follows: increases the attribute damage of all allies (each 250 points of Shiina Yuumi's ATK provides a 1% damage bonus, up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> ATK), and increases the chosen ally's attribute damage bonus by an additional 20%. This effect lasts for 2 turns. This ability cannot be used when there are no cocktails",
         "Formula": ["500"]
       },
       "4":{
