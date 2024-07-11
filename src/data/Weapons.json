@@ -368,7 +368,7 @@
         "Scalings":[["30","10","25"]]
     },
     "phoebe-4":{
-        "Name":"The Starry Night",
+        "Name":"The Starry Night Diviner",
         "Rarity": 4,
         "Description":"Attack Power is increased by %s%. When releasing a skill, the primary target gains a damage boost of %s%. If the skill consumes a Cocktail, the damage dealt by the primary target is boosted by an additional %s%. This effect lasts for 2 turns.",
         "Passive":"The Kiss of Confusion",
@@ -378,7 +378,7 @@
         "Name":"Moonlit Feather",
         "Rarity": 5,
         "Description":"Increase ATK by %s%. For each cocktail consumed by Yuumi Shiina, one of the following three effects will occur: All allies will randomly gain an increase in ATK (%s%)/ Damage Dealt (%s%) /Crit Rate (%s%) for 2 turns. If the cocktail consume is a 『Premium Deluxe』/『Premium』/『Mixed Blend』 this effect is increased by 120%/100%/50% respectively. For every 2 cups of Cocktail made, there is a %s% chance to reduce the preparation time by 1 action.",
-        "Passive":"",
+        "Passive":"Singing and Dancing to one's heart's content",
         "Scalings":[["30","6","5","4","55"]]
     }
 }

@@ -2439,15 +2439,15 @@
         "Name": "Alluring Drunkenness",
         "Cost": 8,
         "Description": "Increase the ATK of all allies equal to 8% of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> ATK). This effect lasts for 3 turns. When using this skill, if Shiina Yuumi has Alcohol, she will consume 1 bottle to enhance the skill's effect (consuming high quality wine first). Consuming 『Premium Deluxe』/『Premium』/『Mixed Blend』increases the skill's effect by 120%/100%/50% respectively.",
-        "Formula": ["500"]
+        "Formula": ["4700"]
       },
       "2":{
         "Type": 3,
-        "Icon":"BUFF_AOE",
+        "Icon":"BUFF_ST",
         "Name": "Colorful Supplement",
         "Cost": 4,
-        "Description": "Increases the damage of one ally per 250 points of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> ATK) and their Max HP by %s%. This effect lasts for 1 turn. When using this skill, Shiina Yumi will transform 1 bottle of 『Mixed Blend』/『Premium』into『Premium Deluxe』",
-        "Formula": ["500","8.3"]
+        "Description": "Increases the damage of one ally per 250 points of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> ATK) and their Max HP by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. This effect lasts for 1 turn. When using this skill, Shiina Yumi will transform 1 bottle of 『Mixed Blend』/『Premium』into『Premium Deluxe』",
+        "Formula": ["4700","12.7"]
       },
       "3":{
         "Type": 3,
@@ -2455,7 +2455,7 @@
         "Name": "Unparalleled Drink",
         "Cost": 8,
         "Description": "Consumes all Cocktails to custom-mix the chosen ally's attribute. Each bottle of 『Premium Deluxe』/『Premium』/『Mixed Blend』triggers an effect of 150%/100%/50% boost as follows: increases the attribute damage of all allies (each 250 points of Shiina Yuumi's ATK provides a 1% damage bonus, up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> ATK), and increases the chosen ally's attribute damage bonus by an additional 20%. This effect lasts for 2 turns. This ability cannot be used when there are no cocktails",
-        "Formula": ["500"]
+        "Formula": ["4700"]
       },
       "4":{
         "Type": 2,
@@ -2466,7 +2466,7 @@
       "5":{
         "Type": 2,
         "Name": "Stir",
-        "Description": "For each Phantom Thief included in the team, the attribute damage corresponding to all Phantom Thieves increases by 6%."
+        "Description": "For each Phantom Thief included in the team, the attribute damage corresponding to all Phantom Thieves increases by 4%."
       },
       "6":{
         "Type": 2,
