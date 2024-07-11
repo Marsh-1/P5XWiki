@@ -778,14 +778,14 @@
         "Icon":"BUFF_ST",
         "Name": "Sub-zero Cure",
         "Cost": 24,
-        "Description": "Increases the maximum health of all companions by 15% of Soy's maximum health (up to <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> points of maximum health), and greatly increases the chance of being attacked. The effect lasts for 2 turns. Restores the health of all companions by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of Soy's maximum health. Cooldown: 1 turn.",
+        "Description": "Increases the maximum health of all companions by 15% of Soy's maximum health (up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> points of maximum health), and greatly increases the chance of being attacked. The effect lasts for 2 turns. Restores the health of all companions by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of Soy's maximum health. Cooldown: 1 turn.",
         "Formula": ["skillLv*1500","(0.6+0.04*skillLv)*16.9"]
       },
       "4": {
         "Type": 1,
         "Icon":"ICE_ST",
         "Name": "Combat Skills",
-        "Description": "Highlight: Increases the maximum health of all companions by 10.3% of Soy's's maximum health (up to <span style=\"color:#00a2ef;font-weight:bold;\">%s</span> points of maximum health). Restores the health of all companions by <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Soy's maximum health. At the same time, deals <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of the maximum health of 1 enemy in cold damage. One More: Causes frost damage to 1 enemy.",
+        "Description": "Highlight: Increases the maximum health of all companions by 10.3% of Soy's's maximum health (up to <span style=\"color:#00a2ef;font-weight:bold;\">%s</span> points of maximum health). Restores the health of all companions by <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Soy's Max HP. At the same time, deals <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> Max HP as Frozen damage to one enemy. One More: Causes frost damage to 1 enemy.",
         "Formula": ["skillLv*1500","(0.6+0.04*skillLv)*10.3","(0.6+0.04*skillLv)*77.2"]
       },
       "5": {
@@ -1502,10 +1502,10 @@
       },
       "2": {
         "Type": 1,
-        "Icon":"BUFF_ST",
+        "Icon":"HEAL_ST",
         "Name": "Life Support",
         "Cost": 20,
-        "Description": "Replaces 30% of 1 companion's current life value at 80% with a shield and adds an additional shield equal to the Shinzan Ridge Central <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> + <span style=\"color:#00fcff;font-weight:bold;\">%s</span> Attack Power, which lasts for 2 turns. It also gives it 1 layer of『Activation』.",
+        "Description": "Replaces 30% of 1 companion's current life value at 80% with a shield and adds an additional shield equal to the Shinzan Ridge Central <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> Attack Power, which lasts for 2 turns. It also gives it 1 layer of『Activation』.",
         "Formula": ["32.4*(0.6+0.04*skillLv)","(300*skillLv+27)*0.324*(0.6+0.04*skillLv)"]
       },
       "3": {
@@ -1513,13 +1513,13 @@
         "Icon":"BUFF_ST",
         "Name": "Energy Conversion",
         "Cost": 24,
-        "Description": "Increases the attack power of 1 companion by <span style=\"color:#00fcff;font-weight:bold;\">%s%</span>, the effect lasts for 2 turns. For the duration of the effect, for every 1 layer of 『Activation』on the target, it gains an Attack Power boost based on 20% of the Shinzan Ridge Central's Attack Power, and the Attack Power gained in this way is capped at <span style=\"color:#00fcff;font-weight:bold;\">%s</span>.",
+        "Description": "Increases the attack power of 1 companion by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, the effect lasts for 2 turns. For the duration of the effect, for every 1 layer of 『Activation』on the target, it gains an Attack Power boost based on 20% of the Shinzan Ridge Central's Attack Power, and the Attack Power gained in this way is capped at <span style=\"color:#3c6eff;font-weight:bold;\">%s</span>.",
         "Formula": ["20*(0.6+0.04*skillLv)","777*2*(0.6+0.04*skillLv)"]
       },
       "4": {
         "Type": 1,
         "Name": "Combat Skills",
-        "Description": "HIGHLIGHT: Causes 1 companion to gain a full tier of『Activation』, the effect lasts for 2 turns, and if the target's life value is below 60%, it restores it to 60%, with the restored life value capped at 200% of Kamiyama Ryo's attack power.It also boosts its attack power based on 15% of Kamiyama Ryo's attack power, capped at <span style=\"color:#00fcff;font-weight:bold;\">%s</span> points, and the effect lasts for 2 turns. ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
+        "Description": "HIGHLIGHT: Causes 1 companion to gain a full tier of『Activation』, the effect lasts for 2 turns, and if the target's life value is below 60%, it restores it to 60%, with the restored life value capped at 200% of Kamiyama Ryo's attack power.It also boosts its attack power based on 15% of Kamiyama Ryo's attack power, capped at <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> points, and the effect lasts for 2 turns. ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
         "Formula": ["600*(0.6+skillLv*0.04)"]
       },
       "5": {
@@ -1706,7 +1706,7 @@
         "Icon":"BUFF_AOE",
         "Name": "Party Frenzy",
         "Cost": 4,
-        "Description": "Based on 12% of Toyama's own Attack Power, boosts the Attack Power of all companions (up to <span style=\"color:#3c6eff;\">%s</span> points of Attack Power) and boosts all companions' Effect Hit Rate by <span style=\"color:#3c6eff;\">%s%</span>, the effect lasts for 1 turn. Gain 1 『Beat』.",
+        "Description": "Based on 12% of Toyama's own Attack Power, boosts the Attack Power of all companions (up to <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> points of Attack Power) and boosts all companions' Effect Hit Rate by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, the effect lasts for 1 turn. Gain 1 『Beat』.",
         "Formula": ["450*skillLv","(0.6+0.04*skillLv)*26.0"]
       },
       "2": {
@@ -1714,7 +1714,7 @@
         "Icon":"BUFF_AOE",
         "Name": "Gorgeous Swing",
         "Cost": 8,
-        "Description": "Restores <span style=\"color:#3c6eff;\">%s</span> energy value to all companions. Gain 3『Beats』.",
+        "Description": "Restores <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> energy value to all companions. Gain 3『Beats』.",
         "Formula": ["11+Math.ceil(skillLv+Math.max(0,skillLv-8)*0.3+Math.max(0,skillLv-10)*0.6)"]
       },
       "3": {
@@ -1722,7 +1722,7 @@
         "Icon":"BUFF_AOE",
         "Name": "Hot Variations",
         "Cost": 8,
-        "Description": "Causes all companions to inflict a damage boost <span style=\"color:#3c6eff;\">%s%</span> that lasts for 3 turns and provides an additional 1% damage boost for every 225 points of Yoshiyo Tomiyama's Attack Power (up to a maximum of <span style=\"color:#3c6eff;\">%s</span> points of Attack Power counted). When dealing damage to an enemy in the Elemental Anomaly state, the damage bonus effect is increased by an additional 50%. Gain 2『Beats』.",
+        "Description": "Causes all companions to inflict a damage boost <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> that lasts for 3 turns and provides an additional 1% damage boost for every 225 points of Yoshiyo Tomiyama's Attack Power (up to a maximum of <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> points of Attack Power counted). When dealing damage to an enemy in the Elemental Anomaly state, the damage bonus effect is increased by an additional 50%. Gain 2『Beats』.",
         "Formula": ["(0.6+0.04*skillLv)*10","450*skillLv"]
       },
       "4": {
@@ -2027,7 +2027,7 @@
           "Icon":"HEAL_AOE",
           "Name": "Healing Blessing",
           "Cost": 25,
-          "Description": "Immediately restores Miyashita Minami's <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span Maximum Life + <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> and dispels 2 Negative Condition for the designated target and the other Monster with the lowest current Life, as well as granting the healed allies a 1 tier Blessing effect and restores life points equal to Minami Miyashita's <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Max HP + <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> at the start of his turn for 2 turns. Gain 1 layer of『Nectar』.",
+          "Description": "Immediately restores Miyashita Minami's <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span Maximum Life + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> and dispels 2 Negative Condition for the designated target and the other Monster with the lowest current Life, as well as granting the healed allies a 1 tier Blessing effect and restores life points equal to Minami Miyashita's <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Max HP + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> at the start of his turn for 2 turns. Gain 1 layer of『Nectar』.",
           "Formula": ["(0.6+0.04*skillLv)*17.855","(0.6+0.04*skillLv)*.17855*3*(300*skillLv+27)","(0.6+0.04*skillLv)*14.28","(0.6+0.04*skillLv)*.1428*3*(300*skillLv+27)"]
         },
         "3":{
@@ -2035,14 +2035,14 @@
           "Icon":"HEAL_AOE",
           "Name":"The Gift of Spring",
           "Cost": 32,
-          "Description":"Consume all Nectar tiers to instantly restore the life of a designated party member equal to Minami Miyashita's <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> max life + <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> and with the same healing effect. Heals the ally with the lowest current lifesteal 2 times, and heals an additional 1 time for every 1 tier of Manna effect consumed. Also, for every 1 layer of Nectar effect consumed, other allies except Minami gains 1 layer equal to Minami's 7.5% Maximum Life (up to <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> points) Max HP for 2 turns.",
+          "Description":"Consume all Nectar tiers to instantly restore the life of a designated party member equal to Minami Miyashita's <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> max life + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> and with the same healing effect. Heals the ally with the lowest current lifesteal 2 times, and heals an additional 1 time for every 1 tier of Manna effect consumed. Also, for every 1 layer of Nectar effect consumed, other allies except Minami gains 1 layer equal to Minami's 7.5% Maximum Life (up to <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> points) Max HP for 2 turns.",
           "Formula":["(0.6+0.04*skillLv)*16.17","(0.6+0.04*skillLv)*.1617*3*(300*skillLv+27)",".075*skillLv*1500"]
         },
         "4":{
           "Type":1,
           "Icon":"HEAL_AOE",
           "Name":"Combat Skills",
-          "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Max HP + <span> style=\"color:#ffff9f;font-weight:bold;\">%s</span> to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Maximum HP boost equal 16.5% of Minami Miyashita's Maximum HP (up to <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> points) for 2 turns. When any ally takes action, immediately regenerate HP equal to <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Minami Miyashita's Max HP + <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> for 2 turns. The main target will also get additional regeneration stack for 1 turn. ONE MORE: Deals blessed attribute damage to 1 enemy.",
+          "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Max HP + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Maximum HP boost equal 16.5% of Minami Miyashita's Maximum HP (up to <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> points) for 2 turns. When any ally takes action, immediately regenerate HP equal to <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Minami Miyashita's Max HP + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> for 2 turns. The main target will also get additional regeneration stack for 1 turn. ONE MORE: Deals blessed attribute damage to 1 enemy.",
           "Formula":["(0.6+0.04*skillLv)*18","(0.6+0.04*skillLv)*.18*3*(300*skillLv+27)",".165*skillLv*1500","(0.6+0.04*skillLv)*6.67","(0.6+0.04*skillLv)*.0667*3*(skillLv*300+27)"]
         },
         "5":{
