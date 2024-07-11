@@ -2461,7 +2461,7 @@
         "Type": 2,
         "Icon":"PASSIVE",
         "Name": "Attribute Improvement",
-        "Description": "Increases the corresponding attribute values of all companions present based 20% of Phoebe's Attributes."
+        "Description": "Increases the corresponding attribute values of all companions present based on 20% of Phoebe's Attributes."
       },
       "5":{
         "Type": 2,
