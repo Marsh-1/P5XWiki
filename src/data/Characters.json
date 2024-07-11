@@ -2427,46 +2427,47 @@
     "Codename":"Phoebe",
     "Role":"Navi",
     "Element":"None",
+    "Released": 1720119802,
     "Talents":{
       "1":{
-        "Type": 2,
+        "Type": 3,
         "Icon":"BUFF_AOE",
         "Name": "Alluring Drunkenness",
         "Cost": 8,
-        "Description": "Increase the ATK of all allies equal to 5% of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;\">%s</span> ATK). This effect lasts for 3 turns. When using this skill, if Shiina Yuumi has Alcohol, she will consume 1 bottle to enhance the skill's effect (consuming high quality wine first). Consuming 『Premium Deluxe』/『Premium』/『Mixed Blend』increases the skill's effect by 150%/100%/50% respectively.",
-        "Formula": []
+        "Description": "Increase the ATK of all allies equal to 8% of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;\">%s</span> ATK). This effect lasts for 3 turns. When using this skill, if Shiina Yuumi has Alcohol, she will consume 1 bottle to enhance the skill's effect (consuming high quality wine first). Consuming 『Premium Deluxe』/『Premium』/『Mixed Blend』increases the skill's effect by 120%/100%/50% respectively.",
+        "Formula": ["500"]
       },
       "2":{
-        "Type": 2,
+        "Type": 3,
         "Icon":"BUFF_AOE",
         "Name": "Colorful Supplement",
         "Cost": 4,
-        "Description": "Increases the ATK of one ally equal to 5% of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;\">%s</span> ATK). and heals them for 5% of the damage dealt. This effect lasts for 1 turn. When using this skill, Shiina Yumi will transform 1 bottle of 『Mixed Blend』/『Premium』into『Premium Deluxe』",
-        "Formula": []
+        "Description": "Increases the damage of one ally per 250 points of Shiina Yuumi's ATK (up to <span style=\"color:#3c6eff;\">%s</span> ATK) and their Max HP by %s%. This effect lasts for 1 turn. When using this skill, Shiina Yumi will transform 1 bottle of 『Mixed Blend』/『Premium』into『Premium Deluxe』",
+        "Formula": ["500","8.3"]
       },
       "3":{
-        "Type": 2,
+        "Type": 3,
         "Icon":"BUFF_AOE",
         "Name": "Unparalleled Drink",
         "Cost": 8,
-        "Description": "Consumes all Wine to custom-mix the chosen ally's attribute. Each bottle of 『Premium Deluxe』/『Premium』/『Mixed Blend』triggers an effect of 150%/100%/50% boost as follows: increases the attribute damage of all allies (each 100 points of Shiina Yuumi's ATK provides a 1% damage bonus, up to <span style=\"color:#3c6eff;\">%s</span> ATK), and increases the chosen ally's attribute damage bonus by an additional 20%. This effect lasts for 2 turns.",
-        "Formula": []
+        "Description": "Consumes all Cocktails to custom-mix the chosen ally's attribute. Each bottle of 『Premium Deluxe』/『Premium』/『Mixed Blend』triggers an effect of 150%/100%/50% boost as follows: increases the attribute damage of all allies (each 250 points of Shiina Yuumi's ATK provides a 1% damage bonus, up to <span style=\"color:#3c6eff;\">%s</span> ATK), and increases the chosen ally's attribute damage bonus by an additional 20%. This effect lasts for 2 turns. This ability cannot be used when there are no cocktails",
+        "Formula": ["500"]
       },
       "4":{
         "Type": 2,
         "Icon":"PASSIVE",
         "Name": "Attribute Improvement",
-        "Description": "Increases the corresponding attribute values of all companions present by 15% based on the attributes of Phoebe."
+        "Description": "Increases the corresponding attribute values of all companions present based 20% of Phoebe's Attributes."
       },
       "5":{
         "Type": 2,
         "Name": "Stir",
-        "Description": "For each Phantom Thief included in the team, the attribute damage corresponding to all Phantom Thieves increases by %s."
+        "Description": "For each Phantom Thief included in the team, the attribute damage corresponding to all Phantom Thieves increases by 6%."
       },
       "6":{
         "Type": 2,
         "Name": "Shake",
-        "Description": "At the start of battle, Shiina Yumi randomly gains a certain amount of 'Flavor' based on the attributes of the Phantom Thieves in the team."
+        "Description": "At the start of battle, Shiina Yumi randomly gains 3 'Flavor' based on the attributes of the Phantom Thieves in the team."
       }
     },
     "Awareness":{
@@ -2476,35 +2477,53 @@
         "Description": "When an ally uses a Persona skill/follow up/HIGHLIGHT to deal damage, Yumi Shiina gains a corresponding attribute 'Flavor'. When 'Flavor' reaches 3. Yumi Shiina will mix a cocktail based on the different 'Flavors', up to a maximum of three cocktails. (Each ally can grant Yumi Shiina 1 'Flavor' before the start of the next turn) Having 3 of the same attribute will make『Premium Deluxe』. 2 of the same attributes will make『Premium』. Having 2 different attributes will make『Mixed Blend』. When Shiina Yumi uses a skill, she will consume a cocktail and restore a certain amount of SP to allies."
       },
       "1":{
-        "Id": 0,
+        "Id": 1,
         "Name": "Mojito",
         "Description": "When Yumi Shiina mixes a cocktail. There is a chance to regain one 'Flavor' from it."
       },
       "2":{
-        "Id": 0,
+        "Id": 2,
         "Name": "Margarita",
         "Description": "The skills levels of Colorful Supplement and Unparalled Drink are increased by 3 levels, up to a maximum of level 13."
       },
       "3":{
-        "Id": 0,
+        "Id": 3,
         "Name": "Tequila Sunrise",
-        "Description": "When Yumi Shiina mixes a cocktail, it significantly increases the damage dealt by all alilies for a certain number of turns."
+        "Description": "When Yumi Shiina mixes a cocktail, the damage dealt by all companions is increased by 16% for 1 turn."
       },
       "4":{
-        "Id": 0,
+        "Id": 4,
         "Name": "Bloody Mary",
         "Description": "The skill level of Alluring Drunkenness increased by 3 levels, up to a maximum of level 13. "
       },
       "5":{
-        "Id": 0,
+        "Id": 5,
         "Name": "Screwdriver",
-        "Description": "When an ally unleashes their HIGHLIGHT, their ATK increases and Yumi Shiina gains 1 'Premium Deluxe' cocktail."
+        "Description": "When an ally unleashes their HIGHLIGHT, their ATK increases by 10% for 1 turn and Yumi Shiina gains 1 'Premium Deluxe' cocktail."
       },
       "6":{
-        "Id": 0,
+        "Id": 6,
         "Name": "Classic Martini",
         "Description": " The limit of Cocktails increased to 4. At the start of battle, obtain 1 'Premium Deluxe'. For every set of 3 cocktails mixed, obtain an additional 'Premium Deluxe'"
       }
+    },
+    "Weapons":["phoebe-4","phoebe-5"],
+    "Build": {
+      "Revelation": [{
+        "Name": "Growth",
+        "Image": "/P5XWiki/arcana/qishi-new-teshu-chengzhang.png"
+      }],
+      "Artifact": [{
+        "Name": "Power",
+        "Image": "/P5XWiki/arcana/qishi-new-tz-liliang.png"
+      }],
+      "Main":{
+        "Moon": "ATK",
+        "Star": "Crit Rate/DMG",
+        "Dawn": "ATK"
+      },
+      "Sub": ["Same as DPS Main Stat"]
+
     }
   }
 }
