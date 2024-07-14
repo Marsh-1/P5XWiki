@@ -43,6 +43,7 @@ const info = Characters[character];
     <div>
       <h1>{info['Name']}</h1>
       <p>Codename: {info['Codename']}</p>
+      {info['Persona'] && <p>Persona: {info['Persona']}</p>}
       <p>Role: {info['Role']}</p>
       <p>Element: {info['Element']}</p>
     </div>
