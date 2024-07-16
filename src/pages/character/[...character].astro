@@ -4,6 +4,7 @@ import Characters from '../../data/Characters.json';
 import Weapons from '../../data/Weapons.json';
 import WeaponItem from '../../components/WeaponItem.astro';
 import Recommendation from '../../components/Recommendation.astro';
+import Role from '../../components/Role.astro';
 
 export function getStaticPaths() {
   return [
@@ -42,9 +43,9 @@ const info = Characters[character];
   <main>
     <div>
       <h1>{info['Name']}</h1>
+      <Role role={info['Role']}/>
       <p>Codename: {info['Codename']}</p>
       {info['Persona'] && <p>Persona: {info['Persona']}</p>}
-      <p>Role: {info['Role']}</p>
       <p>Element: {info['Element']}</p>
     </div>
     <div>
