@@ -32,7 +32,7 @@
     "mont-4":{
         "Name":"Song of the Sky",
         "Rarity": 4,
-        "Description":"Attack power is increased by %s. Mont increases her frozen damage by %s% every time she gets an『Ice Crystals』for 1 turn, stack up to 10 times",
+        "Description":"Attack power is increased by %s%. Mont's frozen damage is increased by %s% for each stack of『Ice Crystals』for 1 turn, stack up to 10 times.",
         "Passive":"Gift of Ice",
         "Scalings": [
             ["12","2.4"],
@@ -47,7 +47,7 @@
     "mont-5":{
         "Name":"Queen of Winter",
         "Rarity": 5,
-        "Description":"CRIT DMG is increased by %s%. When Mont's『Ice Crystals』reach 8 stacks, she can unleash『Dancers on the Tip of the Knife』. The damage of『IDancers on the Tip of the Knife』is increased by %s%. At the same time, when you hold 8『Ice Crystals』,『Blade of Ice』is strengtened.",
+        "Description":"CRIT DMG is increased by %s%. When Mont's『Ice Crystals』reach 8 stacks, she can unleash『Dancers on the Tip of the Knife』. The damage of『IDancers on the Tip of the Knife』is increased by %s%. At the same time, when you hold 8『Ice Crystals』,『Blade of Ice』is strengthened.",
         "Passive": "Eternal Winter Night",
         "Scalings": [
             ["36.3","46"],
@@ -104,14 +104,14 @@
     "rin-4": {
         "Name":"Four Seasons, All of Creation",
         "Rarity": 4,
-        "Description":"Increase ATK by %s. After applying a debuff, increase Rin's SPD by %s. Effect lasts for 2 rounds, max 2 stacks. Gain 2 stacks at beginning of battle.",
+        "Description":"Increase ATK by %s%. After applying a debuff, increase Rin's SPD by %s. Effect lasts for 2 rounds, max 2 stacks. Gain 2 stacks at beginning of battle.",
         "Passive":"The Meaning of the Battlefield",
         "Scalings":[["12","8"]]
     },
     "rin-5": {
         "Name":"Distant Corner, One Thought",
         "Rarity": 5,
-        "Description":"SPD is increased by %s. When attacking with a Persona skill inflict 『Wang Chuan Water』on the targeted enemy. 『Wang Chuan Water』: Increase the damage taken by %s% for every 10 points of Rin's SPD, effect lasts for 1 turn. Affects all enemies when『Meng Po Soup』is active.",
+        "Description":"SPD is increased by %s. When attacking with a Persona skill inflict 『Wang Chuan Water』on the targeted enemy.\n\n『Wang Chuan Water』: Increase the damage taken by %s% for every 10 points of Rin's SPD, effect lasts for 1 turn. Affects all enemies when『Meng Po Soup』is active.",
         "Passive":"Reincarnation",
         "Scalings":[["15","1"]]
     },
@@ -209,7 +209,7 @@
     "panther-5":{
         "Name":"Sea Buckthorn",
         "Rarity": 5,
-        "Description":"Flame Damage is increased by %s%. When Panther enters the Subconscious state, it will cause one enemy to enter the Burning state. Flame damage is increased by the number of enemies in the burning state caused by Panther (Number of Burned Enemies * %s%, up to a max of %s%)",
+        "Description":"Flame Damage is increased by %s%. When Panther enters the 『Concentration』 state, it will cause one enemy to enter the Burning state. Flame damage is increased by the number of enemies in the burning state caused by Panther (Number of Burned Enemies * %s%, up to a max of %s%)",
         "Passive":"Love Devouring Fire",
         "Scalings":[["24.2","25.5","76"]]
     },

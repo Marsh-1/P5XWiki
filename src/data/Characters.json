@@ -125,7 +125,7 @@
           "Icon":"CURSE_ST",
           "Name": "Gathering of the Distant Shore",
           "Cost": 22,
-          "Description": "Deals <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to a single enemy. If the enemy is debuffed, increase damage dealt by 20%.『Meng Po Soup』now has a 100% chance to inflict [Forget], lasting for 2 turns.",
+          "Description": "Deals <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to a single enemy. If the enemy is debuffed, increase damage dealt by 20%.『Meng Po Soup』now has a 100% chance to inflict『Forget』, lasting for 2 turns.",
           "Formula": ["60+skillLv*4"]
         },
         "3": {
@@ -140,7 +140,7 @@
           "Type": 1,
           "Icon":"CURSE_AOE",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deal <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to all enemies and increase the next damage taken by all enemies by <span style=\"color:#ff0036;font-weight:bold;\">%s%</span>. There is a 30% base chance to inflict [Forget] on all enemies for 2 turns. ONE MORE: Deals Curse DMG to 1 opponent.",
+          "Description": "HIGHLIGHT: Deal <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> of Rin's ATK as Curse DMG to all enemies and increase the next damage taken by all enemies by <span style=\"color:#ff0036;font-weight:bold;\">%s%</span>. There is a 30% base chance to inflict [Forget] on all enemies for 2 turns.\n\nONE MORE: Deals Curse DMG to 1 opponent.",
           "Formula": ["150*(0.6+skillLv*0.04)", "50*(0.6+skillLv*0.04)"]
         },
         "5": {
@@ -158,7 +158,7 @@
         "0": {
           "Id": 0,
           "Name": "Wang Chuan Water Flows",
-          "Description": "At the beginning of RIn's turn, she gains『Memory』for every 10 SPD, she has (max 18). Once Memory reaches 40 stacks, consumes all stacks to obtain『Meng Po Soup』.『Meng Po Soup』: Strengthens some skills and a 50% chance to inflict forget on the main targeted enemy for 1 turn."
+          "Description": "At the beginning of Rin's turn, she gains『Memory』for every 10 SPD, she has (max 18). Once Memory reaches 40 stacks, consumes all stacks to obtain『Meng Po Soup』.\n\n『Meng Po Soup』: Strengthens some skills and makes it have a 50% chance to inflict『Forget』on the main targeted enemy for 1 turn."
         },
         "1": {
           "Id": 1,
@@ -235,7 +235,7 @@
           "Icon":"BUFF_AOE",
           "Name": "Song of Peace",
           "Cost": 8,
-          "Description": "Grant all allies shield equal to <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of Puppet's DEF + <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> for 2 turns. Restore 4 SP. When the shield breaks, reduce Puppet's preparation time by 1.",
+          "Description": "Grant all allies shield equal to <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of Puppet's DEF + <span style=\"color:#3c6eff;font-weight:bold;\">%s</span> for 2 turns. Restore 4 SP. When the shield breaks, reduce Puppet's preparation time by 1.",
           "Formula": ["(0.6+0.04*skillLv)*28.6", "(0.6+0.04*skillLv)*0.3367*(300*skillLv+27)"]
         },
         "2": {
@@ -264,7 +264,7 @@
           "Type": 2,
           "Icon": "PASSIVE",
           "Name": "Attribute Improvement",
-          "Description": "Apply 15% of Puppet's stats to all allies"
+          "Description": "Apply 15% of Puppet's stats to all allies."
         },
         "5": {
           "Type": 2,
@@ -369,7 +369,7 @@
           "Type": 1,
           "Icon":"PHYS_ST",
           "Name": "Combat Skills",
-          "Description": "Highlight: Deals <span style=\"color:#ff9c00;font-weight:bold;\">%s%</span> Attack Power Physical Attribute damage to 1 enemy and boosts the damage dealt by your next skill by <span style=\"color:#ff9c00;font-weight:bold;\">%s%</span>. One More: Deals physical attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Deals <span style=\"color:#ff9c00;font-weight:bold;\">%s%</span> Attack Power Physical Attribute damage to 1 enemy and boosts the damage dealt by your next skill by <span style=\"color:#ff9c00;font-weight:bold;\">%s%</span>.\n\nONE MORE: Deals physical attribute damage to 1 enemy.",
           "Formula": ["(0.6+0.04*skillLv)*415","(0.6+0.04*skillLv)*60"]
         },
         "5": {
@@ -452,7 +452,7 @@
           "Icon":"FIRE_AOE",
           "Name": "Flowers Bloom",
           "Cost": 20,
-          "Description": "Inflicts <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> Attack Power of Flame damage on all enemies and boosts your own Attack Power by 20% for 2 turns. Steal 8% of an enemy's Attack Power while in the『Subliminal』state.",
+          "Description": "Inflicts <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> Attack Power of Flame damage on all enemies and boosts your own Attack Power by 20% for 2 turns. Steal 8% of an enemy's Attack Power while in the『Concentration』state.",
           "Formula": ["90*(0.6+skillLv*0.04)"]
         },
         "2": {
@@ -460,7 +460,7 @@
           "Icon":"FIRE_ST",
           "Name": "Phantom Fire",
           "Cost": 20,
-          "Description": "Deal <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> attack power of fire damage to 1 enemy. In the 'Concentrated' state, the damage caused to enemies with less than 50% health is increased by 30%, and there is a 75% basic chance of burning the enemy.",
+          "Description": "Deal <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> attack power of fire damage to 1 enemy. In the『Concentration』state, the damage caused to enemies with less than 50% health is increased by 30%, and there is a 75% basic chance of burning the enemy.",
           "Formula": ["137.5*(0.6+skillLv*0.04)"]
         },
         "3": {
@@ -468,14 +468,14 @@
           "Icon":"FIRE_AOE",
           "Name": "Flame Erosion",
           "Cost": 22,
-          "Description": "Inflicts <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> attack power to all enemies. The damage caused in the Subconsciousness state is increased by 30%, and there is a 30% basic probability of burning the enemy.",
+          "Description": "Inflicts <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> attack power to all enemies. The damage caused in the『Concentration』state is increased by 30%, and there is a 30% basic probability of burning the enemy.",
           "Formula": ["98.7*(skillLv*0.04+0.6)"]
         },
         "4": {
           "Type": 1,
           "Icon":"FIRE_AOE",
           "Name": "Combat Skills",
-          "Description": "Highlight: Inflicts <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> Attack Power to all enemies and increases Panther's Flame damage by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span>. One More: Inflicts Flame damage on 1 enemy.",
+          "Description": "HIGHLIGHT: Inflicts <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> Attack Power to all enemies and increases Panther's Flame damage by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span>.\n\nONE MORE: Inflicts Flame damage on 1 enemy.",
           "Formula": ["200*(skillLv*0.04+0.6)","80*(skillLv*0.04+0.6)"]
         },
         "5": {
@@ -486,19 +486,19 @@
         "6": {
           "Type": 2,
           "Name": "Comfort",
-          "Description": "At the end of Subconsciousness, restore the lowest life companion by 45% of Panther's attack power."
+          "Description": "At the end of 『Concentration』, restore the lowest life companion by 45% of Panther's attack power."
         }
       },
       "Awareness": {
         "0": {
           "Id": 0,
           "Name": "Charming",
-          "Description": "When all enemies are damaged by the Flame attribute, they will be counted, and if the count reaches 6, they will enter the Submerge state, increasing their attack power by 30%/40%/50% (changes when they reach level 1,50,70), and the effect lasts for 1 round , and they will not enter the Submerge state again in the next round, and will not be counted by a maximum of 4 enemies for each action."
+          "Description": "When all enemies are damaged by the Flame attribute, they will be counted, and if the count reaches 6, they will enter the『Concentration』state, increasing their attack power by 30%/40%/50% (changes when they reach level 1,50,70), and the effect lasts for 1 round , and they will not enter the『Concentration』state again in the next round, and will not be counted by a maximum of 4 enemies for each action."
         },
         "1": {
           "Id": 1,
           "Name": "Hot Dancing",
-          "Description": "When Enemies are afflicted with Subconsciouness, the attack power of all companions is increased by 17% for 1 turn"
+          "Description": "When Enemies are afflicted with 『Concentration』, the attack power of all companions is increased by 17% for 1 turn"
         },
         "2": {
           "Id": 2,
@@ -508,7 +508,7 @@
         "3": {
           "Id": 3,
           "Name": "Fire Red Miracle",
-          "Description": "Attacking an enemy at the end of subconsciousness causes 2 Flame Bursts, each dealing 66% of Attack Power to a random enemy."
+          "Description": "Attacking an enemy at the end of 『Concentration』 causes 2 Flame Bursts, each dealing 66% of Attack Power to a random enemy."
         },
         "4": {
           "Id": 4,
@@ -518,12 +518,12 @@
         "5": {
           "Id": 5,
           "Name": "Ecstasy",
-          "Description": "Highlight Effect Boost: After releasing a highlight skill, your attack power is increased by 100% for 1 turn."
+          "Description": "HIGHLIGHT Effect Boost: After releasing a highlight skill, your attack power is increased by 100% for 1 turn."
         },
         "6": {
           "Id": 6,
           "Name": "A Perfect Curtain Call",
-          "Description": "When attacking an enemy, there is a 60% that you will use an additional subconsciousness. Gain 1 extra count of Subconsciousness. For each level of Subconsciouness you have, Panther's Flame damage is increased by 11%, up to a maximum of 110%"
+          "Description": "When attacking an enemy, there is a 60% that you will use an additional 『Concentration』. Gain 1 extra count of 『Concentration』. For each level of 『Concentration』 you have, Panther's Flame damage is increased by 11%, up to a maximum of 110%"
         }
       },
       "Weapons":["panther-4","panther-5"],
@@ -566,7 +566,7 @@
           "Icon":"HEAL_ST",
           "Name": "Beam of Hope",
           "Cost": 24,
-          "Description": "Restores <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> Attack Power + <span style=\"color:#ff3318;font-weight:bold;\">%s</span> HP to 1 companion, healing effect is increased by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> if companion's HP is below 50%.",
+          "Description": "Restores <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Attack Power + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> HP to 1 companion, healing effect is increased by <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> if companion's HP is below 50%.",
           "Formula": ["(0.6+0.04*skillLv)*63.9","(300*skillLv+27)*(0.6+0.04*skillLv)*.639","10+1*skillLv"]
         },
         "3": {
@@ -574,14 +574,14 @@
           "Icon":"HEAL_AOE",
           "Name": "Angel's Mercy",
           "Cost": 31,
-          "Description": "Restores <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> Attack Power + <span style=\"color:#ff3318;font-weight:bold;\">%s</span> HP to all companions, and increases the healing effect inflicted on the primary target companion by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span>.",
+          "Description": "Restores <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Attack Power + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> HP to all companions, and increases the healing effect inflicted on the primary target companion by <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span>.",
           "Formula": ["(0.6+0.04*skillLv)*40","(300*skillLv+27)*(0.6+0.04*skillLv)*.4","15+skillLv"]
         },
         "4": {
           "Type": 1,
           "Icon":"HEAL_AOE",
           "Name": "Combat Skills",
-          "Description": "Highlight: Restores <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> Attack Power + <span style=\"color:#ff3318;font-weight:bold;\">%s</span> HP to all companions, boosts all companions' Attack Power by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span>. \n One More: Deals flame attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Restores <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Attack Power + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> HP to all companions, boosts all companions' Attack Power by <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span>.\n\nONE MORE: Deals flame attribute damage to 1 enemy.",
           "Formula": ["(0.6+0.04*skillLv)*61.2","(300*skillLv+27)*(0.6+0.04*skillLv)*.612","(0.6+0.04*skillLv)*34"]
         },
         "5": {
@@ -599,7 +599,7 @@
         "0": {
           "Id": 0,
           "Name": "Day and Night Reversal",
-          "Description": "When using a healing skill, cause the target companion to gain the 『Star's Fire』 effect, and each companion has at most one 『Star's Fire』 related effect. \n『Star's Fire I』: Attack power is increased by 4% of Luffel's Attack Power (up to 160 Attack Power), the effect lasts for 1 turn, and is upgraded to『Star's Fire II』at the end of the effect. \n『Star Fire II』: Attack power increased by 8% of Luffel's attack power (up to 320 attack power), effect lasts for 1 turn."
+          "Description": "When using a healing skill, cause the target companion to gain the 『Star's Fire』 effect, and each companion has at most one 『Star's Fire』 related effect.\n\n『Star's Fire I』: Attack power is increased by 4% of Luffel's Attack Power (up to 160 Attack Power), the effect lasts for 1 turn, and is upgraded to『Star's Fire II』at the end of the effect.\n\n『Star Fire II』: Attack power increased by 8% of Luffel's attack power (up to 320 attack power), effect lasts for 1 turn."
         },
         "1": {
           "Id": 1,
@@ -629,7 +629,7 @@
         "6": {
           "Id": 6,
           "Name": "Return from a rewarding journey",
-          "Description": "At the end of 『Starfire II』, grant the target 『Starfire III』. \n『Starfire III』: Increases attack power by 8% of Lufei's attack power, increases fire damage by 20%, increases healing effect by 10%, and lasts for 1 round."
+          "Description": "At the end of 『Starfire II』, grant the target 『Starfire III』.\n\n『Starfire III』: Increases attack power by 8% of Lufei's attack power, increases fire damage by 20%, increases healing effect by 10%, and lasts for 1 round."
         }
       },
       "Weapons":["cattle-4","cattle-5"],
@@ -687,7 +687,7 @@
           "Type": 1,
           "Name": "Combat Skills",
           "Icon":"FIRE_AOE",
-          "Description": "Highlight: Increases the fire damage taken by all enemies by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span>, and deals fire damage equal to <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> of Key's Max HP. There is a 100% chance to put all enemies in the Burning state for 2 turns. One More: Deals flame attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Increases the fire damage taken by all enemies by <span style=\"color:#ff3318;font-weight:bold;\">%s%</span>, and deals fire damage equal to <span style=\"color:#ff3318;font-weight:bold;\">%s%</span> of Key's Max HP. There is a 100% chance to put all enemies in the Burning state for 2 turns.\n\nONE MORE: Deals flame attribute damage to 1 enemy.",
           "Formula":["(0.6+0.04*skillLv)*30.8","(0.6+0.04*skillLv)*42.5"]
         },
         "5": {
@@ -793,7 +793,7 @@
           "Type": 1,
           "Icon":"ICE_ST",
           "Name": "Combat Skills",
-          "Description": "Highlight: Increases the maximum health of all companions by 10.3% of Soy's's maximum health (up to <span style=\"color:#00a2ef;font-weight:bold;\">%s</span> points of maximum health). Restores the health of all companions by <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Soy's Max HP. At the same time, deals <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> Max HP as Frozen damage to one enemy. One More: Causes frost damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Increases the maximum health of all companions by 10.3% of Soy's's maximum health (up to <span style=\"color:#00a2ef;font-weight:bold;\">%s</span> points of maximum health). Restores the health of all companions by <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Soy's Max HP. At the same time, deals <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> Max HP as Frozen damage to one enemy.\n\nONE MORE: Causes frost damage to 1 enemy.",
           "Formula": ["skillLv*1500","(0.6+0.04*skillLv)*10.3","(0.6+0.04*skillLv)*77.2"]
         },
         "5": {
@@ -884,7 +884,7 @@
           "Icon":"ELEC_ST",
           "Name": "Hyper-speed Electric Shock",
           "Cost": 18,
-          "Description": "Deals <span style=\"color:#fafd35;\">%s%</span> Attack Power Electricity Attribute Damage to 1 enemy and boosts the Electricity Attribute Damage dealt by all companions by <span style=\"color:#fafd35;\">%s%</span>, the effect lasts for 2 turns.",
+          "Description": "Deals <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> Attack Power Electricity Attribute Damage to 1 enemy and boosts the Electricity Attribute Damage dealt by all companions by <span style=\"color:#fafd35;font-weight:bold;\">%s%</span>, the effect lasts for 2 turns.",
           "Formula": ["161*(0.6+skillLv*0.04)","12*(0.6+0.04*skillLv)"]
         },
         "3": {
@@ -892,20 +892,20 @@
           "Icon":"ELEC_AOE",
           "Name": "Electrifying Mad Shark",
           "Cost": 24,
-          "Description": "Deals <span style=\"color:#fafd35;\">%s%</span> Attack Power Electricity Attribute damage to all enemies. If there is an enemy in the Electrocuted state, inflict an additional <span style=\"color:#fafd35;\">%s%</span> Attack Power Electric Attack damage to all enemies.",
+          "Description": "Deals <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> Attack Power Electricity Attribute damage to all enemies. If there is an enemy in the Electrocuted state, inflict an additional <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> Attack Power Electric Attack damage to all enemies.",
           "Formula": ["81.2*(0.6+0.04*skillLv)","43.8*(0.6+0.04*skillLv)"]
         },
         "4": {
           "Type": 1,
           "Icon":"ELEC_AOE",
           "Name": "Combat Skills",
-          "Description": "Highlight: Deals <span style=\"color:#fafd35;\">%s%</span> Attack Power Electric Attack Attribute damage to all enemies, with a fixed 100% chance of causing the main target of the skill to enter the Electrocuted state, the effect lasts for 2 turns. It also increases the damage it receives from the Electrocution attribute by 10%, and the effect lasts for 2 turns. One More: Deals electric shock attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Deals <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> Attack Power Electric Attack Attribute damage to all enemies, with a fixed 100% chance of causing the main target of the skill to enter the Electrocuted state, the effect lasts for 2 turns. It also increases the damage it receives from the Electrocution attribute by 10%, and the effect lasts for 2 turns.\n\nONE MORE: Deals electric shock attribute damage to 1 enemy.",
           "Formula": ["(0.04*skillLv+0.6)*166.4"]
         },
         "5": {
           "Type": 2,
           "Name": "Protect",
-          "Description": "Upon releasing the Mask of Personality skill, it increases the damage taken by the main target of the skill from the Electricity Attack property by 20%, the effect lasts for 2 rounds and can be stacked for 2 tiers"
+          "Description": "Upon releasing the Mask of Personality skill, it increases the damage taken by the main target of the skill from the Electricity Attack property by 20%, the effect lasts for 2 rounds and can be stacked for 2 tiers."
         },
         "6": {
           "Type": 2,
@@ -990,7 +990,7 @@
           "Icon":"PHYS_ST",
           "Name": "Miracle Punch",
           "Cost": 12,
-          "Description": "Inflicts<span style=\"color:#ff9c00;font-weight:bold;\">%s%</span> Attack Power Physical Attribute damage to 1 enemy, this skill's Hit Rate is reduced by 20%, and its Critical Rate is increased by 30%. If the hit is critical, you immediately gain a layer of『Intuition』.",
+          "Description": "Inflicts <span style=\"color:#ff9c00;font-weight:bold;\">%s%</span> Attack Power Physical Attribute damage to 1 enemy, this skill's Hit Rate is reduced by 20%, and its Critical Rate is increased by 30%. If the hit is critical, you immediately gain a layer of『Intuition』.",
           "Formula": ["132.1*(0.6+0.04*skillLv)"]
         },
         "3": {
@@ -1005,7 +1005,7 @@
           "Type": 1,
           "Icon":"WIND_ST",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deals <span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> Attack Power Blast Wind Attribute damage to 1 enemy and revives 1 companion at 1% of their max HP. ONE MORE: Deals Wind attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Deals <span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> Attack Power Blast Wind Attribute damage to 1 enemy and revives 1 companion at 1% of their max HP.\n\nONE MORE: Deals Wind attribute damage to 1 enemy.",
           "Formula": ["233.4*(0.6+skillLv*0.04)"]
         },
         "5": {
@@ -1016,7 +1016,7 @@
         "6": {
           "Type": 2,
           "Name": "Restraint",
-          "Description": "Aura: 15% reduction in SP Cost for all companions"
+          "Description": "Aura: 15% reduction in SP Cost for all companions."
         }
       },
       "Awareness": {
@@ -1088,7 +1088,7 @@
           "Icon":"WIND_AOE",
           "Name": "Elegant Storm",
           "Cost": 19,
-          "Description": "Deals 3 times <span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> Attack Power Blast attribute damage to all enemies. There is a base probability of gaining the 『Motivation』status based on the number of enemies at the time of the attack (Number of Enemies* <span style=\"color:#81ea2b;\">%s</span>).",
+          "Description": "Deals 3*<span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> Attack Power Blast attribute damage to all enemies. There is a base probability of gaining the 『Motivation』status based on the number of enemies at the time of the attack (Number of Enemies* <span style=\"color:#81ea2b;\">%s</span>).",
           "Formula": ["74.3*(skillLv*0.04+0.6)/3","50*(skillLv*0.04+0.6)"]
         },
         "2": {
@@ -1096,7 +1096,7 @@
           "Icon":"WIND_ST",
           "Name": "Shadowless Stab",
           "Cost": 18,
-          "Description": "Inflicts 3 times <span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> of Attack Power Gale damage to 1 enemy, and when the 『Motivation』status is at least 3 levels, this skill inflicts an additional 1 damage, and increases the Critical Rate by 20%.",
+          "Description": "Inflicts 3*<span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> of Attack Power Gale damage to 1 enemy, and when the 『Motivation』status is at least 3 levels, this skill inflicts an additional 1 damage, and increases the Critical Rate by 20%.",
           "Formula": ["54.5*(skillLv*0.04+0.6)"]
         },
         "3": {
@@ -1104,14 +1104,14 @@
           "Icon":"WIND_ST",
           "Name": "Wind Whistling",
           "Cost": 16,
-          "Description": "Deals 4 <span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> Attack Power Blast Wind Attribute damage to 1 enemy, with a <span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> base probability of causing the enemy to fall into the Wind Attack state, and the effect lasts for two turns.",
+          "Description": "Deals 4*<span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> Attack Power Blast Wind Attribute damage to 1 enemy, with a <span style=\"color:#81ea2b;font-weight:bold;\">%s%</span> base probability of causing the enemy to fall into the Wind Attack state, and the effect lasts for two turns.",
           "Formula": ["175.8/4*(skillLv*0.04+0.6)","(0.6+0.04*skillLv)*15"]
         },
         "4": {
           "Type": 1,
           "Icon":"WIND_ST",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deals 4 <span style=\"color:#81ea2b;\">%s%</span> Attack Power Blast Wind Attribute Damage to 1 enemy, and the number of damage is increased by 1 if you hold three or more levels of the『Motivation』status when releasing this skill. One More: Deals Wind attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Deals 4 <span style=\"color:#81ea2b;\">%s%</span> Attack Power Blast Wind Attribute Damage to 1 enemy, and the number of damage is increased by 1 if you hold three or more levels of the『Motivation』status when releasing this skill.\n\nONE MORE: Deals Wind attribute damage to 1 enemy.",
           "Formula": ["30*(0.6+0.04*skillLv)*2"]
         },
         "5": {
@@ -1217,7 +1217,7 @@
           "Type": 1,
           "Icon":"BLESS_ST",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Inflicts <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Defense Blessing Attribute damage to 1 enemy and causes all companions to raise their Defense based on 20% of Fujikawa Yukimitsu's Defense (up to a maximum of <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> points of Defense), and the effect lasts for 2 turns. ONE MORE: Causes blessing damage to 1 enemy",
+          "Description": "HIGHLIGHT: Inflicts <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Defense Blessing Attribute damage to 1 enemy and causes all companions to raise their Defense based on 20% of Fujikawa Yukimitsu's Defense (up to a maximum of <span style=\"color:#ffff9f;font-weight:bold;\">%s</span> points of Defense), and the effect lasts for 2 turns.\n\nONE MORE: Causes blessing damage to 1 enemy",
           "Formula": ["291.1*(skillLv*0.04+0.6)","674*(skillLv*0.04+0.6)"]
         },
         "5": {
@@ -1323,7 +1323,7 @@
           "Type": 1,
           "Icon":"PSY_ST",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deals <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> Attack Power Psychic Attribute damage to 1 enemy, boosting the damage dealt by all companions by <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> * the current 『Child's Delight』 tier, and the effect lasts for 1 turn. ONE MORE: Deals Psychic Attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Deals <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> Attack Power Psychic Attribute damage to 1 enemy, boosting the damage dealt by all companions by <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> * the current 『Child's Delight』 tier, and the effect lasts for 1 turn.\n\nONE MORE: Deals Psychic Attribute damage to 1 enemy.",
           "Formula": ["375*(0.6+0.04*skillLv)","8*(0.6+0.04*skillLv)"]
         },
         "5": {
@@ -1429,7 +1429,7 @@
           "Type": 1,
           "Icon":"DBF_ST",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Causes 1 enemy to have a 80% base probability of falling into the Sleep state, the effect lasts for 1 turn, and increases the damage it receives the next time by <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> , the effect lasts for 1 round. ONE MORE: Inflicts Psychic Attribute damage to 1 enemy",
+          "Description": "HIGHLIGHT: Causes 1 enemy to have a 80% base probability of falling into the Sleep state, the effect lasts for 1 turn, and increases the damage it receives the next time by <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> , the effect lasts for 1 round.\n\nONE MORE: Inflicts Psychic Attribute damage to 1 enemy",
           "Formula": ["33.6*(0.6+0.04*skillLv)"]
         },
         "5": {
@@ -1534,7 +1534,7 @@
         "4": {
           "Type": 1,
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Causes 1 companion to gain a full tier of『Activation』, the effect lasts for 2 turns, and if the target's life value is below 60%, it restores it to 60%, with the restored life value capped at 200% of Kamiyama Ryo's attack power.It also boosts its attack power based on 15% of Kamiyama Ryo's attack power, capped at <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> points, and the effect lasts for 2 turns. ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Causes 1 companion to gain a full tier of『Activation』, the effect lasts for 2 turns, and if the target's life value is below 60%, it restores it to 60%, with the restored life value capped at 200% of Kamiyama Ryo's attack power.It also boosts its attack power based on 15% of Kamiyama Ryo's attack power, capped at <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> points, and the effect lasts for 2 turns.\n\nONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
           "Formula": ["600*(0.6+skillLv*0.04)"]
         },
         "5": {
@@ -1617,7 +1617,7 @@
           "Icon":"CURSE_ST",
           "Name": "Tragedy of Sorrow",
           "Cost": 22,
-          "Description": "Deals 3 <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> attack power Curse damage to 1 enemy and gains 3 『Hate Verses』 with this attack, the next time you gain a 『Verses』, there is a 25% fixed chance that it will change to 『Hate Verses』 with a fixed 25% chance of changing to 『Hate Verse』, triggering up to 2 times each level『Hate Verse』 making 『Sonnet of Fate』 to attach a curse effect at a 30% base chance.",
+          "Description": "Deals 3*<span style=\"color:#ff0036;font-weight:bold;\">%s%</span> attack power Curse damage to 1 enemy and gains 3『Hate Verses』 with this attack, the next time you gain a『Verses』, there is a 25% fixed chance that it will change to 『Hate Verses』 with a fixed 25% chance of changing to『Hate Verse』, triggering up to 2 times each level『Hate Verse』making『Sonnet of Fate』to attach a curse effect at a 30% base chance.",
           "Formula": ["180*(skillLv*0.04+0.6)/3"]
         },
         "2": {
@@ -1625,7 +1625,7 @@
           "Icon":"CURSE_AOE",
           "Name": "Comedy of the Absurd",
           "Cost": 20,
-          "Description": "Deals 2 <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> attack power curse damage to all enemies and gains 2 『Healing Verses』 for this attack, the next time you gain 『Verses』a 25% fixed chance of changing to 『Healing Verses』. With a fixed 25% chance of transforming into 『Healing Verses』, triggering up to 2 times each level of 『Healing Verses』 making 『Sonnets of Destiny』restores 7.5% of the lowest lifestealing companion's attack power.",
+          "Description": "Deals 2*<span style=\"color:#ff0036;font-weight:bold;\">%s%</span> attack power curse damage to all enemies and gains 2『Healing Verses』for this attack, the next time you gain『Verses』a 25% fixed chance of changing to『Healing Verses』. With a fixed 25% chance of transforming into『Healing Verses』, triggering up to 2 times each level of『Healing Verses』making『Sonnets of Destiny』restores 7.5% of the lowest lifestealing companion's attack power.",
           "Formula": ["73.125*(skillLv*0.04+0.6)/2"]
         },
         "3": {
@@ -1633,14 +1633,14 @@
           "Icon":"CURSE_ST",
           "Name": "Romantic Comedy",
           "Cost": 22,
-          "Description": "Deals 4 <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> Attack Power Curse damage to 1 enemy and gains 4 『Passionate Verse』for this attack, the next time you gain 'Verses' a 25% fixed chance of changing to 'Passionate Verses' with a fixed probability of 25% to change to 『Passionate Verse』, triggering up to 2 times each tier of『Passionate Verse』making『Sonnets of Fate』add 7% of attack power to the overall damage.",
+          "Description": "Deals 4*<span style=\"color:#ff0036;font-weight:bold;\">%s%</span> Attack Power Curse damage to 1 enemy and gains 4『Passionate Verse』for this attack, the next time you gain 'Verses' a 25% fixed chance of changing to 'Passionate Verses' with a fixed probability of 25% to change to『Passionate Verse』, triggering up to 2 times each tier of『Passionate Verse』making『Sonnets of Fate』add 7% of attack power to the overall damage.",
           "Formula": ["170*(skillLv*0.04+0.6)/4"]
         },
         "4": {
           "Type": 1,
           "Icon":"CURSE_AOE",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deals 3 <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> attack power Curse damage to 1 enemy, causing the next 2 『Sonnets of Fate』to deal an additional <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> attack power. ONE MORE: Deals cursed attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Deals 3*<span style=\"color:#ff0036;font-weight:bold;\">%s%</span> attack power Curse damage to 1 enemy, causing the next 2 『Sonnets of Fate』to deal an additional <span style=\"color:#ff0036;font-weight:bold;\">%s%</span> attack power.\n\nONE MORE: Deals cursed attribute damage to 1 enemy.",
           "Formula": ["297.5/3*(skillLv*0.04+0.6)","51.8*(skillLv*0.04+0.6)"]
         },
         "5": {
@@ -1763,7 +1763,7 @@
         "0": {
           "Id": 0,
           "Name": "♪ To the Free World ♪",
-          "Description": "Yoshiyo Tomiyama gains a variable number of『Beats』 after using a Support Skill. When the number of 『Beats』 reaches 4, Yoshiyo Tomiyama consumes 4 『Beats』 and immediately releases the add-on effect 「Power Dance」.『Power Dance』: All companions gain a 10%/15%/20% increase in Attack, 10%/15%/20% increase in Defense, and 5%/7.5%/10% increase in Effective Hits for 2 turns, stacking up to a maximum of 3 levels."
+          "Description": "Yoshiyo Tomiyama gains a variable number of『Beats』 after using a Support Skill. When the number of 『Beats』 reaches 4, Yoshiyo Tomiyama consumes 4 『Beats』 and immediately releases the add-on effect『Power Dance』.\n\n『Power Dance』: All companions gain a 10%/15%/20% increase in Attack, 10%/15%/20% increase in Defense, and 5%/7.5%/10% increase in Effect Hit Rate for 2 turns, stacking up to a maximum of 3 levels."
         },
         "1": {
           "Id": 1,
@@ -1788,7 +1788,7 @@
         "5": {
           "Id": 5,
           "Name": "♪ To be the Queen of the Stage ♪",
-          "Description": "After any companion releases the HIGHLIGHT skill, Yoshiyo Toyama has a 67% fixed chance to gain 1『Beats』."
+          "Description": "After any companion releases the HIGHLIGHT skill, Yoshiyo Toyama has a 67% fixed chance to gain 1『Beat』."
         },
         "6": {
           "Id": 6,
@@ -1851,7 +1851,7 @@
           "Type": 1,
           "Icon":"CURSE_AOE",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deals <span style=\"color:#ff0034;font-weight:bold;\">%s%</span> of Joker's ATK as Curse DMG to all enemies and gain 1 Fury stack. ONE MORE: Deals Curse DMG to 1 opponent",
+          "Description": "HIGHLIGHT: Deals <span style=\"color:#ff0034;font-weight:bold;\">%s%</span> of Joker's ATK as Curse DMG to all enemies and gain 1 Fury stack.\n\nONE MORE: Deals Curse DMG to 1 opponent",
           "Formula": ["(0.6+skillLv*0.04)*210"]
         },
         "5": {
@@ -1957,7 +1957,7 @@
           "Type": 1,
           "Icon":"BUFF_AOE",
           "Name": "Combat Skills",
-          "Description": "Highlight: Increases YUI's attack power by <span style=\"color:#fafd35;font-weight:bold;\">%s%</span>, and the damage boost caused by Pursuit is equal to <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> of YUI's attack power, and the effect lasts for 2 turns. It also makes any companion that releases a skill that deals damage trigger YUI's Pursuit, the effect lasts for 1 turn. One More: Deals electric shock attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Increases YUI's attack power by <span style=\"color:#fafd35;font-weight:bold;\">%s%</span>, and the damage boost caused by Pursuit is equal to <span style=\"color:#fafd35;font-weight:bold;\">%s%</span> of YUI's attack power, and the effect lasts for 2 turns. It also makes any companion that releases a skill that deals damage trigger YUI's Pursuit, the effect lasts for 1 turn.\n\nONE MORE: Deals electric shock attribute damage to 1 enemy.",
           "Formula": ["35*(0.6+0.04*skillLv)","25*(0.6+0.04*skillLv)"]
         },
         "5": {
@@ -2062,7 +2062,7 @@
             "Type":1,
             "Icon":"HEAL_AOE",
             "Name":"Combat Skills",
-            "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Max HP + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Maximum HP boost equal 16.5% of Minami Miyashita's Maximum HP (up to <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> points) for 2 turns. When any ally takes action, immediately regenerate HP equal to <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Minami Miyashita's Max HP + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> for 2 turns. The main target will also get additional regeneration stack for 1 turn. ONE MORE: Deals blessed attribute damage to 1 enemy.",
+            "Description":"HIGHLIGHT: Immediately restores Minami Miyashita's <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Max HP + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> to all friendly Monsters, dispels 1 Negative Condition, and gives the target a Maximum HP boost equal 16.5% of Minami Miyashita's Maximum HP (up to <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> points) for 2 turns. When any ally takes action, immediately regenerate HP equal to <span style=\"color:#00ff9f;font-weight:bold;\">%s%</span> Minami Miyashita's Max HP + <span style=\"color:#00ff9f;font-weight:bold;\">%s</span> for 2 turns. The main target will also get additional regeneration stack for 1 turn.\n\nONE MORE: Deal blessed attribute damage to 1 enemy.",
             "Formula":["(0.6+0.04*skillLv)*18","(0.6+0.04*skillLv)*.18*3*(300*skillLv+27)",".165*skillLv*1500","(0.6+0.04*skillLv)*6.67","(0.6+0.04*skillLv)*.0667*3*(skillLv*300+27)"]
           },
           "5":{
@@ -2168,7 +2168,7 @@
           "Type": 1,
           "Icon":"ICE_AOE",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deals Ice Damage equal to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Fox's DEF to all enemies. Increase the chance of triggering [Dragon Dance] by <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> for 3 turns. ONE MORE: Deals Ice Damage to an enemy.",
+          "Description": "HIGHLIGHT: Deals Ice Damage equal to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Fox's DEF to all enemies. Increase the chance of triggering [Dragon Dance] by <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> for 3 turns.\n\nONE MORE: Deal Ice Damage to an enemy.",
           "Formula": ["178.1*(0.6+0.04*skillLv)", "35*(0.6+0.04*skillLv)"]
         },
         "5": {
@@ -2241,7 +2241,7 @@
     "vino":{
       "Name":"Chizuko Nagao",
       "Codename":"Vino",
-      "Persona": "Amber Rose",
+      "Persona": "Ampelos",
       "Role":"Debuffer",
       "Element":"Nuclear",
       "Released": 1719374400,
@@ -2274,7 +2274,7 @@
           "Type": 1,
           "Icon":"NUKE_ST",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Deal <span style=\"color:#00fcff;\">324.5%</span> Nuclear damage to an enemy. Vino has a 75% base chance to apply 2 random elemental ailments on the targeted enemy that they do not have. ONE MORE: Deal Nuclear damage to one enemy.",
+          "Description": "HIGHLIGHT: Deal <span style=\"color:#00fcff;\">324.5%</span> Nuclear damage to an enemy. Vino has a 75% base chance to apply 2 random elemental ailments on the targeted enemy that they do not have.\n\nONE MORE: Deal Nuclear damage to one enemy.",
           "Formula": []
         },
         "5":{
@@ -2379,7 +2379,7 @@
           "Type": 1,
           "Icon":"NUKE_ST",
           "Name": "Combat Skills",
-          "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0% ONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
+          "Description": "HIGHLIGHT: Queen gains 2『Heat』and deal <span style=\"color:#00fcff;font-weight:bold;\">%s%</span> Nuke damage to one enemy. Consume 1『Heat』and apply a random elemental ailment on the enemy until the enemy has 2 elemental ailments. After that, consume the remaining『Heat』and for each remaining『Heat』consumed, the damage of the skill is increased by 20.0%.\n\nONE MORE: Inflicts Nuclear Attribute damage to 1 enemy.",
           "Formula": ["(0.6+0.04*skillLv)*390.6"]
         },
         "5":{

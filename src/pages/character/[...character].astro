@@ -61,7 +61,7 @@ const info = Characters[character];
             </h2>
           </div>
           <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider1" id="skill1">
-          <p>{info['Role'] == 'Navi' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['1']['Cost']}{info['Talents']['1']['Type'] == 3 ? ' Rounds' : info['Talents']['1']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
+          <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['1']['Cost']}{info['Talents']['1']['Type'] == 3 ? ' Rounds' : info['Talents']['1']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={
             info['Talents']['1']['Formula'].reduce((acc,cur) =>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['1']['Description']
@@ -78,7 +78,7 @@ const info = Characters[character];
             </h2>
           </div>
           <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider2" id="skill2">
-          <p>{info['Role'] == 'Navi' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['2']['Cost']}{info['Talents']['2']['Type'] == 3 ? ' Rounds' : info['Talents']['2']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
+          <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['2']['Cost']}{info['Talents']['2']['Type'] == 3 ? ' Rounds' : info['Talents']['2']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={info['Talents']['2']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['2']['Description']
           )} class='skill2desc'></p>
@@ -93,7 +93,7 @@ const info = Characters[character];
             </h2>
           </div>
           <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider3" id="skill3">
-          <p>{info['Role'] == 'Navi' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['3']['Cost']}{info['Talents']['3']['Type'] == 3 ? ' Rounds' : info['Talents']['3']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
+          <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['3']['Cost']}{info['Talents']['3']['Type'] == 3 ? ' Rounds' : info['Talents']['3']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={info['Talents']['3']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['3']['Description']
           )} class='skill3desc'></p>
