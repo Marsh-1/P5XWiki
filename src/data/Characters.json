@@ -35,7 +35,7 @@
             "Type": 1,
             "Icon":"ICE_ST",
             "Name": "Combat Skills",
-            "Description": "HIGHLIGHT: Deal Ice DMG equals to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Mont's ATK to an enemy. Deal additional damage dependent on the enemy's % of missing HP, up to a maximum of 30.0% additional damage at 20% remaining HP. ONE MORE: Deals Ice DMG to an enemy.",
+            "Description": "HIGHLIGHT: Deal Ice DMG equals to <span style=\"color:#00a2ef;font-weight:bold;\">%s%</span> of Mont's ATK to an enemy. Deal additional damage dependent on the enemy's % of missing HP, up to a maximum of 30.0% additional damage at 20% remaining HP.\n\nONE MORE: Deals Ice DMG to an enemy.",
             "Formula": ["300*(0.6+skillLv*0.04)"]
           },
           "5": {
