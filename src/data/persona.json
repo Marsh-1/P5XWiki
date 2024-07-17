@@ -1,0 +1,58 @@
+{
+    "dionysus":{
+        "Name":"Dionysus",
+        "Rank": "7",
+        "Rarity": "5",
+        "Level": 80,
+        "Stats": {
+            "HP": 565,
+            "ATK": 156,
+            "DEF": 104
+        },
+        "Passive": {
+            "Name": "Drunken Carnival",
+            "Description": "Increases Crit Rate by %s%. After targeting a companion with their Persona, increase the Crit DMG of the skill's primary target by %s% for 2 turns.",
+            "Scalings":[["14.8","22"],["14.8","24.7"],["14.8","27.6"],["14.8","30`"]]
+        },
+        "Skills": {
+            "Inate":{
+                "Name": "Revolution",
+                "Description": "Increase all allies CRIT Rate by %s%. Allies will gain an additional %s% CRIT Rate for every 10% Crit Rate Wonder has up to maximum of %s%. This effect lasts three turns.",
+                "Scalings": [["4.9",".8","3.3"]]
+            },
+            "Combat": {
+                "Name": "Combat Skills",
+                "Description": "HIGHLIGHT: Increase damage dealt by all allies by %s% for 2 turns.\n\nONE MORE: Deal Psi Damage to 1 enemy",
+                "Scalings":[["19.2"]]
+            }
+        }
+    },
+    "king_frost": {
+        "Name":"King Frost",
+        "Rank": "7",
+        "Rarity": "5",
+        "Level": 80,
+        "Stats": {
+            "HP": 614,
+            "ATK": 217,
+            "DEF": 145
+        },
+        "Passive": {
+            "Name":"Frozen Decision",
+            "Description": "Increases Defense by 37.4%. When adding a shield to a teammate, the primary target gains%sa %s% increase in Defense %s a %s% increase in Frozen Damage for 2 turns.",
+            "Scalings":[[" either ","12","or","7"],[" either ","12","or","10"],[" ","12","and","10"],[" ","15","and","10"]]
+        },
+        "Skills": {
+            "Inate":{
+                "Name": "Shelter of the Snow King",
+                "Description": "Give all companions a %s% Attack Power + %s shield and increase their defense by 30% for 2 turns.",
+                "Scalings":[["17.1","55"]]
+            },
+            "Combat":{
+                "Name": "Combat Skills",
+                "Description": "HIGHLIGHT: Generate a shield equal to %s% ATK + %s to all allies.\n\nONE MORE: Deal Ice damage to 1 enemy.",
+                "Scalings":[["31","107"]]
+            }
+        }
+    }
+}

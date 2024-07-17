@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Personas from '../../data/persona.json'
+export function getStaticPaths() {
+    return [
+        {params: {'persona':'dionysus'}},
+        {params: {'persona':'king_frost'}}
+    ];
+}
+const { persona } = Astro.params;
+const info = Personas[persona];
+---
+
+<Layout title={info['Name']}>
+    <main>
+        <div>
+            <h1>{info['Name']}</h1>
+            <h1>Stats</h1>
+            <p>HP: {info["Stats"]["HP"]}</p>
+            <p>ATK: {info["Stats"]["ATK"]}</p>
+            <p>DEF: {info["Stats"]["DEF"]}</p>
+        </div>
+        <div>
+            <h2>Inate Skill:</h2>
+            <h3>{info["Skills"]["Inate"]["Name"]}</h3>
+            <p set:html={
+                info["Skills"]["Inate"]["Scalings"][0].reduce((acc,cur) =>
+                acc.replace("%s",cur),info["Skills"]["Inate"]["Description"]
+            )
+            }/>
+            <h2>Combat Skills:</h2>
+            <p set:html={
+                info["Skills"]["Combat"]["Scalings"][0].reduce((acc,cur) =>
+                acc.replace("%s",cur),info["Skills"]["Combat"]["Description"])
+            }
+            />
+        </div>
+        <div>
+            <h1>Passive</h1>
+            <p>{info["Passive"]["Name"]}</p>
+            <p set:html={
+                info["Passive"]["Scalings"][0].reduce((acc,cur) => acc.replace("%s",cur),info["Passive"]["Description"])
+            }/>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    h1,h2,h3,p{
+        white-space: pre-wrap;
+    }
+    main {
+        margin: 0 auto;
+		max-width: 960px;
+        padding: 1rem;
+		font-size: 20px;
+		line-height: 1.6;
+        color: white;
+    }
+</style>
