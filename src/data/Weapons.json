@@ -380,5 +380,19 @@
         "Description":"Increase ATK by %s%. For each cocktail consumed by Yuumi Shiina, one of the following three effects will occur: All allies will randomly gain an increase in ATK (%s%)/ Damage Dealt (%s%) /Crit Rate (%s%) for 2 turns. If the cocktail consume is a 『Premium Deluxe』/『Premium』/『Mixed Blend』 this effect is increased by 120%/100%/50% respectively. For every 2 cups of Cocktail made, there is a %s% chance to reduce the preparation time by 1 action.",
         "Passive":"Singing and Dancing to one's heart's content",
         "Scalings":[["30","6","5","4","55"]]
+    },
+    "chord-4":{
+        "Name":"Solo Rock",
+        "Rarity": 4,
+        "Description":"Increase ATK by %s%. When Chord uses『Finale: Range Unleash』, increases Chord's ATK by %s% for 2 turns",
+        "Passive":"",
+        "Scalings":[["12","28"]]
+    },
+    "chord-5":{
+        "Name":"Eye Catching Star",
+        "Rarity": 5,
+        "Description":"Increases ATK by %s%. At the start of battle, gain %s HIGHLIGHT energy. When an ally has『Loyal Listener』, increase their ATK by %s%. Each time an ally unleashes their HIGHLIGHT, the ATK of the ally with『Loyal Listener』will increase by %s%, up to 3 stacks.",
+        "Passive":"",
+        "Scalings":[["30","40","15","5"]]
     }
 }

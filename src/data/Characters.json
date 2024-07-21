@@ -2553,5 +2553,111 @@
         "Sub": ["Same as DPS Main Stat"]
   
       }
+    },
+    "chord": {
+      "Name":"Ayaka Sakai",
+      "Codename":"Chord",
+      "Persona": "Calliope",
+      "Role":"Buffer",
+      "Element":"Electric",
+      "Released": 1721318400,
+      "Talents":{
+        "1":{
+          "Type": 1,
+          "Icon":"ELEC_AOE",
+          "Name": "Passionate Singing",
+          "Cost": 20,
+          "Description": "Deals <span style=\"\">%s%</span> ATK as Electric Damage to all enemies. If an ally has『Loyal Listener』, inflict an additional Electric Attack based on <span style=\"\">%s%</span> of『Loyal Listener』's Attack Power to the main target of the skill.",
+          "Formula": ["85.4","83.3"]
+        },
+        "2":{
+          "Type": 1,
+          "Icon":"BUFF_ST",
+          "Name": "Improvised Solo",
+          "Cost": 20,
+          "Description": "Choose 1 ally to become a『Loyal Listener』. Increase the Attack Power of『Loyal Listener』by <span style=\"\">%s%</span> of Ayaka Sakai's Attack Power, up to a maximum of <span style=\"\">%s%</span> ATK, for 3 turns. You can only have 1『Loyal Listener』at a time.",
+          "Formula": ["24","976"]
+        },
+        "3":{
+          "Type": 1,
+          "Icon":"BUFF_ST",
+          "Name": "Finale: Range Unleash",
+          "Cost": 25,
+          "Description": "Select 1 ally and immediately release their HIGHLIGHT skill, increasing the damage of that HIGHLIGHT by <span style=\"\">%s%</span>. HIGHLIGHT used through this skill does not count against the character's HIGHLIGHT cooldown.",
+          "Formula": ["78.1"]
+        },
+        "4":{
+          "Type": 1,
+          "Icon":"BUFF_ST",
+          "Name": "Combat Skills",
+          "Description": "HIGHLIGHT: All allies receive a <span style=\"\">%s%</span> damage bonus for 4 actions. During this time, after an ally takes action, they will recover 10% of their HIGHLIGHT Energy.\n\nONE MORE: Deals Electric Damage to 1 enemy.",
+          "Formula": ["45.5"]
+        },
+        "5":{
+          "Type": 2,
+          "Name": "Stress",
+          "Description": "When an ally unleash their HIGHLIGHT, increase their ATK by 24.0% for 1 turn. This effect is boosted by 1.5x if the ally has『Loyal Listener』."
+        },
+        "6":{
+          "Type": 2,
+          "Name": "Sweep Picking",
+          "Description": "Immediately after an ally uses HIGHLIGHT, Ayaka Sakai restore HP equal to 15.0% of Sakai's Attack Power + 1350 to an ally with the lowest HP percentage."
+        }
+      },
+      "Awareness":{
+        "0":{
+          "Id": 0,
+          "Name": "♪ My Light ♪",
+          "Description": "When entering battle,『Finale: Range Unleash』has a 1 turn cooldown. Each time the ultimate skill is used, it permanently increases Chord's ATK 20%, stacking up to 2 times. After that, the ultimate skill's cooldown permanently increases by 1 turn, up to a maximum of 3 turns."
+        },
+        "1":{
+          "Id": 1,
+          "Name": "♪ Welcome Dawn ♪",
+          "Description": "At the start of battle, choose an ally to become a 『Loyal Listener』, giving priority to the ally with the highest attack power.『Loyal Listener』gain an additional effect: Critical Rate is increased by 15%."
+        },
+        "2":{
+          "Id": 2,
+          "Name": "♪ Twlight Shimmer ♪",
+          "Description": "Increase the skill level of『Passionate Singing』 and 『Finale: Range Unleash』 by 3 levels, up to a maximum of level 15."
+        },
+        "3":{
+          "Id": 3,
+          "Name": "♪ Enlightening Star ♪",
+          "Description": "When the HIGHLIGHT skill of a companion is triggered by『Finale: Range Unleash』, the damage of that companion is immediately increased by 30% for 1 turn."
+        },
+        "4":{
+          "Id": 4,
+          "Name": "♪ Dream Outline ♪",
+          "Description": "Increase the skill level of『Improvised Solo』and『Combat Skills』by 3 levels, up to a maximum of level 15."
+        },
+        "5":{
+          "Id": 5,
+          "Name": "♪ Change Myself ♪",
+          "Description": "HIGHLIGHT Effect Boost: Damage bonus duration is increased to 6 actions, HIGHLIGHT energy recovery limit is increased to 60%, and HIGHLIGHT cooldown of other allies is reduced by 1 turn."
+        },
+        "6":{
+          "Id": 6,
+          "Name": "♪ My Mr. Right ♪",
+          "Description": "Unlock『Finale: Range Unleash』immediately upon battle. The cooldown of『Finale: Range Unleash』is permanently reduced by 1 turn, and the maximum is reduced to 2 turns. Each time Ayaka uses 『Finale: Range Unleash』, it increase the damage of all allies by 15%, up to a maximum of 2 stacks."
+        }
+      },
+      "Weapons":["chord-4","chord-5"],
+      "Build": {
+        "Revelation": [{
+          "Name": "Trust",
+          "Image": "/P5XWiki/arcana/qishi-new-teshu-xinren.png"
+        }],
+        "Artifact": [{
+          "Name": "4PC Wealth",
+          "Image": "/P5XWiki/arcana/qishi-new-tz-fuzu.png"
+        }],
+        "Main":{
+          "Moon": "ATK%",
+          "Star": "ATK%",
+          "Dawn": "ATK% or SPD"
+        },
+        "Sub": ["ATK%","SPD","HP%","SP Regen"]
+  
+      }
     }
 }
