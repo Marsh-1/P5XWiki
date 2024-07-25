@@ -394,5 +394,26 @@
         "Description":"Increases ATK by %s%. At the start of battle, gain %s HIGHLIGHT energy. When an ally has『Loyal Listener』, increase their ATK by %s%. Each time an ally unleashes their HIGHLIGHT, the ATK of the ally with『Loyal Listener』will increase by %s%, up to 3 stacks.",
         "Passive":"",
         "Scalings":[["30","40","15","5"]]
+    },
+    "wind-4":{
+        "Name":"Bright Moon's Hook",
+        "Rarity": 4,
+        "Description":"Increases ATK by %s%. After attacking an enemy with『Vulnerability』, permanently increase all allies ATK by %s%, up to 5 stacks",
+        "Passive":"",
+        "Scalings":[[12,3.5]]
+    },
+    "wind-4-2":{
+        "Name":"Crimson Plum Blossom",
+        "Rarity": 4,
+        "Description":"Increase SPD by %s. Every time『Vulnerability』is broken, give your allies the following buffs:\nIncrease ATK by %s%,Increase DEF by 11.0%, Increase HP by %s% for 2 turns. There is a %s% fixed chance for Wind to gain 1 extra『Intel』.",
+        "Passive":"",
+        "Scalings":[[4.6,7,11,7,5]]
+    },
+    "wind-5":{
+        "Name":"Shinobi Tool: Winged Sky Blade",
+        "Rarity": 5,
+        "Description":"Increases SPD by %s. For every 2『Vulnerability』broken, gain %s additional『Intel』and increase allies damage dealt by %s% for 1 turn. Maximum stacks of『Intel』is increased to %s.",
+        "Passive":"",
+        "Scalings":[[15,2,6,11]]
     }
 }

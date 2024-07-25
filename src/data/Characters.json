@@ -2659,5 +2659,120 @@
         "Sub": ["ATK%","SPD","HP%","SP Regen"]
   
       }
+    },
+    "wind": {
+      "Name":"Riko Tanemura",
+      "Codename":"Wind",
+      "Persona": "Chiyome",
+      "Role":"Navigation",
+      "Element":"None",
+      "Released": 1721318400,
+      "Talents":{
+        "1":{
+          "Type": 3,
+          "Icon":"BUFF_ST",
+          "Name": "Art of Skyglow",
+          "Cost": 4,
+          "Description": "All enemies have their defense reduced by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. If Riko's speed exceeds 100 points, then for every 10 points over, the enemies defense is lowered by an additional <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, up to a maximum of <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. The primary target is also given the『Vulnerability』Debuff",
+          "Formula": ["9.76","4.9","28.69"]
+        },
+        "2":{
+          "Type": 3,
+          "Icon":"BUFF_ST",
+          "Name": "Art of Plum Blossom",
+          "Cost": 8,
+          "Description": "All enemies take <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> increased damage for 2 rounds. If an ally reduces an enemy's down shield or performs a knockdown, reduce Wind's cooldown by 1. When Wind's cooldown reaches 0, automatically use this skill once.",
+          "Formula": ["10.5"]
+        },
+        "3":{
+          "Type": 1,
+          "Icon":"BUFF_ST",
+          "Name": "Aroma Whisper",
+          "Cost": 8,
+          "Description": "Spend all『Intel』to grant『Pride』 and heals the main target for <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of their HP.\nPride: Damage is increased by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> and each『Intel』spent provides increases damage dealt by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. If Wind's SPD exceed 100, for every 10 SPD over, damage dealt is increased by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, up to a maximum of <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, lasting for 1 round.",
+          "Formula": ["12.4","12.3","1.05","6.15"]
+        },
+        "4":{
+          "Type": 2,
+          "Icon":"PASSIVE",
+          "Name": "Attribute Improvement",
+          "Description": "Increases all allies stats by 15.0% of the Navi's stats.",
+          "Formula": []
+        },
+        "5":{
+          "Type": 2,
+          "Name": "Butterfly Dream",
+          "Description": "When entering battle, if Wind's SPD exceeds 100, for every 1 SPD over 100, all allies gain 6 HP, 2 ATK, and 2 DEF, up to a maximum of 360 HP, 120 ATK, and 120 DEF."
+        },
+        "6":{
+          "Type": 2,
+          "Name": "Bird Song",
+          "Description": " Increases all enemies ONE MORE and ALL OUT ATTACK damage taken by 60.0%."
+        }
+      },
+      "Awareness":{
+        "0":{
+          "Id": 0,
+          "Name": "Firefly",
+          "Description": "When an ally acts 3 times, the enemy with the highest down shield value is exposed to 『Vulnerability』.\n『Vulnerability』: Increases damage taken by 6% and inflicts Weak after an attack. When Weak is inflicted, Riko gains 2『Intel』. If the target receives Weak or normal damage, the down shield value is additionally reduced by 1. When down shield value is reduced, Riko receives an additional『Intel』, up to maximum of 8『Intel』."
+        },
+        "1":{
+          "Id": 1,
+          "Name": "Thin Cold",
+          "Description": "At the start of battle, Apply『Vulnerability』to the enemy with the higest down shield value."
+        },
+        "2":{
+          "Id": 2,
+          "Name": "Quiet Color",
+          "Description": "The skills levels of Art of Skyglow and Art of Plum Blossom are increased by 2 levels, up to a maximum of level 15."
+        },
+        "3":{
+          "Id": 3,
+          "Name": "LIttle Snow",
+          "Description": "After using Aroma Whisper, immediately apply『Vulnerability』to the enemy with highest down shield value."
+        },
+        "4":{
+          "Id": 4,
+          "Name": "Calm Silence",
+          "Description": "The skill level of Aroma Whisper increased by 2 levels, up to a maximum of level 15."
+        },
+        "5":{
+          "Id": 5,
+          "Name": "Good Moon",
+          "Description": "When an ally unleashes their HIGHLIGHT, immediately apply『Vulnerability』 to the enemy with the highest down shield value."
+        },
+        "6":{
+          "Id": 6,
+          "Name": "Single Bloom",
+          "Description": "After using Aroma Whisper, if Wind's SPD is greater than 100, for every 15 SPD over, reduce Wind cooldown by 1, up to a maximum of 4."
+        }
+      },
+      "Weapons":["wind-4","wind-4-2","wind-5"],
+      "Build": {
+        "Revelation": [{
+          "Name": "Trust",
+          "Image": "/P5XWiki/arcana/qishi-new-teshu-xinren.png"
+        },{
+          "Name": "Sincerity",
+          "Image": "/P5XWiki/arcana/qishi-new-teshu-zhencheng.png"
+        }],
+        "Artifact": [
+          {
+            "Name": "4PC Wealth",
+            "Image": "/P5XWiki/arcana/qishi-new-tz-fuzu.png"
+          },
+          {
+            "Name": "4PC Responsibilites",
+            "Image": "/P5XWiki/arcana/qishi-new-tz-zhize.png"
+          }
+      ],
+        "Main":{
+          "Moon": "ATK%",
+          "Star": "CR or CD or ATK%",
+          "Dawn": "SPD"
+        },
+        "Sub": ["SPD","Crit Rate","Crit Dmg","DMG Bonus","ATK%"]
+
+      }
     }
 }

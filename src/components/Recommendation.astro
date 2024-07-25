@@ -22,21 +22,30 @@ const {build} = Astro.props;
 ---
 
 <div>
-    <h1>Recommended Build:</h1>
+    <h1>Recommended Revelations:</h1>
     <div class="RecommendedMain">
         <div>
             {build["Revelation"].map((curr,index)=>{
                 return <div>
                     <div class="ArcanaCard">
                         <img src={curr["Image"]}></img>
-                        <img src={build["Artifact"][index]["Image"]}></img>
                     </div>
-                    <p class="name">{curr["Name"]} & {build["Artifact"][index]["Name"]}</p>
+                    <p class="name">{curr["Name"]}</p>
                 </div>
             })}
         </div>
         <div>
-        <h2>Main Stat</h2>
+            {build["Artifact"].map((curr,index)=>{
+                return <div>
+                    <div class="ArcanaCard">
+                        <img src={curr["Image"]}></img>
+                    </div>
+                    <p class="name">{curr["Name"]}</p>
+                </div>
+            })}
+        </div>
+        <div>
+            <h2>Main Stat</h2>
             <p>Moon: {build["Main"]["Moon"]}</p>
             <p>Star: {build["Main"]["Star"]}</p>
             <p>Dawn: {build["Main"]["Dawn"]}</p>
