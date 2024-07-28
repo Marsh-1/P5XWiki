@@ -130,34 +130,12 @@ const info = Characters[character];
     </div>
     <h1>Awareness</h1>
     <div>
-      <div>
-        <h2>0. {info['Awareness']['0']['Name']}</h2>
-        <p>{info['Awareness']['0']['Description']}</p>
-      </div>
-      <div>
-        <h2>1. {info['Awareness']['1']['Name']}</h2>
-        <p>{info['Awareness']['1']['Description']}</p>
-      </div>
-      <div>
-        <h2>2. {info['Awareness']['2']['Name']}</h2>
-        <p>{info['Awareness']['2']['Description']}</p>
-      </div>
-      <div>
-        <h2>3. {info['Awareness']['3']['Name']}</h2>
-        <p>{info['Awareness']['3']['Description']}</p>
-      </div>
-      <div>
-        <h2>4. {info['Awareness']['4']['Name']}</h2>
-        <p>{info['Awareness']['4']['Description']}</p>
-      </div>
-      <div>
-        <h2>5. {info['Awareness']['5']['Name']}</h2>
-        <p>{info['Awareness']['5']['Description']}</p>
-      </div>
-      <div>
-        <h2>6. {info['Awareness']['6']['Name']}</h2>
-        <p>{info['Awareness']['6']['Description']}</p>
-      </div>
+      {Object.keys(info['Awareness']).map((cur)=>{
+        return <div class='awarenessitem'>
+          <div><img src=`/P5XWiki/awareness/Awareness${cur}.png`/><h2>{info['Awareness'][cur]['Name']}</h2></div>
+          <p>{info['Awareness'][cur]['Description']}</p>
+        </div>
+      })}
     </div>
     {info["Weapons"] && <h1>Weapons:</h1>}
     <ul class="weaponlist">
@@ -237,6 +215,19 @@ const info = Characters[character];
 
   .weaponlist{
     max-width: 100vw;
+  }
+
+  .awarenessitem{
+    div {
+      display: flex;
+      align-content: center;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: .75rem;
+        align-self: center;
+      }
+    }
   }
   
   p {

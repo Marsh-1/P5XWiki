@@ -50,8 +50,23 @@ const { name, rarity, passive, description, scalings, path } = Astro.props;
         max-height: 300px;
     }
 
-    p {
+    p, h2, h3 {
         white-space: pre-wrap;
+    }
+
+    @media only screen and (max-width: 768px) {
+        li {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            gap: 4rem;
+            width: 100%;
+            height: 100%;
+        }
+
+        p,h2,h3{
+            text-align:center;
+        }
     }
 
 </style>
