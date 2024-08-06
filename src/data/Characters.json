@@ -1,5 +1,5 @@
 {
-  "mont": {
+  "Mont": {
         "Name": "Kotone Montagne",
         "Codename": "Mont",
         "Persona": "Teripschore",
@@ -104,7 +104,7 @@
           "Sub": ["CD%","PEN%","DMG Bonus","ATK%","CR%"]
         }
     },
-    "rin": {
+    "Rin": {
       "Name": "Yaoling Li",
       "Codename": "Rin",
       "Persona": "Meng Po",
@@ -222,7 +222,7 @@
   
       }
     },
-    "puppet": {
+    "Puppet": {
       "Name": "Muyi Sahara",
       "Codename": "Puppet",
       "Persona": "Nemertes",
@@ -333,7 +333,7 @@
   
       }
     },
-    "skull": {
+    "Skull": {
       "Name": "Ryuji Sakamoto",
       "Codename": "Skull",
       "Persona": "Captain Kidd",
@@ -439,7 +439,7 @@
   
       }
     },
-    "panther": {
+    "Panther": {
       "Name": "Ann Takamaki",
       "Codename": "Panther",
       "Persona": "Carmen",
@@ -545,7 +545,7 @@
   
       }
     },
-    "cattle": {
+    "Cattle": {
       "Name": "Luffy",
       "Codename": "Cattle",
       "Persona": "Rob Roy",
@@ -651,7 +651,7 @@
   
       }
     },
-    "key": {
+    "Key": {
       "Name": "Kurotani Kiyoshi",
       "Codename": "Key",
       "Persona": "Syke",
@@ -757,7 +757,7 @@
   
       }
     },
-    "soy": {
+    "Soy": {
       "Name": "Kano Shun",
       "Codename": "Soy",
       "Persona": "Mandrin",
@@ -863,7 +863,7 @@
   
       }
     },
-    "closer": {
+    "Closer": {
       "Name": "Arai Suha",
       "Codename": "Closer",
       "Persona": "Awilda",
@@ -969,7 +969,7 @@
   
       }
     },
-    "mona":{
+    "Mona":{
       "Name": "Morgana",
       "Codename": "Mona",
       "Persona": "Zorro",
@@ -1075,7 +1075,7 @@
   
       }
     },
-    "fleuret": {
+    "Fleuret": {
       "Name": "Seiji Shiratori",
       "Codename": "Fleuret",
       "Persona": "Leucothea",
@@ -1181,7 +1181,7 @@
   
       }
     },
-    "yuki": {
+    "Yuki": {
       "Name": "Yukimi Fujikawa",
       "Codename": "Yuki",
       "Persona": "Styx",
@@ -1287,7 +1287,7 @@
   
       }
     },
-    "riddle": {
+    "Riddle": {
       "Name": "Hina Nishimori",
       "Codename": "Riddle",
       "Persona": "Daeira",
@@ -1393,7 +1393,7 @@
   
       }
     },
-    "moko": {
+    "Moko": {
       "Name": "Tomoko Noge",
       "Codename": "Moko",
       "Persona": "Prosymna",
@@ -1499,7 +1499,7 @@
   
       }
     },
-    "leon": {
+    "Leon": {
       "Name": "Kamiyama Reiyo",
       "Codename": "Leon",
       "Persona": "Erytheia",
@@ -1604,7 +1604,7 @@
   
       }
     },
-    "sepia": {
+    "Sepia": {
       "Name": "Sumi Toshiya",
       "Codename": "Sepia",
       "Persona": "Gorgyra",
@@ -1710,7 +1710,7 @@
   
         }
     },
-    "okyann": {
+    "Okyann": {
       "Name": "Yoshiyo Toyama",
       "Codename": "Okyann",
       "Persona": "Cleodora",
@@ -1815,7 +1815,7 @@
   
       }
     },
-    "joker": {
+    "Joker": {
       "Name": "Ren Amamiya",
       "Codename": "Joker",
       "Persona": "Arsene",
@@ -1921,7 +1921,7 @@
   
       }
     },
-    "bui": {
+    "Bui": {
       "Name": "Yui",
       "Codename": "Bui",
       "Persona": "Apseudes",
@@ -2026,7 +2026,7 @@
   
       }
     },
-    "marian":{
+    "Marian":{
         "Name":"Minami Miyashita",
         "Persona": "Talia",
         "Codename":"Marian",
@@ -2132,7 +2132,7 @@
   
         }
     },
-    "fox": {
+    "Fox": {
       "Name": "Yusuke Kitagawa",
       "Codename": "Fox",
       "Persona": "Goemon",
@@ -2238,7 +2238,7 @@
   
       }
     },
-    "vino":{
+    "Vino":{
       "Name":"Chizuko Nagao",
       "Codename":"Vino",
       "Persona": "Ampelos",
@@ -2343,7 +2343,7 @@
         "Sub": ["EHR%","SPD","ATK%"]
       }
     },
-    "queen":{
+    "Queen":{
       "Name":"Makoto Nijima",
       "Codename":"Queen",
       "Persona": "Johanna",
@@ -2449,7 +2449,7 @@
   
       }
     },
-    "phoebe":{
+    "Phoebe":{
       "Name":"Yumi Shiina",
       "Codename":"Phoebe",
       "Persona": "Urania",
@@ -2554,7 +2554,7 @@
   
       }
     },
-    "chord": {
+    "Chord": {
       "Name":"Ayaka Sakai",
       "Codename":"Chord",
       "Persona": "Calliope",
@@ -2660,7 +2660,7 @@
   
       }
     },
-    "wind": {
+    "Wind": {
       "Name":"Riko Tanemura",
       "Codename":"Wind",
       "Persona": "Chiyome",
@@ -2773,6 +2773,112 @@
         },
         "Sub": ["SPD","Crit Rate","Crit Dmg","DMG Bonus","ATK%"]
 
+      }
+    },
+    "Summer Closer":{
+      "Name": "Motoha Arai",
+      "Codename": "Closer",
+      "Persona": "Awilda",
+      "Role": "AOE Attacker",
+      "Element":"Bless",
+      "Released": 1722434400,
+      "Talents":{
+        "1":{
+          "Type": 1,
+          "Icon":"BLESS_AOE",
+          "Name": "Summer Cool Magic",
+          "Cost": 20,
+          "Description": "Deal <span style=\"color:#ffff9f;\">%s%</span> Bless damage to all enemies. While in『Midsummer』or『True Summer』state, consume 10% of HP to deal an additional instance of <span style=\"color:#ffff9f;\">%s%</span> Bless damage to all enemies.",
+          "Formula": ["87.8","29.3"]
+        },
+        "2":{
+          "Type": 1,
+          "Icon":"BLESS_ST",
+          "Name": "Leisurely Vacation",
+          "Cost": 20,
+          "Description": "Deal <span style=\"color:#ffff9f;\">%s%</span> Bless damage to an enemy, while also restoring 20.0% of HP. When in『Midsummer』or『True Summer』state, deals an additional instance of <span style=\"color:#ffff9f;\">%s%</span> Bless damage to the target.",
+          "Formula": ["136.6","34.2"]
+        },
+        "3":{
+          "Type": 1,
+          "Icon":"BLESS_AOE",
+          "Name": "Wave Chaser",
+          "Cost": 24,
+          "Description": "Enter『Midsummer』state until the end of the next turn, then consumes 15.0% of HP to deal <span style=\"color:#ffff9f;\">%s%</span> Bless damage to all enemies. Increase CR by <span style=\"color:#ffff9f;\">%s%</span> and DMG bonus by <span style=\"color:#ffff9f;\">%s%</span>.",
+          "Formula": ["146.4","9.8","29.3"]
+        },
+        "4":{
+          "Type": 1,
+          "Icon":"BLESS_AOE",
+          "Name": "Combat Skills",
+          "Description": "『HIGHLIGHT』: Deal <span style=\"color:#ffff9f;\">%s%</span> Bless damage to all enemies, while also healing 20.0% of HP. If HP is above 50%, the damage is increased by an additional <span style=\"color:#ffff9f;\">%s%</span>.\n\n『ONE MORE』: Deals Bless Damage to one enemy.",
+          "Formula": ["195.2","25.0"]
+        },
+        "5":{
+          "Type": 2,
+          "Name": "Cute Shadow",
+          "Description": "When receiving overheal, gain 30% DMG bonus for 2 turns."
+        },
+        "6":{
+          "Type": 2,
+          "Name": "Heat Wave",
+          "Description": "When Max HP is over 8000, for every 100 Max HP over the cap, increase ATK by 24 up to a maximum of 1920."
+        }
+      },
+      "Awareness":{
+        "0":{
+          "Id": 0,
+          "Name": "Sunshine and Azure Sea",
+          "Description": "When receiving healing, if the healing amount exceeds 15.0% of max HP, the cooldown of『Wave Chaser』will be reduced by 1 turn, up to a maximum of 1 turn. Using skills to consume HP will not result in death.\n Midsummer/True Summer: Increase Crit Rate and DMG Bonus while also Enhancing Closer Skills."
+        },
+        "1":{
+          "Id": 1,
+          "Name": "Wave Kissing Toes",
+          "Description": "Reduce the cooldown of『Wave Chaser』by 1 turn.『Midsummer』or『True Summer』increase Crit Rate by 10% and Crit DMG by 25%."
+        },
+        "2":{
+          "Id": 2,
+          "Name": "Scattered Golden Radiance",
+          "Description": "Leisurely Vacation Lv. +3, up to a maximum of Lv. 15.\nWave Chaser Lv. +3, up to a maximum of Lv. 15."
+        },
+        "3":{
+          "Id": 3,
+          "Name": "Faraway Boat Shake",
+          "Description": "When healed, increase Crit DMG by 20.0% for 2 turns, up to 2 stacks."
+        },
+        "4":{
+          "Id": 4,
+          "Name": "Salty Fragarance in the Sea Breeze",
+          "Description": "Summer Cool Magic Lv. +3, up to a maximum of Lv. 15.\nCombat Skills, Lv. +3, up to a maximum of Lv. 15."
+        },
+        "5":{
+          "Id": 5,
+          "Name": "Sunshine Smile",
+          "Description": "HIGHLIGHT Effect Boost: After unleasing HIGHLIGHT, increase the damage of the next『Wave Chaser』by 80.0%"
+        },
+        "6":{
+          "Id": 6,
+          "Name": "Handholding Summer Stroll",
+          "Description": "『Midsummer』is upgraded to『True Summer』state, enhancing all skills:\n『Summer Cool Magic』: Additional damage will trigger twice.\n『Leisurely Vacation』: Restores an extra 20.0% Max HP.\n『Wave Chaser』:Increased the skill multiplier by 35.0%."
+        }
+      },
+      "Weapons":["summer-closer-4","summer-closer-5"],
+      "Build": {
+        "Revelation": [{
+          "Name": "Determination",
+          "Image": "/P5XWiki/arcana/qishi-new-teshu-juexin.png"
+        }],
+        "Artifact": [{
+          "Name": "4PC Virtue",
+          "Image": "/P5XWiki/arcana/qishi-new-tz-meide.png"
+        }],
+        "Main":{
+          "Moon": "DMG Bonus or ATK%",
+          "Star": "CR%",
+          "Dawn": "ATK%"
+        },
+        "Sub": ["CR","CD","ATK% = DMG Bonus","HP%"]
+  
       }
     }
 }

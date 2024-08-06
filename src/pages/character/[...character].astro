@@ -8,32 +8,33 @@ import Role from '../../components/Role.astro';
 
 export function getStaticPaths() {
   return [
-    {params: {character: 'mont'}},
-    {params: {character: 'joker'}},
-    {params: {character: 'rin'}},
-    {params: {character: 'puppet'}},
-    {params: {character: 'fox'}},
-    {params: {character: 'skull'}},
-    {params: {character: 'panther'}},
-    {params: {character: 'cattle'}},
-    {params: {character: 'key'}},
-    {params: {character: 'soy'}},
-    {params: {character: 'bui'}},
-    {params: {character: 'closer'}},
-    {params: {character: 'mona'}},
-    {params: {character: 'fleuret'}},
-    {params: {character: 'yuki'}},
-    {params: {character: 'riddle'}},
-    {params: {character: 'moko'}},
-    {params: {character: 'leon'}},
-    {params: {character: 'sepia'}},
-    {params: {character: 'okyann'}},
-    {params: {character: 'marian'}},
-    {params: {character: 'vino'}},
-    {params: {character: 'queen'}},
-    {params: {character: 'phoebe'}},
-    {params: {character: 'chord'}},
-    {params: {character: 'wind'}}
+    {params: {character: 'Mont'}},
+    {params: {character: 'Joker'}},
+    {params: {character: 'Rin'}},
+    {params: {character: 'Puppet'}},
+    {params: {character: 'Fox'}},
+    {params: {character: 'Skull'}},
+    {params: {character: 'Panther'}},
+    {params: {character: 'Cattle'}},
+    {params: {character: 'Key'}},
+    {params: {character: 'Soy'}},
+    {params: {character: 'Bui'}},
+    {params: {character: 'Closer'}},
+    {params: {character: 'Mona'}},
+    {params: {character: 'Fleuret'}},
+    {params: {character: 'Yuki'}},
+    {params: {character: 'Riddle'}},
+    {params: {character: 'Moko'}},
+    {params: {character: 'Leon'}},
+    {params: {character: 'Sepia'}},
+    {params: {character: 'Okyann'}},
+    {params: {character: 'Marian'}},
+    {params: {character: 'Vino'}},
+    {params: {character: 'Queen'}},
+    {params: {character: 'Phoebe'}},
+    {params: {character: 'Chord'}},
+    {params: {character: 'Wind'}},
+    {params: {character: 'Summer Closer'}}
   ];
 }
 
@@ -62,7 +63,7 @@ const info = Characters[character];
               {info['Talents']['1']['Name']} (Lv. 10)
             </h2>
           </div>
-          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider1" id="skill1">
+          <!--<input type="range" autocomplete="off" min="1" max="15" value="10" class="slider1" id="skill1">-->
           <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['1']['Cost']}{info['Talents']['1']['Type'] == 3 ? ' Rounds' : info['Talents']['1']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={
             info['Talents']['1']['Formula'].reduce((acc,cur) =>
@@ -79,7 +80,7 @@ const info = Characters[character];
               {info['Talents']['2']['Name']} (Lv. 10)
             </h2>
           </div>
-          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider2" id="skill2">
+          <!--<input type="range" autocomplete="off" min="1" max="15" value="10" class="slider2" id="skill2">-->
           <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['2']['Cost']}{info['Talents']['2']['Type'] == 3 ? ' Rounds' : info['Talents']['2']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={info['Talents']['2']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['2']['Description']
@@ -94,7 +95,7 @@ const info = Characters[character];
               {info['Talents']['3']['Name']} (Lv. 10)
             </h2>
           </div>
-          <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider3" id="skill3">
+          <!--<input type="range" autocomplete="off" min="1" max="15" value="10" class="slider3" id="skill3">-->
           <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['3']['Cost']}{info['Talents']['3']['Type'] == 3 ? ' Rounds' : info['Talents']['3']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={info['Talents']['3']['Formula'].reduce((acc,cur)=>
             acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['3']['Description']
@@ -109,7 +110,7 @@ const info = Characters[character];
               {info['Talents']['4']['Name']} {info['Talents']['4']['Type'] == 1 ? '(Lv. 10)': ''}
             </h2>
           </div>
-          {info['Talents']['4']['Type'] == 1 ? <input type="range" autocomplete="off" min="1" max="15" value="10" class="slider4" id="skill4"> : ''}
+          {info['Talents']['4']['Type'] == 1 ? <!--<input type="range" autocomplete="off" min="1" max="15" value="10" class="slider4" id="skill4">--> : ''}
           {
             info['Talents']['4']['Type'] == 1 ? 
             <p set:html={info['Talents']['4']['Formula'].reduce((acc,cur)=>

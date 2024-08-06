@@ -415,5 +415,19 @@
         "Description":"Increases SPD by %s. For every 2『Vulnerability』broken, gain %s additional『Intel』and increase allies damage dealt by %s% for 1 turn. Maximum stacks of『Intel』is increased to %s.",
         "Passive":"",
         "Scalings":[[15,2,6,11]]
+    },
+    "summer-closer-4": {
+        "Name":"Bouncing Star",
+        "Rarity": 4,
+        "Description": "Increase ATK by %s%. Increase damage by %s% when receiving healing during『Midsummer』or『True Summer』state for 2 turns, up to maximum of 2 stacks.",
+        "Passive":"",
+        "Scalings":[[12,7.6]]
+    },
+    "summer-closer-5":{
+        "Name":"Colorful Shores",
+        "Rarity": 5,
+        "Description": "Increase Bless damage by %s%. When entering『Midsummer』or『True Summer』state, increase Crit DMG by %s% and gain 2『Sunlight』. Consume 1『Sunlight』when using skills or HIGHLIGHT to increase the damage by %s%.",
+        "Passive":"",
+        "Scalings":[[24.2,26.0,34.0]]
     }
 }
