@@ -20,10 +20,10 @@ interface Props {
 
 const {build} = Astro.props;
 ---
-
+<!-- TODO: ADD RELEVANT REVELATION INFORMATION-->
 <div>
     <h1>Recommended Revelations:</h1>
-    <div class="RecommendedMain">
+    <div class="Cards">
         <div>
             {build["Revelation"].map((curr,index)=>{
                 return <div>
@@ -44,47 +44,77 @@ const {build} = Astro.props;
                 </div>
             })}
         </div>
+    </div>
+    <h1>Main Stat:</h1>
+    <div class="MainStat">
         <div>
-            <h2>Main Stat</h2>
-            <p>Moon: {build["Main"]["Moon"]}</p>
-            <p>Star: {build["Main"]["Star"]}</p>
-            <p>Dawn: {build["Main"]["Dawn"]}</p>
-            <h2>Substat Priority</h2>
-            <p>{build["Sub"].map((stat,index) => {
-                            if(index == build["Sub"].length-1){
-                                return stat
-                            }
-                            return stat + " -> "
-                        }
-                    )       
-                }
-            </p>
+            <p>Moon:</p>
+            <p>{build["Main"]["Moon"]}</p>
         </div>
-        
+        <div>
+            <p>Star:</p>
+            <p>{build["Main"]["Star"]}</p>
+        </div>
+        <div>
+            <p>Dawn:</p>
+            <p>{build["Main"]["Dawn"]}</p>
+        </div>
+    </div>
+    <h1>Substat Priority</h1>
+    <div class='subPriority'>
+        <p>{build["Sub"].map((stat,index) => {
+                    if(index == build["Sub"].length-1){
+                        return stat
+                    }
+                    return stat + " -> "
+                }
+            )       
+        }
+    </p>
     </div>
 </div>
 
 <style>
-    .RecommendedMain {
+
+    h1{
+        text-align: center;
+    }
+
+    .Cards {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: 1fr;
         grid-column-gap: 2rem;
         grid-row-gap: 0px;
     }
-    .RecommendedMain h2 {
+    .Cards h2 {
         margin: 0;
     }
-    .RecommendedMain .ArcanaCard{
+    .Cards .ArcanaCard{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-content: center;
     }
-    .RecommendedMain .name{
+    .Cards .name{
         text-align: center;
     }
-    .RecommendedMain .ArcanaCard img{
-        max-width: 33%;
+    .Cards .ArcanaCard img{
+        max-width: 50%;
+    }
+
+    .MainStat{
+        display: flex;
+        flex-direction:  row;
+        justify-content: space-around;  
+    }
+
+    .MainStat div p{
+        text-align: center;
+    }
+
+    .subPriority{
+        display: flex;
+        justify-content: center;
     }
 </style>

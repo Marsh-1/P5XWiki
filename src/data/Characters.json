@@ -2673,7 +2673,7 @@
           "Icon":"BUFF_ST",
           "Name": "Art of Skyglow",
           "Cost": 4,
-          "Description": "All enemies have their defense reduced by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. If Riko's speed exceeds 100 points, then for every 10 points over, the enemies defense is lowered by an additional <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, up to a maximum of <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. The primary target is also given the『Vulnerability』Debuff",
+          "Description": "All enemies have their defense reduced by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. If Riko's speed exceeds 100 points, then for every 10 points over, the enemies defense is lowered by an additional <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, up to a maximum of <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. The primary target is also given the『Vulnerability』Debuff.",
           "Formula": ["9.76","4.9","28.69"]
         },
         "2":{
@@ -2690,7 +2690,7 @@
           "Name": "Aroma Whisper",
           "Cost": 8,
           "Description": "Spend all『Intel』to grant『Pride』 and heals the main target for <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> of their HP.\nPride: Damage is increased by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span> and each『Intel』spent provides increases damage dealt by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>. If Wind's SPD exceed 100, for every 10 SPD over, damage dealt is increased by <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, up to a maximum of <span style=\"color:#3c6eff;font-weight:bold;\">%s%</span>, lasting for 1 round.",
-          "Formula": ["12.4","12.3","1.05","6.15"]
+          "Formula": ["12.4","12.3","1.05","6.15","4"]
         },
         "4":{
           "Type": 2,
@@ -2859,7 +2859,7 @@
         "6":{
           "Id": 6,
           "Name": "Handholding Summer Stroll",
-          "Description": "『Midsummer』is upgraded to『True Summer』state, enhancing all skills:\n『Summer Cool Magic』: Additional damage will trigger twice.\n『Leisurely Vacation』: Restores an extra 20.0% Max HP.\n『Wave Chaser』:Increased the skill multiplier by 35.0%."
+          "Description": "『Midsummer』is upgraded to『True Summer』state, enhancing all skills:\n『Summer Cool Magic』: Additional damage will trigger twice.\n『Leisurely Vacation』: Restores an extra 20.0% Max HP.\n『Wave Chaser』: Increased the skill multiplier by 35.0%."
         }
       },
       "Weapons":["summer-closer-4","summer-closer-5"],
