@@ -2880,5 +2880,118 @@
         "Sub": ["CR","CD","ATK% = DMG Bonus","HP%"]
   
       }
+    },
+    "Summer Moko":{
+      "Name": "Tomoko Noge",
+      "Codename": "Moko",
+      "Persona": "Prosymna",
+      "Role": "Healer",
+      "Element": "Psychic",
+      "Released": 1723651200,
+      "Talents":{
+        "1":{
+          "Type": 1,
+          "Icon":"PSY_AOE",
+          "Name": "Come Order a Drink",
+          "Cost": 23,
+          "Description": "Deals <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> Psy damage 4 times to random enemies, prioritizing enemies who have not been hit. Each hit inflicts 1『Spark』. Decreases damage to the same target by 30.0%. Increase 『Gorgeous Fireworks』skill multiplier and healing amount by 51.7%",
+          "Formula": ["77.6"]
+        },
+        "2":{
+          "Type": 1,
+          "Icon":"HEAL_ST",
+          "Name": "Please Enjoy",
+          "Cost": 27,
+          "Description": "Restore HP to 1 ally equal to <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> of Moko's ATK + <span style=\"color:#ff67ff;font-weight:bold;\">%s</span>, increasing their ATK by <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> and their EHR by <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span>. Make them inflict 1『Spark』after they dealt 1 hit of damage to the enemies for 2 turns, they can inflict up to 5『Spark』with this effect.",
+          "Formula": ["22.4","1437","14.6","58.6"]
+        },
+        "3":{
+          "Type": 1,
+          "Icon":"PSY_AOE",
+          "Name": "Midnight Hearbeat Memory",
+          "Cost": 25,
+          "Description": "Deals <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> Psy damage to all enemies and increases their DMG taken by <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span>. Inflicts 1『Spark』to the enemy after they took 1 hit of damage for 2 turns. This effect can inflict up to 5『Spark』.",
+          "Formula": ["61.0","19.5"]
+        },
+        "4":{
+          "Type": 1,
+          "Icon":"PSY_AOE",
+          "Name": "Combat Skills",
+          "Description": "『HIGHLIGHT』: Deals <span style=\"color:#ff67ff;font-weight:bold;\">%s%</span> Psy damage 3 times to random enemies, prioritizing enemies who have not been hit. Each hit inflict 1『Spark』. Decreases damage to the same target by 30.0%.\n\n『ONE MORE』: Deals Psy damage to one enemy.",
+          "Formula": ["59.3"]
+        },
+        "5":{
+          "Type": 2,
+          "Name": "Dazzling",
+          "Description": "Increases Psy damage and Max HP by 42.0% of Moko's Healing Bonus, up to a maximum of 70.0% Psy damage and 2100 Max HP."
+        },
+        "6":{
+          "Type": 2,
+          "Name": "Eye-Catching",
+          "Description": "Increase the main target's Max HP of『Please Enjoy』by 1800."
+        }
+      },
+      "Awareness":{
+        "0":{
+          "Id": 0,
+          "Name": "Gorgeous Fireworks",
+          "Description": "After any ally use a skill and enemies have 3『Spark』, Moko will trigger a Follow-up:\nDeals 19.0% Psy damage of all enemies and decreases their DMG dealt by 20.0%. Restores HP to all allies equal to 9.0% of Moko's ATK + 300 / 600 / 900 (Lv. 1 / 50 / 70). Follow-Up damage changes depending on the number of enemies, iti will deal 150.0 / 120.0 / 100% damage based on if there is 1 / 2 / 3 or more enemies. When an enemy dies it's『Spark』will be randomly distributed to other enemies."
+        },
+        "1":{
+          "Id": 1,
+          "Name": "The Promised Light Arrives",
+          "Description": "After enemies take damage from『Gorgeous Fireworks』, decrease DEF by 12.0% for 3 turns, up to 3 stacks.『Please Enjoy』healing effect now affect all allies."
+        },
+        "2":{
+          "Id": 2,
+          "Name": "Like a Galaxy Coming into View",
+          "Description": "『Come Order a Drink』Lv. +3, up to a maximum of Lv. 13.\n『Please Enjoy』Lv. +3, up to a maximum of Lv. 13."
+        },
+        "3":{
+          "Id": 3,
+          "Name": "The Summer is Not Over Yet",
+          "Description": "After triggering『Gorgeous Fireworks』2 times. Inflicts 1 random enemy with 1『Spark』."
+        },
+        "4":{
+          "Id": 4,
+          "Name": "Wish Within the Fireworks",
+          "Description": "『Midnight Hearbeat Memory』Lv. +3, up to a maximum of Lv. 13.\n『Combat Skills』 Lv. +3, up to a maximum of Lv. 13."
+        },
+        "5":{
+          "Id": 5,
+          "Name": "Hope this Night Stays in Memories",
+          "Description": "HIGHLIGHT Effect Boost: Increase the number of hits to 5."
+        },
+        "6":{
+          "Id": 6,
+          "Name": "Connect Hearts of Love",
+          "Description": "『Gorgeous Fireworks』evolves into『Brillant Fireworks』.『Brilliant Fireworks』has all the effects of『Gorgeous Fireworks』. Increases Crit Rate by 35.0% when dealing damage with『Brilliant Fireworks』. After enemies take damage from『Brilliant Fireworks』, permanently increase their DMG taken by 5.0%, up to 3 stacks. When the stack is maxed, increase the Crit DMG taken by 20.0%."
+        }
+      },
+      "Weapons":["summer-moko-4","summer-moko-5"],
+      "Build": {
+        "Revelation": [{
+          "Name": "Sincerity",
+          "Image": "/P5XWiki/arcana/qishi-new-teshu-zhencheng.png"
+        },{
+          "Name":"Acceptance",
+          "Image":"/P5XWiki/arcana/qishi-new-teshu-jiena.png"
+        }
+      ],
+        "Artifact": [{
+          "Name": "4PC Joy",
+          "Image": "/P5XWiki/arcana/qishi-new-tz-huanyu.png"
+        },{
+          "Name":"4PC Love",
+          "Image":"/P5XWiki/arcana/qishi-new-tz-shehua.png"
+        }],
+        "Main":{
+          "Moon": "Healing Bonus %",
+          "Star": "ATK%",
+          "Dawn": "ATK%"
+        },
+        "Sub": ["SPD","ATK%","DMG Bonus","CR","CD","HP%"]
+
+      }
     }
 }

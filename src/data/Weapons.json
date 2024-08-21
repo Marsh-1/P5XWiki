@@ -429,5 +429,19 @@
         "Description": "Increase Bless damage by %s%. When entering『Midsummer』or『True Summer』state, increase Crit DMG by %s% and gain 2『Sunlight』. Consume 1『Sunlight』when using skills or HIGHLIGHT to increase the damage by %s%.",
         "Passive":"",
         "Scalings":[[24.2,26.0,34.0]]
+    },
+    "summer-moko-4":{
+        "Name": "Word of the Tides",
+        "Rarity": 4,
+        "Description":"Increase ATK by %s%. After triggering『Gorgeous Fireworks』, increase Healing Bonus by %s%.",
+        "Passive":"",
+        "Scalings":[[14,13]]
+    },
+    "summer-moko-5":{
+        "Name": "Bubble Sweetheart",
+        "Rarity": 5,
+        "Description":"Increase Healing Bonus by %s%. Increase『Gorgeous Fireworks』skill multiplier and restore amount by %s%. After enemies takes damage from『Gorgeous Fireworks』, increase their DMG taken by %s% for 3 turns, up to 3 stacks.",
+        "Passive":"",
+        "Scalings":[[22,15,3]]
     }
 }
