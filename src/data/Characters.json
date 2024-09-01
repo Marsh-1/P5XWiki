@@ -2788,31 +2788,31 @@
           "Icon":"BLESS_AOE",
           "Name": "Summer Cool Magic",
           "Cost": 20,
-          "Description": "Deal <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Bless damage to all enemies. While in『Midsummer』or『True Summer』state, consume 10% of HP to deal an additional instance of <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Bless damage to all enemies.",
-          "Formula": ["87.8","29.3"]
+          "Description": "Deal <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span> Bless damage to all enemies. While in『Midsummer』or『True Summer』state, consume 10% of HP to deal an additional instance of <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span> Bless damage to all enemies.",
+          "Formula": ["(0.6+0.04*skillLv)*90","(0.6+0.04*skillLv)*30"]
         },
         "2":{
           "Type": 1,
           "Icon":"BLESS_ST",
           "Name": "Leisurely Vacation",
           "Cost": 20,
-          "Description": "Deal <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Bless damage to an enemy, while also restoring 20.0% of HP. When in『Midsummer』or『True Summer』state, deals an additional instance of <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Bless damage to the target.",
-          "Formula": ["136.6","34.2"]
+          "Description": "Deal <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span> Bless damage to an enemy, while also restoring 20.0% of HP. When in『Midsummer』or『True Summer』state, deals an additional instance of <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span> Bless damage to the target.",
+          "Formula": ["(0.6+0.04*skillLv)*140","(0.6+0.04*skillLv)*35"]
         },
         "3":{
           "Type": 1,
           "Icon":"BLESS_AOE",
           "Name": "Wave Chaser",
           "Cost": 24,
-          "Description": "Enter『Midsummer』state until the end of the next turn, then consumes 15.0% of HP to deal <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Bless damage to all enemies. Increase CR by <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> and DMG bonus by <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span>.",
-          "Formula": ["146.4","9.8","29.3"]
+          "Description": "Enter『Midsummer』state until the end of the next turn, then consumes 15.0% of HP to deal <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span> Bless damage to all enemies. Increase CR by <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span> and DMG bonus by <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span>.",
+          "Formula": ["(0.6+0.04*skillLv)*150","(0.6+0.04*skillLv)*10","(0.6+0.04*skillLv)*30"]
         },
         "4":{
           "Type": 1,
           "Icon":"BLESS_AOE",
           "Name": "Combat Skills",
-          "Description": "『HIGHLIGHT』: Deal <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span> Bless damage to all enemies, while also healing 20.0% of HP. If HP is above 50%, the damage is increased by an additional <span style=\"color:#ffff9f;font-weight:bold;\">%s%</span>.\n\n『ONE MORE』: Deals Bless Damage to one enemy.",
-          "Formula": ["195.2","25.0"]
+          "Description": "『HIGHLIGHT』: Deal <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span> Bless damage to all enemies, while also healing 20.0% of HP. If HP is above 50%, the damage is increased by an additional <span style=\"color:#FFFC40;font-weight:bold;\">%s%</span>.\n\n『ONE MORE』: Deals Bless Damage to one enemy.",
+          "Formula": ["(0.6+0.04*skillLv)*200","25.0"]
         },
         "5":{
           "Type": 2,
