@@ -2928,7 +2928,7 @@
         "6":{
           "Type": 2,
           "Name": "Eye-Catching",
-          "Description": "Increase the main target's Max HP of『Please Enjoy』by 1800."
+          "Description": "Increases the main target's Max HP of『Please Enjoy』by 1800."
         }
       },
       "Awareness":{
@@ -2940,7 +2940,7 @@
         "1":{
           "Id": 1,
           "Name": "The Promised Light Arrives",
-          "Description": "After enemies take damage from『Gorgeous Fireworks』, decrease DEF by 12.0% for 3 turns, up to 3 stacks.『Please Enjoy』healing effect now affect all allies."
+          "Description": "After enemies take damage from『Gorgeous Fireworks』, decrease DEF by 12.0% for 3 turns, up to 3 stacks.『Please Enjoy』's healing effect now affect all allies."
         },
         "2":{
           "Id": 2,
