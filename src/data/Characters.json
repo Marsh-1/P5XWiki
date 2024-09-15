@@ -2024,7 +2024,8 @@
         },
         "Sub": ["PEN","Crit Rate/Dmg","Dmg Bonus","ATK"]
   
-      }
+      },
+      "Weapons":["bui-4","bui-5"]
     },
     "Marian":{
         "Name":"Minami Miyashita",

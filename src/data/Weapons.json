@@ -242,18 +242,18 @@
         "Scalings":[["30","18","4"]]
     },
     "bui-4":{
-        "Name":"Future Instruction",
+        "Name": "Future Directive",
         "Rarity": 4,
-        "Description":"CRIT Rate increases by %s%. Increases the electric damage dealt by YUI after dealing Pursuit by %s%. This effect lasts for 1 round and can be stacked twice.",
-        "Passive":"Code Reorganization",
-        "Scalings":[["7.3","9.7"]]
+        "Description":"Increase Crit Rate by %s%. After follow up increase Electric Damage by %s% for 1 turn, up to 2 stacks.",
+        "Passive":"",
+        "Scalings":[[7.3,9.7]]
     },
     "bui-5":{
-        "Name":"",
-        "Rarity": 0,
-        "Description":"",
+        "Name": "Virtual Disruptor",
+        "Rarity": 5,
+        "Description":"Increase Crit Rate by %s%. Increases damage dealt by Follow Ups by %s%. Increases Follow up damage dealt by %s% if an ally triggered the equipping character's follow up using an electric skill.",
         "Passive":"",
-        "Scalings":[]
+        "Scalings":[[18.1,22.0,22.0]]
     },
     "closer-4": {
         "Name":"Crime and Punishment",
