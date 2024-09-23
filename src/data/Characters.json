@@ -2994,5 +2994,114 @@
         "Sub": ["SPD","ATK%","DMG Bonus","CR","CD","HP%"]
 
       }
-    }
+    },
+    "Messa":{
+        "Name":"Kira Kitazato",
+        "Codename":"Messa",
+        "Persona": "Harpyia",
+        "Role":"Single Target Attacker",
+        "Element":"Physical",
+        "Released": 1726707600,
+        "Talents":{
+          "1":{
+            "Type": 1,
+            "Icon":"PHYS_ST",
+            "Name": "Cutting Techniques / Sin Games",
+            "Cost": 21,
+            "Description": "Hunter Status: deals 4 * <span style=\"color:#FFFC40;font-weight:bold\">%s%</span> Attack Power Physical Attribute Damage to 1 enemy and adds 1 layer of『Bleeding』to it. \n『Executioner』 Status: Inflicts <span style=\"color:#FFFC40;font-weight:bold\">%s%</span> Attack Power Physical Attribute Damage to 1 enemy, removes 2 layers of『Bleeding』to them at the end of the skill. (Can trigger『Tear』effect)",
+            "Formula": ["48.5*(0.6+0.04*skillLv)","206.3*(0.6+0.04*skillLv)"]
+          },
+          "2":{
+            "Type": 1,
+            "Icon":"PHYS_ST",
+            "Name": "Deadly Pleasure / Curtain Call",
+            "Cost": 21,
+            "Description": "『Hunter』Status: inflicts 2 * <span style=\"color:#FFFC40;font-weight:bold\">%s%</span> Attack Power Physical Attribute Damage to 1 enemy, immediately settling for one 『Bleeding』 damage and refreshing duration of its『Bleeding』status. \n『Executioner』status: inflicts <span style=\"color:#FFFC40;font-weight:bold\">%s%</span> Attack Power Physical Attribute Damage on 1 enemy for every 1 tier of 『Bloodshed』 that the target has, so that the skill Damage and its triggered『Tear』damage is increased by 2%, and all『Bleeding』 statuses are cleared at the end of the skill. (Can trigger『Tear』effect)",
+            "Formula": ["86.3*(0.6+0.04*skillLv)","206.3*(0.6+0.04*skillLv)"]
+          },
+          "3":{
+            "Type": 1,
+            "Icon":"BUFF_ST",
+            "Name": "Night's Arrival",
+            "Cost": 15,
+            "Description": "This skill unlocks when any enemy has『Bleeding』 layers ≥ 7. \n Transforms to『Executioner』state, changing the skill mode and gaining the effect: for every 3 layers of『Bleeding』 the target has when using the skill, Kitazato inflicts 1 additional 『Tear』: <span style=\"color:#FFFC40;font-weight:bold\">%s%</span> physical attribute damage to their attack power. \n After using this skill, you can still use other skills this turn, and at the end of the turn, you automatically shift to the『Hunter』 state.",
+            "Formula": ["68.3*(0.6+0.04*skillLv)"]
+          },
+          "4":{
+            "Type": 1,
+            "Icon":"PHYS_ST",
+            "Name": "Combat Skills",
+            "Description": "HIGHLIGHT: Transforms to the 『Hunter』 state, immediately adding 5 layers of『Bleed』to 1 enemy; then transforms to the『Executioner』 state, inflicting <span style=\"color:#FFFC40;font-weight:bold\">%s%</span> Attack Strength Physical Attribute Damage to them. (『Tear』effect can be triggered) \n ONE MORE: Deals physical damage to one enemy.",
+            "Formula": ["336.6*(0.6+0.04*skillLv)"]
+          },
+          "5":{
+            "Type": 2,
+            "Name": "Infest",
+            "Description": "For every 30% EHR increases Bleed DMG by 4.0% of Messa's ATK, upt to 90% EHR."
+          },
+          "6":{
+            "Type": 2,
+            "Name": "Fester",
+            "Description": "Increase EHR by 36% when in『Hunter』, increase PEN by 21% when in『Executioner』."
+          }
+        },
+        "Awareness":{
+          "0":{
+            "Id": 0,
+            "Name": "Reaper's Victory",
+            "Description": "Kira Kitazato has two states,『Hunter』and 『Executioner』, different states have different skill modes, initially in the state of『Hunter』. \n『Hunter』: Each time you deal damage, you have a 65% chance to add 1 layer of Bleed to the target. When an enemy in the Bleed state is killed in battle, their Bleed will be transferred to the enemy with the highest Life Value. \n『Executioner』: When using the skill, for every 3 layers of 『Bleed』 the target has, Kirikiran deals 1 additional 『Tear』 damage to them. \n『Bleed』: Every turn, take physical attribute damage equal to 1% of one's maximum life value of universal attribute damage + 4% of Kitari Kirara's attack power, lasts for 4 turns, stackable for 10 layers. \n 『Tear』: physical attribute damage based on Kitanari Kira's Attack Power, 『Night has come』 skill level. Cannot be bludgeoned, and cannot deal fall value damage."
+          },
+          "1":{
+            "Id": 1,
+            "Name": "Rings Around the Rosies",
+            "Description": "When in『Hunter』state, the first time you deal skill damage to each enemy, additionally inflict 5『Bleed』. When in『Executioner』 state, when using skills, increase skill damage by 8% for each debuff on the enemy, up to 10 debuffs."
+          },
+          "2":{
+            "Id": 2,
+            "Name": "A Pocket Full of Posies",
+            "Description": "Incision Technique / Sinful Game Lv. +3, up to a maximum of Lv. 13.\n Combat Skills Lv. +3, up to maximum of Lv. 13."
+          },
+          "3":{
+            "Id": 3,
+            "Name": "Accompanied by Flowers",
+            "Description": "Increase『Tear』skill multiplier by 35% of Messa's ATK. Restore HP equal to 2.0% of『Tear』damage. (The maximum healing per turn is Messa level * 15 + 300)"
+          },
+          "4":{
+            "Id": 4,
+            "Name": "Jumping Off the Ground",
+            "Description": "Lethal Pleasure / Curtain Call Lv. +3, up to a maximum of Lv. 13. Night's Arrival Lv. +3, up to a maximum of Lv. 13."
+          },
+          "5":{
+            "Id": 5,
+            "Name": "Ashes! Ashes!",
+            "Description": "HIGHLIGHT Effect Boost: For each『Bleed』on the target, increase HIGHLIGHT damage by 8.0%."
+          },
+          "6":{
+            "Id": 6,
+            "Name": "We All Fall Down!",
+            "Description": "Increase『Bleed』maximum stacks to 13, all enemies will never have less than 3『Bleed』stacks. When in『Executioner』state, using Sinful Game will not longer remove『Bleed』.『Tear』 upgrade to『Execution』, increase damage by 100% and deals 50% damage to all other enemies.『Execution』can trigger all effects from『Tear』."
+          }
+        },
+        "Weapons":["messa-4","messa-5"],
+        "Build": {
+          "Revelation": [{
+            "Name": "4PC Repression",
+            "Image": "/P5XWiki/arcana/qishi-new-tz-yayi.png"
+          },{
+            "Name": "4PC Joy",
+            "Image": "/P5XWiki/arcana/qishi-new-tz-huanyu.png"
+          }],
+          "Artifact": [{
+            "Name": "Wisdom",
+            "Image": "/P5XWiki/arcana/qishi-new-teshu-zhihui.png"
+          }],
+          "Main":{
+            "Moon": "ATK%",
+            "Star": "ATK% (Repression) EHR% (Joy)",
+            "Dawn": "ATK%"
+          },
+          "Sub": ["EHR%","PEN (Repression) ATK% (Joy)","DMG Bonus","ATK"]
+    
+        }
+      }
 }

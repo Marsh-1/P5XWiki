@@ -443,5 +443,19 @@
         "Description":"Increase Healing Bonus by %s%. Increase『Gorgeous Fireworks』skill multiplier and restore amount by %s%. After enemies takes damage from『Gorgeous Fireworks』, increase their DMG taken by %s% for 3 turns, up to 3 stacks.",
         "Passive":"",
         "Scalings":[[22,15,3]]
+    },
+    "messa-4":{
+        "Name": "Endless Ashes",
+        "Rarity": 4,
+        "Description":"Increase ATK by %s%. Increase ATK permanently by %s% for each『Bleeding』inflicted to enemies (up to 10).",
+        "Passive":"",
+        "Scalings":[[12,1.8]]
+    },
+    "messa-5":{
+        "Name": "Crimson Weaver",
+        "Rarity": 5,
+        "Description":"Increase ATK by %s%. Increase PEN when dealing『Tear』by %s%. Increase DMG dealt to enemies inflicted with『Bleeding』by %s%.",
+        "Passive":"",
+        "Scalings":[[30,25,25]]
     }
 }
