@@ -457,5 +457,19 @@
         "Description":"Increase ATK by %s%. Increase PEN when dealing『Tear』by %s%. Increase DMG dealt to enemies inflicted with『Bleeding』by %s%.",
         "Passive":"",
         "Scalings":[[30,25,25]]
+    },
+    "navi-4":{
+        "Name": "Portable C Type Model",
+        "Rarity": 4,
+        "Description":"Increase ATK by %s%. After inflicting『Disruption Virus』increase enemies' DMG taken by %s% for 2 turn.",
+        "Passive":"",
+        "Scalings":[[12,10]]
+    },
+    "navi-5":{
+        "Name": "Professional HACK Model",
+        "Rarity": 5,
+        "Description":"Increases ATK by %s%. When an ally exploits a weakness and deals damage, the character's ATK is further increased by %s%, lasting for 2 turns. After Navi debuffs an enemy, the enemy taken %s% more CRIT DMG for 3 turns, max 2 stacks.",
+        "Passive":"",
+        "Scalings":[[30,10,7.6]]
     }
 }

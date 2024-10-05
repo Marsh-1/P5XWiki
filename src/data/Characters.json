@@ -3103,5 +3103,115 @@
           "Sub": ["EHR%","PEN (Repression) ATK% (Joy)","DMG Bonus","ATK"]
     
         }
+      },
+    "Navi":{
+        "Name":"Futaba Sakura",
+        "Codename":"Navi",
+        "Persona": "Necronomicon",
+        "Role":"Navigation",
+        "Element":"None",
+        "Released": 1727308800,
+        "Talents":{
+          "1":{
+            "Type": 3,
+            "Icon":"BUFF_AOE",
+            "Name": "Silent Hacking",
+            "Cost": 4,
+            "Description": "Decreases all enemies DEF by %s% + %s% for each 100 ATK Navi has (max 4600 ATK) for 2 turns. During this duration, when enemies take Weakness DMG, the effect is doubled. If『Analysis Progress』is at 100%,『Hack Complete』is given to all allies for 2 turn.",
+            "Formula": ["6.0","0.53"]
+          },
+          "2":{
+            "Type": 3,
+            "Icon":"BUFF_ST",
+            "Name": "Data Crack",
+            "Cost": 4,
+            "Description": "Increase DMG Taken on an enemy by %s% + %s% for every 100 ATK Navi has (max 4600 ATK) for 2 turns. During the effect's duration, when an ally uses a skill to deal damage to the target, Navi gains 15% of『Analysis Progress』. If『Analysis Progress』is at 100%,『Hack Complete』is given to all allies for 2 turn.",
+            "Formula": ["6.0","0.38"]
+          },
+          "3":{
+            "Type": 3,
+            "Icon":"BUFF_AOE",
+            "Name": "In the Name of Featherman",
+            "Cost": 8,
+            "Description": "Unlock Condition: An ally has『Hack Complete』.\nIncreases the ATK of an ally by %s + %s for every 100 ATK Navi has (max 4600 ATK) for 2 turns. Applies the ally's corresponding attribute『Disruption Virus』to all enemies for 1 turn.",
+            "Formula": ["270","21.7"]
+          },
+          "4":{
+            "Type": 1,
+            "Icon":"PASSIVE",
+            "Name": "Attribute Improvement",
+            "Description": "Increases all allies stats by 20.0% of the Navi's stats.",
+            "Formula": []
+          },
+          "5":{
+            "Type": 2,
+            "Name": "Playfulness",
+            "Description": "Gains 100% of『Analysis Progress』at the start of battle."
+          },
+          "6":{
+            "Type": 2,
+            "Name": "Clean Up",
+            "Description": "Under『Hack Complete』all allies receive 30% of Navi's ATK as a shield. This shield lasts for 3 turns."
+          }
+        },
+        "Awareness":{
+          "0":{
+            "Id": 0,
+            "Name": "Information Gathering",
+            "Description": "When an ally uses a Persona skill, Navi gains 5% of『Analysis Progress』. When an ally uses a skill to exploit a Weakness and cause damage, she gains an additional 15% of『Analysis Progress』.\nWhen『Hack Complete』status is acheived, all allies' damage is increased by 10%/15%/20% (at level 10/50/70) for 2 turns."
+          },
+          "1":{
+            "Id": 1,
+            "Name": "Hacking Time",
+            "Description": "When『Analysis Progress』is at 100% or in『Hack Complete』status, all allies' CRIT Rate is increased by 12%."
+          },
+          "2":{
+            "Id": 2,
+            "Name": "Break In",
+            "Description": "In the Name of Featherman / Data Crack Lv +3, up to a maximum level of 15."
+          },
+          "3":{
+            "Id": 3,
+            "Name": "Remote Assistance",
+            "Description": "When an ally attacks an enemy with Navi's debuffs, their ATK is increased by 25%. If an ally receives a fatal hit, their HP will not drop below 1, and all allies will gain a 20% shield. This effect can only be triggered once per battle."
+          },
+          "4":{
+            "Id": 4,
+            "Name": "Mind Warfare",
+            "Description": "Silent Hacking Lv +3, up to a maximum of Lv. 15."
+          },
+          "5":{
+            "Id": 5,
+            "Name": "Sneak Attack",
+            "Description": "After an ally uses a HIGHLIGHT, Navi gains 1『Weakness Analysis』, max 2 stacks. When Navi uses Silent hacking or Data Crack, all『Weakness Analysis』are consumed, increasing the skill's effect by 8% for each stack."
+          },
+          "6":{
+            "Id": 6,
+            "Name": "Virus Invasion",
+            "Description": "When using In the Name of Featherman, it will be cast on all alies. While applying the corresponding『Disruption Virus』to all enemies (only one『Disruption Virus』of the same resistance can exist at a time). The duration of『Hack Complete』is extended to 3 turns, and it also increases allies' weakness damge by 10% and overall damage by 25%."
+          }
+        },
+        "Weapons":["navi-4","navi-5"],
+        "Build": {
+          "Revelation": [{
+            "Name": "Determination",
+            "Image": "/P5XWiki/arcana/qishi-new-teshu-juexin.png"
+          },
+          {
+            "Name": "Sincerity",
+            "Image": "/P5XWiki/arcana/qishi-new-teshu-zhencheng.png"
+          }],
+          "Artifact": [{
+            "Name": "Duty",
+            "Image": "/P5XWiki/arcana/qishi-new-tz-zhize.png"
+          }],
+          "Main":{
+            "Moon": "ATK",
+            "Star": "Crit Rate",
+            "Dawn": "ATK"
+          },
+          "Sub": ["Crit Rate", "ATK/ATK%"]
+    
+        }
       }
 }

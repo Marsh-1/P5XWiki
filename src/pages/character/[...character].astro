@@ -36,7 +36,8 @@ export function getStaticPaths() {
     {params: {character: 'Wind'}},
     {params: {character: 'Summer Closer'}},
     {params: {character: 'Summer Moko'}},
-    {params: {character: 'Messa'}}
+    {params: {character: 'Messa'}},
+    {params: {character: 'Navi'}}
   ];
 }
 
@@ -46,12 +47,34 @@ const info = Characters[character];
 
 <Layout title={info['Name']}>
   <main>
-    <div>
-      <h1>{info['Name']}</h1>
-      <Role role={info['Role']}/>
-      <p>Codename: {info['Codename']}</p>
-      {info['Persona'] && <p>Persona: {info['Persona']}</p>}
-      <p>Element: {info['Element']}</p>
+    <div class="FirstSection">
+      <div class="CharacterCard">
+        <img src=`/P5XWiki/cards/${info['Codename']}Card.png`></img>
+      </div>
+      <div class="CharacterInfo">
+        <div class="CharacterIntro">
+          <h1>{info['Name']}</h1>
+          <img src=`/P5XWiki/roleicons/${info['Role']}.png`></img>
+        </div>
+        <table>
+          <tr>
+            <td>Role</th> 
+            <td><p>{info['Role']}</p></td>
+          </tr>
+          <tr>
+            <td>Codename</th>
+            <td><p>{info['Codename']}</p></td>
+          </tr>
+          <tr>
+            <td>Persona</th>
+            <td>{info['Persona'] && <p>{info['Persona']}</p>}</td>
+          </tr>
+          <tr>
+            <td>Element</td>
+            <td><p>{info['Element']}</p></td>
+          </tr>
+        </table>
+      </div>
     </div>
     <div>
       <h1>Talents</h1>
@@ -69,7 +92,7 @@ const info = Characters[character];
           <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['1']['Cost']}{info['Talents']['1']['Type'] == 3 ? ' Rounds' : info['Talents']['1']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={
             info['Talents']['1']['Formula'].reduce((acc,cur) =>
-            acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['1']['Description']
+            acc.replace("%s",Number.parseFloat(eval(cur.replaceAll('skillLv',`10`)).toFixed(2))),info['Talents']['1']['Description']
           )
           } class='skill1desc'></p>
         </div>
@@ -85,7 +108,7 @@ const info = Characters[character];
           <input type="range" autocomplete="off" min="1" max="13" value="10" class="slider2" id="skill2">
           <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['2']['Cost']}{info['Talents']['2']['Type'] == 3 ? ' Rounds' : info['Talents']['2']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={info['Talents']['2']['Formula'].reduce((acc,cur)=>
-            acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['2']['Description']
+            acc.replace("%s",Number.parseFloat(eval(cur.replaceAll('skillLv',`10`)).toFixed(2))),info['Talents']['2']['Description']
           )} class='skill2desc'></p>
         </div>
         <div>
@@ -100,7 +123,7 @@ const info = Characters[character];
           <input type="range" autocomplete="off" min="1" max="13" value="10" class="slider3" id="skill3">
           <p>{info['Role'] == 'Navigation' ? 'Preparation Time: ': 'Cost: '} <span style='color: magenta;'>{info['Talents']['3']['Cost']}{info['Talents']['3']['Type'] == 3 ? ' Rounds' : info['Talents']['3']['Type'] == 4 ? '% Max HP' : ' SP'}</span></p>
           <p set:html={info['Talents']['3']['Formula'].reduce((acc,cur)=>
-            acc.replace("%s",Math.round(eval(cur.replaceAll('skillLv',`10`))*10)/10),info['Talents']['3']['Description']
+            acc.replace("%s",Number.parseFloat(eval(cur.replaceAll('skillLv',`10`)).toFixed(2))),info['Talents']['3']['Description']
           )} class='skill3desc'></p>
         </div>
         <div>
@@ -205,6 +228,42 @@ const info = Characters[character];
 		line-height: 1.6;
     color: white;
 	}
+
+  .FirstSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .FirstSection .CharacterCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FirstSection img {
+    max-width: 50%;
+  }
+
+  .CharacterInfo .CharacterIntro{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .CharacterInfo .CharacterIntro img{
+    width: 11%;
+    height: 11%;
+    aspect-ratio: auto;
+  }
+
+  .CharacterInfo table{
+    width: 100%;
+  }
+
+  .CharacterInfo table tr td:last-child{
+    text-align: right;
+  }
+
   .skilltitle{
     display: flex;
     justify-content: flex-start;
