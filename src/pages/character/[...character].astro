@@ -49,7 +49,7 @@ const info = Characters[character];
   <main>
     <div class="FirstSection">
       <div class="CharacterCard">
-        <img src=`/P5XWiki/cards/${info['Codename']}Card.png`></img>
+        <img src=`/P5XWiki/cards/${character}Card.png`></img>
       </div>
       <div class="CharacterInfo">
         <div class="CharacterIntro">
@@ -220,6 +220,7 @@ const info = Characters[character];
 </script>
 
 <style>
+
   main {
     margin: 0 auto;
 		max-width: 960px;
@@ -229,9 +230,10 @@ const info = Characters[character];
     color: white;
 	}
 
-  .FirstSection{
+  .FirstSection {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .FirstSection .CharacterCard {
@@ -251,8 +253,8 @@ const info = Characters[character];
   }
 
   .CharacterInfo .CharacterIntro img{
-    width: 11%;
-    height: 11%;
+    width: 7%;
+    height: 7%;
     aspect-ratio: auto;
   }
 
