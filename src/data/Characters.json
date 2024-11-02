@@ -3213,5 +3213,217 @@
           "Sub": ["Crit Rate", "ATK/ATK%"]
     
         }
+      },
+    "Cherish":{
+        "Name":"Masaki Ashiya",
+        "Codename":"Cherish",
+        "Persona": "Amalthea",
+        "Role":"Defense",
+        "Element":"Ice",
+        "Released": 1729130400,
+        "Talents":{
+          "1":{
+            "Type": 1,
+            "Icon":"ICE_ST",
+            "Name": "Blessing of Compassion",
+            "Cost": 24,
+            "Description": "Deals %s% of Cherish's DEF as Ice Damage to an enemy and deals %s% of Cherish's DEF as Ice Damage to other enemies, there is a %s% base chance to inflict the main target with Freeze and gain 2『Valor』. If you are in『Justice Oath』, additionally for every 600 DEF Cherish has, the main target damage taken increases by 1.0%, up to a maximum of %s% for 2 turns, but decreases『Valor』by 1.",
+            "Formula": ["149.2","44.8","97.6","9.8"]
+          },
+          "2":{
+            "Type": 1,
+            "Icon":"BUFF_ST",
+            "Name": "Honour Protection",
+            "Cost": 26,
+            "Description": "Gives 1 ally 1『Upright Mark』that gives a shield equal to %s% of Cherish's DEF + %s. Increases their DEF by %s% of Cherish's DEF (up to a maximum of %s DEF) for 2 turns. When gaining this effect, if that ally is above 60% HP, increases their chance of being attacked by 50%. At the start of your next turn give that ally 1『Upright Mark』. If you are in『Justice Oath』, increase the shield from『Upright Mark』by 25.0% for 2 turns.",
+            "Formula": ["22.8","650","20","1220"]
+          },
+          "3":{
+            "Type": 1,
+            "Icon":"BUFF_AOE",
+            "Name": "Prayer of Spirituality",
+            "Cost": 30,
+            "Description": "Immediately give all allies 1『Upright Mark』that gives them a shield equal to %s% of Cherish's DEF + 120/240/360 (Levels 1/50/70). Give them 1『Holy Protection』that gives them a shield equivalent to %s% of Cherish's DEF + %s. Gives all allies 1 Knowdown Shield and for every 300 Def Cherish has, increases DMG Dealt by 1.0%, up to a maximum of %s% for 2 turns.",
+            "Formula": ["12","49.1","1400","19.52"]
+          },
+          "4":{
+            "Type": 1,
+            "Icon":"BUFF_AOE",
+            "Name": "Combat Skills",
+            "Description": "『HIGHLIGHT』: Immediately gives all allies 1『Holy Protection』that give them a shield equal to %s% of Cherish's DEF + %s and decrease all allies damage taken by %s% for 2 turns.",
+            "Formula": ["59","1681","31.9"]
+          },
+          "5":{
+            "Type": 2,
+            "Name": "Sacrifice",
+            "Description": "Increases allies DEF by 24.0% when shielded by Cherish."
+          },
+          "6":{
+            "Type": 2,
+            "Name": "Humility",
+            "Description": "Increases allies Effect Res by 48.0% when shielded by Cherish."
+          }
+        },
+        "Awareness":{
+          "0":{
+            "Id": 0,
+            "Name": "I Will Be Kind to the Weak",
+            "Description": "At the start of the battle, give all allies 1『Upright Mark』that give them a shield equal to 12% of Cherish's DEF + 120/240/60 (Levels 1/50/70). When allies with『Upright Mark』take damage, gain 1『Valour』. Cherish can gain up to 2『Valour』this way every turn. At the stat of the turn, if you have 4『Valour』, consume 4『Valour』and gain『Justice Oath』, and give allies 1『Upright Mark』."
+          },
+          "1":{
+            "Id": 1,
+            "Name": "I Will be Brave Against the Strong",
+            "Description": "At the start of battle, gain 3『Valour』and decrease the amount of『Valour』needed to gain『Justice Oath』to 3. Increases all allies DEF PEN by 15.0%"
+          },
+          "2":{
+            "Id": 2,
+            "Name": "I Will Fight All Who Do Wrong",
+            "Description": "Blessing of Compassion Lv. +3, up to a maximum of Lv. 15.\nPrayer of Spirtuality Lv. +3, up to a maximum of Lv. 15."
+          },
+          "3":{
+            "Id": 3,
+            "Name": "I Will Fight for Those Who Cannot Fight",
+            "Description": "Each『Upright Mark』additionally gives 15.0% DEF (max 2 stacks). When『Upright Mark』expires, restore HP equal to 20.0% of the remaining shield."
+          },
+          "4":{
+            "Id": 4,
+            "Name": "I Will Help My Brother Knight",
+            "Description": "Honour Protection Lv. +3, up to a maximum of Lv. 15.\nCombat Skills Lv. +3, up to a maximum of Lv. 15."
+          },
+          "5":{
+            "Id": 5,
+            "Name": "I Will be True to My Friends",
+            "Description": "HIGHLIGHT Effect Boost: Increases all allies shield received by 30.0% for the next 2 turns."
+          },
+          "6":{
+            "Id": 6,
+            "Name": "I Will Be Faithful in Love",
+            "Description": "When gaining『Justice Oath』, additionally gain 2 turns of『Justice Oath』. Increases all allies Crit Rate by 15.0% when『Justice Oath』is active."
+          }
+        },
+        "Weapons":["cherish-4","cherish-5"],
+        "Build": {
+          "Revelation": [{
+            "Name": "Faith",
+            "Image": "/P5XWiki/arcana/qishi-new-teshu-xinnian.png"
+          }],
+          "Artifact": [{
+            "Name": "Peace 4-Pc",
+            "Image": "/P5XWiki/arcana/qishi-new-tz-heping.png"
+          }],
+          "Main":{
+            "Moon": "DEF%",
+            "Star": "DEF%",
+            "Dawn": "DEF%"
+          },
+          "Sub": ["DEF","SP Recovery","HP"]
+
+        }
+      },
+      "Noir":{
+        "Name":"Haru Okumura",
+        "Codename":"Noir",
+        "Persona": "MiLady",
+        "Role":"AOE Attacker",
+        "Element":"Psychic",
+        "Released": 1730340000,
+        "Talents":{
+          "1":{
+            "Type": 1,
+            "Icon":"PSY_AOE",
+            "Name": "Fusion Aiming",
+            "Cost": 26,
+            "Description": "Deals %s% ATK as Psy damage to all enemies 2 times, with a %s% base chance to infict the main target with『Sight』. There is a %s% base chance to inflict other targets with『Sight』, lasts for 3 turns. Noir gains『Thermal Customization』",
+            "Formula": ["57.78","97.6","53.68"]
+          },
+          "2":{
+            "Type": 4,
+            "Icon":"GUN_ST",
+            "Name": "Supressing Fire",
+            "Cost": 12,
+            "Description": "Deals %s% ATK as Gun damage to 1 enemy, increases PEN by %s% when attacking enemies with『Sight』. Noir gains『Piercing Customization』.",
+            "Formula": ["151.57","19.52"]
+          },
+          "3":{
+            "Type": 1,
+            "Icon":"PSY_AOE",
+            "Name": "Full Metal Explosion",
+            "Cost": 26,
+            "Description": "Deals %s% ATK as Psy damage to all enemies, increases skill crit rate by %s% when attack enemies with『Sight』. Noir gains『Spreading Customization』.",
+            "Formula": ["110.87","19.52"]
+          },
+          "4":{
+            "Type": 1,
+            "Icon":"PSY_AOE",
+            "Name": "Combat Skills",
+            "Description": "『HIGHLIGHT』: Deals %s% ATK as Psy damage to all enemies. Gain『Overload Customization』if『Customization』is not full or you don't have『Overload Customization』yet. Otherwise, increases skill DMG by %s%.",
+            "Formula": ["206.91","15.54"]
+          },
+          "5":{
+            "Type": 2,
+            "Name": "Launch",
+            "Description": "In battle, increases ATK based on Noir's Effect Hit Rate at the rate of 1.45% EHR to 1% ATK, up to 165% ATK. Additionally increase CRIT Dmg by 20%/40%/60% when you have at least 70%/140%/210% EHR."
+          },
+          "6":{
+            "Type": 2,
+            "Name": "Instigate",
+            "Description": "Each time after using 1 type of『Customization』, permanently gain 1 stack of『Barrel Heat』. Based on the number of stacks, Noir gets the follow buffs:\n1 Stack: Increases EHR and Effect Res by 18%.\n2 Stacks: Increases ATK and DEF by 18%.\n3 Stacks: Increases Crit DMG by 18%."
+          }
+        },
+        "Awareness":{
+          "0":{
+            "Id": 0,
+            "Name": "Frenzy Teatime",
+            "Description": "Noir's 『Gun』Command deals 55% ATK as Psy damage to all enemies. After using Noir's skills, gain a corresponding『Customization』, each one boosting her『Gun』. When Noir uses『Gun』based on the number of『Customization』, increases Skill damage by 20%/40%/50% for 1/2/3『Customization』respectively. Additionally, when Noir has not less than 2『Customization』, increases ATK by 25%. Removes all『Customization』 after using『Gun』.\nThermal Customization: When using『Gun』on enemies with『Sight』, increases skill damage by 29.28% and removes all『Sight』from enemies.\nPiercing Customization: When using『Gun』, deals an additional hit of 39.04% ATK as Psy damage to the main target. This can trigger the skill boosting effect of『Thermal Customization』.\nSpreading Customization: When using『Gun』, deals an additional hit of 29.28% ATK as Psy damage to all enemies, this can trigger the skill damage boosting effect of『Thermal Customization』.\nOverload Customization: Increases Crit Rate by 15.54% when using『Gun』."
+          },
+          "1":{
+            "Id": 1,
+            "Name": "Broken Rococo Dress",
+            "Description": "At the start of battle, inflict the enemy with the highest HP with『Sight』, with a 55% base chance to inflict other enemies with『Sight』. Gain 1『Thermal Customization』. For each enemy with『Sight』, increases ATK by 8%, up to 24% and Gun Crit Rate by 6%, up to 18%."
+          },
+          "2":{
+            "Id": 2,
+            "Name": "Guns and Roses",
+            "Description": "Full Metal Explosion Level +3, up to a maximum of Level 15.\nCombat Skill Level +3, up to a maximum of Level 15."
+          },
+          "3":{
+            "Id": 3,
+            "Name": "Bloody Waltz",
+            "Description": "When there is not less than one enemy with『Sight』, decrease Noir's damage taken by 25%. When there is not less than three enemies with『Sight』, increase own Psy damage by 35%."
+          },
+          "4":{
+            "Id": 4,
+            "Name": "Wild Vine",
+            "Description": "Fusion Aiming Level +3, up to a maximum of Level 15.\nSuppressing Fire Level +3, up to a maximum of Level 15."
+          },
+          "5":{
+            "Id": 5,
+            "Name": "Explosive Cupcakes",
+            "Description": "HIGHLIGHT Effect Boost:『Overload Customization』gains an additional effect, Increases『Gun』Crit Dmg by 30%."
+          },
+          "6":{
+            "Id": 6,
+            "Name": "Nightmare Rhapsody",
+            "Description": "When Noir has not less than 2『Customization』, Noir's『Gun』command evolves into『Parting Gift』.『Customization』from Noir's persona skill give additional effects:\n『Thermal Customization』: Additionally decreases enemy's Effect RES by 27% for 2 turns.\n『Piercing Customization』: Increases PEN by 12% when attacking enemies with『Sight』for 2 turns.\n『Spreading Customization』: Increases Crit Rate and Crit DMG by 20% when attacking enemies with『Sight』."
+          }
+        },
+        "Weapons":["noir-4","noir-5"],
+        "Build": {
+          "Revelation": [{
+            "Name": "Wisdom",
+            "Image": "/P5XWiki/arcana/qishi-new-teshu-zhihui.png"
+          }],
+          "Artifact": [{
+            "Name": "Joy",
+            "Image": "/P5XWiki/arcana/qishi-new-tz-huanyu.png"
+          }],
+          "Main":{
+            "Moon": "DMG Bonus",
+            "Star": "EHR%/Crit DMG%",
+            "Dawn": "ATK%"
+          },
+          "Sub": ["EHR","Crit Rate","Crit Dmg","Dmg Bonus"]
+    
+        }
       }
 }

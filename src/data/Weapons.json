@@ -471,5 +471,33 @@
         "Description":"Increases ATK by %s%. When an ally exploits a weakness and deals damage, the character's ATK is further increased by %s%, lasting for 2 turns. After Navi debuffs an enemy, the enemy taken %s% more CRIT DMG for 3 turns, max 2 stacks.",
         "Passive":"",
         "Scalings":[[30,10,7.6]]
+    },
+    "cherish-4": {
+        "Name": "Undying Glory",
+        "Rarity": 4,
+        "Description":"Increases Shield Effect by %s%. Increases own Shield Effect by %s% when targeted allies are below 60.0% HP",
+        "Passive":"",
+        "Scalings":[[8.7,13.7]]
+    },
+    "cherish-5": {
+        "Name": "Sacred Oath",
+        "Rarity": 5,
+        "Description":"Increases DEF by %s%. Increases Shield from『Upright Mark』by %s%. Each『Upright Mark』increases allies DMG Bonus by %s%, up to 2 stacks.",
+        "Passive":"",
+        "Scalings":[[45,30,8]]
+    },
+    "noir-4": {
+        "Name": "Gilgamesh Axe",
+        "Rarity": 4,
+        "Description":"Increases ATK by %s%. For each enemy inflicted with a debuff, increases ATK and EHR by %s%, up to 3 stacks at %s%.",
+        "Passive":"",
+        "Scalings":[[12,3.3,9.9]]
+    },
+    "noir-5": {
+        "Name": "Holy Hymn",
+        "Rarity": 5,
+        "Description":"Increases Effect Hit Rate by %s%. When attacking enemies with『Sight』, increases Psy damage by %s%. On gaining『Customization』, increases ATK by 27% for 1 turn.",
+        "Passive":"",
+        "Scalings":[[36,19,27]]
     }
 }
